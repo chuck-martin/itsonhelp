@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Data Filter Settings</title>
+<link rel="stylesheet" type="text/css" href="itsonhelptopic.css" ctype="topic" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        addTocInfo("Policies: Service, Entitlement, Data Session, WiFi, Behavior, and Voice Accounting\nFilters\nAdd a Filter to a Component\nData Filter Settings");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+
+        document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("index.htm", "", "&gt;", "Home", "Service_Design_Center_Help.htm");
+document.write("<a href=\"Policies_Service_Entitlement_Data_Session_WiFi_Behavior_and_Voice_Accounting.html\">Policies: Service, Entitlement, Data Session, WiFi, Behavior, and Voice Accounting<\/a> &gt; <a href=\"Filters.html\">Filters<\/a> &gt; <a href=\"Add_a_Filter_to_a_Component.html\">Add a Filter to a Component<\/a> &gt; Data Filter Settings<\/p>");
+
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+    
+onLoadHandler = function()
+{
+        if (window.setRelStartPage)
+        {
+    setTimeout("setRelStartPage('index.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+        window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+        window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+        autoSync(0);
+        sendSyncInfo();
+        sendAveInfoOut();
+}
+//-->
+//]]>
+</script>
+<meta name="generator" content="Adobe RoboHelp 10" />
+</head>
+<body>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(4);
+//-->
+//]]>
+</script><script type="text/javascript" src="ehlpdhtm.js">
+</script>
+<h1>Data Filter Settings</h1>
+<p>All the filter options that you add and configure must match (be true) for the associated policy event(s) to be evaluated.</p>
+<table>
+<tbody>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Domain</td>
+<td>Enter one domain name. The domain names does not have to be fully qualified (you can enter, for example, cnn.com instead of&#160;http://www.cnn.com) and it is evaluated from right to left, so cnn.com would also include, for example, news.cnn.com and sports.cnn.com. Do not enter the protocol (http, https, etc.) When a domain name is entered, the filter criteria matches only when an app attempts to connect to that domain.</td>
+</tr>
+<tr>
+<td>IP&#160;Address</td>
+<td>
+<p>Enter one or more IP addresses, separated by commas.&#160; When an IP address is entered, the filter criteria matches only when an app attempts to connect to that IP address.</p>
+<p>{{tag.Product Name}} accepts IPv4 IP addresses in data filters. IPv4 IP addresses are 4 numbers separated by periods, each number in the range of 0-255. You can enter single IP addresses, IP address ranges, and CIDR&#160;(Classless Interdomain Routing) notation, but not wildcards (using *).</p>
+</td>
+</tr>
+<tr>
+<td>Protocol</td>
+<td>Select TCP (default) or UDP. When a protocol is defined, the filter criteria matches when an app attempts to use the defined protocol.</td>
+</tr>
+<tr>
+<td>Port</td>
+<td>
+<p>Enter one or more port numbers, separated by commas. When ports are defined, the filter criteria matches when an app attempts to use a defined port.</p>
+<p>{{tag.Product Name}} accepts port numbers in the range of 1 to 65535, inclusive, in data filters. You can enter single port numbers and port ranges.</p>
+</td>
+</tr>
+<tr>
+<td>App ID</td>
+<td>Enter one app ID (also known as a package name). (<a hqid="232053" href="#">Find App IDs</a>) When an app ID is entered, the filter criteria matches when an app with that ID attempts a connection.</td>
+</tr>
+</tbody>
+</table>
+<h2>Data Filter Examples</h2>
+<p>Configuration of data filters can become quite complex, especially because some fields accept ranges of numbers as well as individual values. This section describes some examples of data filter configuration.</p>
+<h3>WhatsApp Minus VoIP</h3>
+<p>WhatsApp is a popular messaging app that also has the capability to make voice calls over data, or VoIP (voice over IP). You want to sell WhatsApp app plans for messaging only, restricting WhatsApp users from using the app for VoIP calls so customers will purchase voice plans for voice calls.</p>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr>
+<th scope="col">Setting</th>
+<th scope="col">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Package (App ID)</td>
+<td>
+<p>This is the package name of the WhatsApp application.</p>
+<p>com.whatsapp</p>
+</td>
+</tr>
+<tr>
+<td><strong>Port</strong></td>
+<td>
+<p>WhatsApp uses only port 3478 for its VoIP functionality. So enter 2 ranges that include all ports except the one you want prevented from use, the VoIP port. No other ports need to be restricted, so the 2 ranges can include all the non-VoIP ports.</p>
+<p>1-3477, 3479-65535</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Validation and Fixing Data Errors</title>
+<link rel="stylesheet" type="text/css" href="itsonhelptopic.css" ctype="topic" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        addTocInfo("Validation and Fixing Data Errors");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+
+        document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("index.htm", "", "&gt;", "Home", "Service_Design_Center_Help.htm");
+document.write("Validation and Fixing Data Errors<\/p>");
+
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+    
+onLoadHandler = function()
+{
+        if (window.setRelStartPage)
+        {
+    setTimeout("setRelStartPage('index.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+        window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+        window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+        autoSync(0);
+        sendSyncInfo();
+        sendAveInfoOut();
+}
+//-->
+//]]>
+</script>
+<meta name="generator" content="Adobe RoboHelp 10" />
+</head>
+<body>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(4);
+//-->
+//]]>
+</script><script type="text/javascript" src="ehlpdhtm.js">
+</script>
+<h1>Validation and Fixing Data Errors</h1>
+<p>When you enter certain types of data into Service Design Center, the software performs immediate validation of the data. This allows you to see that there has been invalid data entered and to fix the data immediately. The following table details where this data validation occurs and the validation criteria.</p>
+<table>
+<tbody>
+<tr>
+<th>Location</th>
+<th>Data Type</th>
+<th>Data Validity</th>
+</tr>
+<tr>
+<td>Subscriber Groups</td>
+<td>Phone Numbers</td>
+<td>U.S. phone numbers must contain only the digits 0 (zero) through 9 (nine) and must be exactly 10 digits long.</td>
+</tr>
+<tr>
+<td>Network Groups</td>
+<td>SID</td>
+<td>A SID (system identification number) number must be an integer between 0 and 32767, inclusive.</td>
+</tr>
+<tr>
+<td>Network Groups</td>
+<td>NID</td>
+<td><span>A NID (network interface device) number must be an integer between 0 and 65534, inclusive.</span></td>
+</tr>
+<tr>
+<td>Network Groups</td>
+<td>SID/NID</td>
+<td>You can enter SID/NID combinations separated by the slash <span>(/) character. If you enter only an SID, it means all NIDs. You can use wildcards for SIDs. For example, */345 means any SID.</span></td>
+</tr>
+<tr>
+<td class="confluenceTd">Network Groups</td>
+<td class="confluenceTd">MCC</td>
+<td class="confluenceTd">An MCC (mobile country code) number must be a three-digit integer between 000 and 999, inclusive.</td>
+</tr>
+<tr>
+<td>Network Groups</td>
+<td>MNC</td>
+<td>
+<p>An MNC (mobile network code) number must be a two- or three-digit&#160;integer between 00 and 999, inclusive.</p>
+<p>When used in an MCC/MNC combination, a wildcard (*) is allowed in the MNC number. For example, 310/*9.</p>
+</td>
+</tr>
+<tr>
+<td>Network Groups</td>
+<td>MCC/MNC</td>
+<td>MCC numbers and MNC numbers must be entered as combinations, known as MCC/MNC tuples, separated by the slash (/) character, also called PLMNIDs.</td>
+</tr>
+</tbody>
+</table>
+<p>As you enter data and it gets validated, a status message at the top of the dialog box provides a running total of how many entries were made successfully (were valid) and how many had issues (were invalid).&#160;</p>
+<p>A list of MCC and MNC codes can be found here:&#160;<a class="external-link" href="http://en.wikipedia.org/wiki/Mobile_country_code" rel="nofollow">http://en.wikipedia.org/wiki/Mobile_country_code</a></p>
+<h2 id="ValidationandFixingDataErrors-FixingDataErrors">Fixing Data Errors</h2>
+<p>When invalid data gets entered, Service Design Center displays two types of feedback:</p>
+<ul>
+<li>At the top of the dialog box, a message in red shows how many data issues were found.</li>
+<li>The data itself is highlighted in the field with white text on a red background.&#160;</li>
+</ul>
+<p>You can:</p>
+<ul>
+<li>Fix the errors: Click on the entry and enter corrected, valid data.</li>
+<li>Clear errors: Select the <strong>Clear errors</strong> check box. All invalid data entries are hidden, but they are not deleted until you click <strong>Save</strong>. Clear the <strong>Clear errors</strong> check box before leaving the dialog box to view invalid data entries.&#160;</li>
+</ul>
+<p>Click <strong>Save</strong> when you finish fixing errors.&#160;</p>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>

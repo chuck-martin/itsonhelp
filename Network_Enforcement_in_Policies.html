@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 10" />
+<title>Network Enforcement in Policies</title>
+<link rel="stylesheet" type="text/css" href="itsonhelptopic.css" ctype="topic" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        addTocInfo("Policies: Service, Entitlement, Data Session, WiFi, Behavior, and Voice Accounting\nNetwork Enforcement in Policies");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+
+        document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("index.htm", "", "&gt;", "Home", "Service_Design_Center_Help.htm");
+document.write("<a href=\"Policies_Service_Entitlement_Data_Session_WiFi_Behavior_and_Voice_Accounting.html\">Policies: Service, Entitlement, Data Session, WiFi, Behavior, and Voice Accounting<\/a> &gt; Network Enforcement in Policies<\/p>");
+
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+    
+onLoadHandler = function()
+{
+        if (window.setRelStartPage)
+        {
+    setTimeout("setRelStartPage('index.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+        window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+        window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+        autoSync(0);
+        sendSyncInfo();
+        sendAveInfoOut();
+}
+//-->
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(4);
+//-->
+//]]>
+</script><script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2">
+</script>
+<h1>Network Enforcement in Policies</h1>
+<p>Part of the core functionality in Service Design Center is network management. This network management is policy driven. Service policies enforce what services that devices do and do not have available for them to use on cellular networks, and when and where allowed services can be used. Entitlement policies allow functionality to subscribers.</p>
+<p>Network-level policy enforcement is available for some or all of your voice, text, and data services when the ItsOn software is integrated with your carrier infrastructure. Network enforcement allows you to enforce policies on all devices that connect to your cellular network, not just devices that use the ItsOn embedded client software (not used by all carriers), that have policy directives encoded into that embedded client software, and that enforce those policy directives on the device level.</p>
+<div class="tip">A downloadable client app can be installed on devices that provides additional functionality, including self-service account management and rich notification experience.</div>
+<p>Whether network enforcement is required or optional for voice, messaging, or data service policies is controlled by tenant-level settings. Depending on your integration with ItsOn, you may be required to associate network enforcement to service policies by attaching bucket IDs or rating groups and to entitlement policies by attaching entitlement codes.</p>
+<p>Bucket IDs, rating groups, and entitlement codes (which can be bucket IDs, rating groups, or service offer codes (SOCs)) are pre-defined for your system and are tailored to your cellular network. They rate classifications of traffic over your networks. If your integration does not require bucket IDs, rating groups, or entitlement codes you will not be required to attach them to policies and the policy interface does not allow network enforcement to be added to policies.</p>
+<p>The idea is to have the configuration of the bucket ID, rating group, or entitlement code match the configuration of the filter and policy event of the policy that the bucket ID, rating group, or entitlement code is attached to. If they do not match, devices with embedded clients and devices with downloadable clients may behave differently on your network and your <a hqid="288842" href="#">intercept notifications</a> may not work properly for notifications or plans that use the policy.</p>
+<div class="warning">Once a bucket ID, rating group, or entitlement code has been added to a policy, it cannot be deleted. It can only be <a hqid="317180" href="#">changed</a>, and only until the policy has been published. Once a policy that uses a bucket ID, rating group, or entitlement code has been published, the bucket ID, rating group, or entitlement code in the policy can no longer be changed.</div>
+<p>You can:</p>
+<ul>
+<li><a hqid="317174" href="#">Add Network Enforcement to a Voice or Messaging Service Policy</a></li>
+<li><a hqid="317178" href="#">Add Network Enforcement to a Data Service Policy</a></li>
+<li><a hqid="317180" href="#">Change the Network Enforcement Used in a Service Policy</a></li>
+</ul>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>

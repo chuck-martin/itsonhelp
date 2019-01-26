@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 10" />
+<title>Edit a Filter in a Component</title>
+<link rel="stylesheet" type="text/css" href="itsonhelptopic.css" ctype="topic" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        addTocInfo("Policies: Service, Entitlement, Data Session, WiFi, Behavior, and Voice Accounting\nFilters\nEdit a Filter in a Component");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+
+        document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("index.htm", "", "&gt;", "Home", "Service_Design_Center_Help.htm");
+document.write("<a href=\"Policies_Service_Entitlement_Data_Session_WiFi_Behavior_and_Voice_Accounting.html\">Policies: Service, Entitlement, Data Session, WiFi, Behavior, and Voice Accounting<\/a> &gt; <a href=\"Filters.html\">Filters<\/a> &gt; Edit a Filter in a Component<\/p>");
+
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+    
+onLoadHandler = function()
+{
+        if (window.setRelStartPage)
+        {
+    setTimeout("setRelStartPage('index.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+        window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+        window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+        autoSync(0);
+        sendSyncInfo();
+        sendAveInfoOut();
+}
+//-->
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(4);
+//-->
+//]]>
+</script><script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2">
+</script>
+<h1>Edit a Filter in a Component</h1>
+<p>Components are added to <a hqid="232073" href="#">service policies</a> in <a hqid="232051" href="#">network features</a> and to <a hqid="1789449" href="#">eCommerce policies</a>, contain one or more <a hqid="232052" href="#">filters</a> and (sometimes) one or more <a hqid="232063" href="#">policy events</a>, and define the behavior of the network feature or eCommerce policy.</p>
+<div>
+<div class="warning">
+<p>You can make changes to network features and eCommerce policies when they are in Draft mode (not published to the ItsOn server or to any embedded-client devices), in Test mode (when the network feature or eCommerce policy is pushed to embedded-client devices that you're using for testing) and in Published mode (when the network feature is already pushed to the ItsOn server and to the embedded-client devices of your customers or the eCommerce policy is made available to be added to products). Changes to network features are immediate, and are published to the ItsOn server immediately and to embedded-client devices as soon as they "check in" with the network (typically within 24 hours, or when the device is reset), or, when a network feature is moved from Draft to Test status, published to test devices immediately. Changes to eCommerce policies do not affect subscribers that already have subscriptions to products based on those eCommerce policies.</p>
+<p>Exception: Once a bucket ID, rating group, or entitlement code has been added to a network feature or eCommerce policy, it cannot be deleted. It can only be <a hqid="317180" href="#">exchanged</a>, and only until the network feature or eCommerce policy has been published. Once a network feature or eCommerce policy has been published, the bucket ID, rating group, or entitlement code in the network feature or eCommerce policy can no longer be changed.</p>
+</div>
+</div>
+<ol>
+<li>Find the voice or service policy in Draft or Testing mode that you want to add a behavior policy to.
+<ul>
+<li>For a service policy in a network feature, Go to <strong>Policy &gt; Features</strong>.</li>
+<li>For a service eCommerce policy, go to <strong>Policy &gt; eCommerce Policies</strong>.</li>
+</ul>
+</li>
+<li>Click the corresponding <strong>View</strong> button&#160;<img alt="" src="images/buttonView.png" style="border-width: 1px; border-style: solid;" width="24" height="18" border="1" /> in the right column.&#160;(The buttons in the right column appear when you hover the mouse pointer over the row.)</li>
+<li>Click the <strong>Lock</strong> button&#160;<img alt="" src="images/buttonLock.png" style="border-width: 1px; border-style: solid;" width="24" height="18" border="1" /> (to unlock and enable editing).</li>
+<li>Click the name of a filter in a service policy.</li>
+<li>Click the Lock button&#160;<img src="images/buttonLock.png" alt="" style="border-left-style: Solid; border-top-style: Solid; border-right-style: Solid; border-bottom-style: Solid; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px;" width="24" height="18" border="1" />&#160;in the Edit <em>[Policy Type]</em>&#160;Filter dialog box (to unlock and enable editing).</li>
+<li>Make any desired changes. You can:
+<ul>
+<li>Change the name of the filter (up to 32 characters).</li>
+<li>Change the&#160;values of the existing <a href="#">data</a>,&#160;<a href="#">voice</a>, or <a href="#">messaging</a> filter criteria.</li>
+<li>Add a filter criterion (click Add Criteria, select the criterion you want to add, and then enter or select the value).</li>
+<li>Delete a filter criterion (click the Delete icon <img src="images/iconFilterCriteriaDelete.png" alt="" width="14" height="14" border="0" /> next to the criterion you want to delete).</li>
+</ul>
+</li>
+<li>Click <strong>Save.</strong></li>
+</ol>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>

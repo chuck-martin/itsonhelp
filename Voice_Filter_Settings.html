@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 10" />
+<title>Voice Filter Settings</title>
+<link rel="stylesheet" type="text/css" href="itsonhelptopic.css" ctype="topic" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        addTocInfo("Policies: Service, Entitlement, Data Session, WiFi, Behavior, and Voice Accounting\nFilters\nAdd a Filter to a Component\nVoice Filter Settings");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+
+        document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("index.htm", "", "&gt;", "Home", "Service_Design_Center_Help.htm");
+document.write("<a href=\"Policies_Service_Entitlement_Data_Session_WiFi_Behavior_and_Voice_Accounting.html\">Policies: Service, Entitlement, Data Session, WiFi, Behavior, and Voice Accounting<\/a> &gt; <a href=\"Filters.html\">Filters<\/a> &gt; <a href=\"Add_a_Filter_to_a_Component.html\">Add a Filter to a Component<\/a> &gt; Voice Filter Settings<\/p>");
+
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+    
+onLoadHandler = function()
+{
+        if (window.setRelStartPage)
+        {
+    setTimeout("setRelStartPage('index.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+        window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+        window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+        autoSync(0);
+        sendSyncInfo();
+        sendAveInfoOut();
+}
+//-->
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(4);
+//-->
+//]]>
+</script><script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2">
+</script>
+<h1>Voice Filter Settings</h1>
+<p>All the filter options that you add and configure must match (be true) for the associated policy event(s) to be evaluated.</p>
+<table>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Remote Phone Number</td>
+<td>
+<p>Enter one regular expression that defines a pattern for one or more phone numbers.</p>
+<p>Do not enter the leading and trailing / (slash) characters.</p>
+<p>Start the regular expression with the ^ (caret) character and end it with the $ (dollar sign) character.</p>
+<p><strong>Examples</strong></p>
+<p>Match only U.S. numbers with a 900 or 976 area code: <code>^(+?1)?(900|976)[0-9]{7}$</code>&#160;</p>
+<ul>
+<li><code>(+?1)?</code> allows for the possibility of 1 or +1, the U.S. country code.</li>
+<li><code>(900|976)</code> requires matching either 900 or 976.</li>
+<li><code>[0-9]{7}</code> requires matching the digits 0 through 9 exactly 7 times.</li>
+<li><code>^</code> ensures no characters come before the number.</li>
+<li><code>$</code> ensures no characters come after the number.</li>
+</ul>
+<p>Match exactly 6505551212, with or without the U.S. country code: <code><span>^(+?1)?(6505551212)$</span></code></p>
+<p><span>Match any legal U.S. phone number: <code><span>^(+?1)?[2-9][0-9]{2}[2-9][0-9]{6}$</span></code></span></p>
+<p><span><span>When a regular expression is entered, the filter criteria matches only when a voice app attempts to call to or receive a call from a number that matches the regular expression.</span></span></p>
+<div class="warning">Service Design Center checks the validity of the entered regular expression. If the regular expression is not valid, you will see an error and you will not be able to save the filter. See&#160;<a hqid="1778510" href="#">Regular Expression Tutorial and Examples</a> for some basics on how to build valid regular expressions.</div>
+</td>
+</tr>
+<tr>
+<td>Direction</td>
+<td>
+<p>Select:</p>
+<ul>
+<li>Inbound (MT): To match inbound traffic (default). MT stands for mobile terminated.</li>
+<li>Outbound (MO): To match outbound traffic. MO stands for mobile originated.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Behavior Policy</td>
+<td>See <a hqid="265687" href="#">Behavior Policy Settings</a>.</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>

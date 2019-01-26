@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 10" />
+<title>Test Regular Expressions</title>
+<link rel="stylesheet" type="text/css" href="itsonhelptopic.css" ctype="topic" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        addTocInfo("Policies: Service, Entitlement, Data Session, WiFi, Behavior, and Voice Accounting\nFilters\nAdd a Filter to a Component\nTest Regular Expressions");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+
+        document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("index.htm", "", "&gt;", "Home", "Service_Design_Center_Help.htm");
+document.write("<a href=\"Policies_Service_Entitlement_Data_Session_WiFi_Behavior_and_Voice_Accounting.html\">Policies: Service, Entitlement, Data Session, WiFi, Behavior, and Voice Accounting<\/a> &gt; <a href=\"Filters.html\">Filters<\/a> &gt; <a href=\"Add_a_Filter_to_a_Component.html\">Add a Filter to a Component<\/a> &gt; Test Regular Expressions<\/p>");
+
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+    
+onLoadHandler = function()
+{
+        if (window.setRelStartPage)
+        {
+    setTimeout("setRelStartPage('index.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+        window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+        window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+        autoSync(0);
+        sendSyncInfo();
+        sendAveInfoOut();
+}
+//-->
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(4);
+//-->
+//]]>
+</script><script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2">
+</script>
+<h1>Test Regular Expressions</h1>
+<p>Because the syntax of regular expressions can be complex, Service Design Center provides a helpful link to test the regular expressions you develop and add to the filters.</p>
+<ol>
+<li>Enter one or more regular expressions.</li>
+<li>Click <strong>RegEx Tester</strong>. A new tab or window opens and loads the regex101.com website with your regular expression(s) already loaded and the "g" and "m" modifiers (see below) already added.</li>
+<li>Enter one or more characters into the Test String box.</li>
+</ol>
+<p>The Match Information box will either explain the match or tell you that the string you entered is not a match.</p>
+<div class="tip">
+<p>You can click RegEx Tester without first entering a regular expression. This will open the regex101.com website without pre-loading a regular expression to test, but with the "g" and "m" modifiers.</p>
+<p>However, the connection is not two-way. If you enter a regular expression into the tester at regex101.com, it will not automatically get transferred to the filter field in Service Design Center. Once you successfully test a regular expression, copy it from regex101.com and paste it into Service Design Cetner.</p>
+</div>
+<h2>More About Regular Expressions in the ItsOn Software Platform</h2>
+<p>The regular expression language has different "flavors," not unlike dialects in a spoken language. The ItsOn software platform uses the Java "flavor."</p>
+<p>The differences between "flavors" are usually minor and esoteric and should not affect most of the regular expressions you will write for use in filters. The testing application at regex101.com offers several "flavors" of regular expressions to test against. You should use use the default, pcre (Perl compatible regular expressions), which is as close to a "standard" as there is for the regular expression language.</p>
+<h2>Modifiers at regex101.com</h2>
+<p>The regex101.com testing engine allows you to add several modifiers to its testing process. The access to the site from within Service Design Center selects two useful ones by default: "g" and "m."</p>
+<p>The "g" modifier makes the test look for all matches instead of just the first one in a test string.</p>
+<p>The "m" modifier allows the "^" and "$" anchors to match the beginning and end of lines, not just the beginning and end of the entire test string of characters, which allows you to enter and test multiple lines of text. For example, this is useful to test multiple phone numbers at once.</p>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>

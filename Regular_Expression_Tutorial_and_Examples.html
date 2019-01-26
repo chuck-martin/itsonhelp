@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 10" />
+<title>Regular Expression Tutorial and Examples</title>
+<link rel="stylesheet" type="text/css" href="itsonhelptopic.css" ctype="topic" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        addTocInfo("Policies: Service, Entitlement, Data Session, WiFi, Behavior, and Voice Accounting\nFilters\nAdd a Filter to a Component\nRegular Expression Tutorial and Examples");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+
+        document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("index.htm", "", "&gt;", "Home", "Service_Design_Center_Help.htm");
+document.write("<a href=\"Policies_Service_Entitlement_Data_Session_WiFi_Behavior_and_Voice_Accounting.html\">Policies: Service, Entitlement, Data Session, WiFi, Behavior, and Voice Accounting<\/a> &gt; <a href=\"Filters.html\">Filters<\/a> &gt; <a href=\"Add_a_Filter_to_a_Component.html\">Add a Filter to a Component<\/a> &gt; Regular Expression Tutorial and Examples<\/p>");
+
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+    
+onLoadHandler = function()
+{
+        if (window.setRelStartPage)
+        {
+    setTimeout("setRelStartPage('index.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+        window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+        window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+        autoSync(0);
+        sendSyncInfo();
+        sendAveInfoOut();
+}
+//-->
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(4);
+//-->
+//]]>
+</script><script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2">
+</script>
+<h1>Regular Expression Tutorial and Examples</h1>
+<p>Regular expressions, often abbreviated as regex or regexp, are used to search for patterns in text strings.</p>
+<p>Text strings are sequences of zero or more characters, where "characters" are numerals, letters (upper and lower case are considered to be different), punctuation marks, other glyphs used in languages, and blank spaces. "Hello world." is a text string. "415-555-1212" and "4155551212" are text strings. "&#160;&#160;&#160;&#160;" (4 spaces) is a text string.</p>
+<div class="tip">All numbers are represented as text strings. When a computer program has to do calculations on numbers, it has to first convert those text strings to numerical values, and it does so internally, in the code. Regular expressions cannot operate on those numerical values. It can search only in the textual representation of numbers.</div>
+<p>In other words, regular expressions deal only with characters, and do so one at a time. To a regular expression, $387.14 is a series of 6 characters. Regular expressions do not "understand" numbers or dates or currency, only characters. The good news is that regular expressions do let you describe numbers or dates or currency or other higher-level concepts.</p>
+<p>Regular expressions have a very exact syntax and can be complex. Some people describe regular expressions as "wildcards on steroids."</p>
+<p>This topic explains some essential regular expression basics and gives (and explains) examples of some common and useful regular expressions. If you want to know more, there are many resources that provide extensive explanations and examples, including many nuances that are not covered here.</p>
+<h2>Regular Expression Tutorial</h2>
+<p>This section explains some of the basic construction and syntax of regular expressions.</p>
+<h3>Literal Characters</h3>
+<p>If a regular expression contains any characters other than special characters (see the Special Characters section below), then the regular expression will search for the exact same characters in the text string.</p>
+<p>For example, say you have a regular expression <code>cat</code>.</p>
+<p>The regular expression would find a match in the text string <code>She petted the <span style="background-color: #FFFFCC;">cat</span></code>.</p>
+<p>The regular expression would also find a match in the text string <code>The <span style="background-color: #FFFFCC;">cat</span>ch is made</code>.</p>
+<p>The regular expression would not find a match in the text string <code>He pushed the cart</code> ("cat" is nowhere in the text string).</p>
+<p>The regular expression would not find a match in the text string <code>Catch me if you can</code> ("cat" is not the same as "Cat" because regular expressions are case sensitive by default).</p>
+<p>This is the simplest form of a regular expression. A search is successful if the characters in the complete regular expression are literally in the text string.</p>
+<h3>Special Characters (Metacharacters)</h3>
+<p>Regular expressions consisting of only literal characters provide a way to make simple searches. Special characters allow you to create regular expressions that are both powerful and complex. That complexity also allows for shortcuts that make the creation of powerful regular expressions simpler. There are 12 special characters, sometimes referred to as metacharacters, and if they are used by themselves in a regular expressions, can generate an error. The 12 characters are:</p>
+<ul>
+<li><code>\\</code> (backslash)</li>
+<li><code>^</code> (caret)</li>
+<li><code>$</code> (dollar sign)</li>
+<li><code>.</code> (period or dot)</li>
+<li><code>|</code> (pipe or vertical bar)</li>
+<li><code>?</code> (question mark)</li>
+<li><code>*</code> (asterisk or star)</li>
+<li><code>+</code> (plus sign)</li>
+<li><code>(</code> (opening parenthesis)</li>
+<li><code>)</code> (closing parenthesis)</li>
+<li><code>[</code> (opening square bracket)</li>
+<li><code>{</code> (opening curly brace)</li>
+</ul>
+<p>Metacharacters have special meanings in regular expressions. If you want to actually search for one of these characters, you precede it with a backslash, which is called escaping it. For example, if you want to look for a plus sign in a text string, you would use the regular expression <code>\\+</code>.</p>
+<p>To use metacharacters correctly, you also understand the concept of the term "token." A token is what a metacharacter acts on, and can be anything from a single literal character to a set of characters that are grouped together by using other metacharacters.</p>
+<h4>Pipes</h4>
+<p>Pipes are used to find alternates. For example, if you wanted to find "cat" or "dog" in a test string, you could use the regular expression <code>cat|dog</code>. This can be read to mean "find the literal string "cat" or the literal string "dog".</p>
+<p>Basically, read <code>|</code> as "or."</p>
+<h4>Parentheses</h4>
+<p>Parentheses are used to group parts of a search expression together. For example, the regular expression <code>I want a (cat)|(dog)</code> would find either the text string "I want a cat" or the text string "I want a dog". Let's look at this example a little more closely.</p>
+<p>The first part of the regular expression consists of the literal characters "I want a&#160;&#160;". (Note that a space is a character, one that can be searched for.) The parentheses allows you to create groups of literals that the pipe can then act on. This piece of the regular expression can be read as "find either "cat" or "dog" in the text string."</p>
+<p>If you did not use the parentheses in the above regular expression, if it instead read like this <code>I want a cat|dog</code>, it would find either the text string "I want a catog" ot the text string "I want a cadog". Because there was nothing to group the characters together, the pipe acts on only the adjacent characters, the "t" and the "d".</p>
+<h4>Brackets</h4>
+<p>When you enclose characters in brackets, it means to search for one of the characters within the brackets. For example, the regular expression [0123456789], will match 0, 1, 2, 3, 4, 5, 6, 7, 8, or 9.</p>
+<p>When you use brackets by themselves, it means to search for one of the characters exactly once. For example, the above regular expression would not match 12. or 0123456789. For that, you need a modifying character.</p>
+<p>For example, you want to find the word "gray" in text, but you know it could be spelled "gray" or "grey", both legal spellings. This regular expression would find either one: <code>gr[ae]y</code></p>
+<h5>Ranges</h5>
+<p>Within brackets, you can define a range of characters by using a hyphen (-) character. A range is a sequence of single ASCII/Unicode characters. Ranges are used as shortcuts when you want to match one of of many characters. For example, you could use a range to rewrite the above regular expression as [0-9].</p>
+<p>It is important to understand that ranges work on characters,not numeric values. Regular expressions "see" a number as a sequence of individual characters. So the regular expression [12-36] does not find the range of numbers 12 through 36. A regular expression evaluation engine sees this as what's called a "character class," and this particular one would find a 3-character-long string where the first character is the literal "1", the second character is in the range of 2" through "6", and the third character is the literal "6".</p>
+<h5>Carets Inside Brackets</h5>
+<p>Carets within brackets negate the part of the regular expression that is within the brackets. For example, [^A-Z] would find any character except an upper-case one.</p>
+<div class="tip">A caret outside square brackets has a different meaning.</div>
+<h4>Iteration</h4>
+<p>Question marks, asterisks, plus signs, and braces are used for iteration, that is, to find a specific number of instances of tokens.</p>
+<h5>Question Marks</h5>
+<p>A question mark means to find the token that precedes it exactly zero or one time. For example, the regular expression colou?r will match both "color" and "colour." Let's look at this example a little more closely.</p>
+<p>If the regular expression did not have the question mark in it, it would look like this: colour. This is your basic literal regular expression and matched the text string "colour".</p>
+<p>When you add the question mark, the token that it acts on as a metacharacter is the "u". So what this regular expression is saying is to "find a text string with the exact characters "c", "o", "l", and "o", and then with exactly zero or one instances of the character "u", and then the exact character "r".</p>
+<h5>Asterisks</h5>
+<p>Asterisks work the same way as question marks, except for they search for the token that precedes it zero or more times. For example, the regular expression tre* would match the text string "tree" (the token "e" is matched 2 times), the text string "tread" (the token "e" is matched 1 time) and the text string "trough" (the token "e" is matched 0 times).</p>
+<h5>Plus Signs</h5>
+<p>Plus Signs work the same way as asterisks, except that the search for the token that precedes them one or more times. For example, the regular expression tre+ would match the text string "tree" (the token "e" is matched 2 times) and the text string "tread" (the token "e" is matched 1 time), but it would not find the text string "trough" (the token "e" is matched 0 times).</p>
+<h5>Braces</h5>
+<p>Braces allow you to specify how many times to search for the token that precedes them by using one or two values within the braces.</p>
+<p>{n} matches for the token that precedes it exactly n times.</p>
+<p>{n,m} matches for the token that precedes is at least n but no more than m times.</p>
+<p>{n,} matches for the token that preceded it at least n times.</p>
+<h4>Position</h4>
+<p>Carets (not within square brackets), dollar signs, and periods are used to define position. Carets and dollar signs are also sometimes called anchors.</p>
+<h5>Carets</h5>
+<p>A caret at the start of a token will find matches only at the start of a text string. For example, the regular expression ^a will find the text string "absolute", but not the text string "baby" or the text string "run a sprint".</p>
+<h5>Dollar Signs</h5>
+<p>Dollar signs are like carets, but dollar signs match only at the end of text strings.</p>
+<h4>Backslash Shortcuts</h4>
+<p>Ranges are common on regular expressions, so several shortcuts that begin with the backslash character can be used to make regular expressions even more concise. Some common shortcuts are:</p>
+<ul>
+<li>\\d - Match any character in the range 0 through 9, which is equivalent to [0-9] or [0123456789]</li>
+<li>\\D - Match any character not on the range 0 through 9, which is the equivalent to [^0-9] or [^0123456789]</li>
+<li>\\s - Match any whitespace characters (spaces, tabs, etc.)</li>
+<li>\\S - Match any characters that are not whitespace characters</li>
+<li>\\w - Match any alphanumeric or punctuation characters, where alphanumeric is equal to [0-9] and [a-z] and [A-Z]</li>
+<li>\\W Match any character than is not an alphanumeric or punctuation character</li>
+</ul>
+<h2>Regular Expressions in Service Design Center</h2>
+<p>Regular expressions are used in voice and messaging <a hqid="232052" href="#">filters</a>, and for 2 purposes in those filters:</p>
+<ul>
+<li>To match incoming or outgoing phone numbers for voice calls or text messages.</li>
+<li>To match message content in text messages.</li>
+</ul>
+<p>To match incoming or outgoing phone numbers, you will almost always want to use regular expressions that match numeric characters only, that is, characters in the range 0 to 9. Punctuation characters that are often used to write or otherwise display phone numbers for readability, such as parentheses, hyphens, and periods, are not needed for regular expressions used to match dialed phone numbers.</p>
+<h2>Regular Expression Examples</h2>
+<p>This section explains how regular expressions that you might use in Service Design Center could be constructed.</p>
+<h3>Simple Number</h3>
+<p>Simple numbers are perhaps some of the easiest things to create regular expressions for.</p>
+<p>Let's say you want to match any 3-digit number, that is, any number from 000 to 999.</p>
+<p>The most explicit regular expression you could create for this is <code>^[0123456789][0123456789][0123456789]$</code>. And really, this is the first step you should use in building regular expressions. Write out explicitly what you want to match.</p>
+<p>It's not complex, but it's a mouthful. Each piece with the square brackets looks for a single character, in this case a numerical digit between 0 and 9. The piece is repeated 3 times, once for each character you want to find in a string.</p>
+<p>The anchor characters make the magic happen. Without them, while "7" and "23" would not match, not only would "123" and "491" match, so would "5539" and "12000" and "428953991472701732". The ^ at the beginning makes sure the text string you're looking to match starts its matching at the beginning of the text string, and the $ at the end makes sure that the text string you're looking to match ends its match at the end of the text string. What this means for this example is that a match can be only 3 characters long. And exactly 3 characters long because the regular expression contains only literals.</p>
+<p>So once you have the explicit regular expression that works, you can look for shortcuts. First, you could use ranges, like this: <code>^[0-9][0-9][0-9]$</code>.</p>
+<p>That's shorter, but it's not optimal. This repeats the same thing 3 times, so why not use one of the ways to iterate. In this case, you could write it this way: <code>^[0-9]{3}$</code>.</p>
+<p>This demonstrates that by making a regular expression shorter, you can also make more complicated and difficult to read and debug. But if you start with a basic regular expression and then find shortcuts, rather than starting with trying to write the shortcuts, you will have a better chance of writing correct regular expressions.</p>
+<p>By the way, we're not done with this one. A backslash shortcut can make this particular regular expression even shorter, like this: <code>^\\d{3}$</code>.</p>
+<h3>Simple Phone Number</h3>
+<p>For the sake of this example, let's say that phone numbers are 7 digits long. We can use what we learned in the previous section and go directly to the regular expression that works: <code>^\\d{7}$</code>.</p>
+<h3>Less Simple Phone Number</h3>
+<p>Many years ago, the U.S. introduced the idea of area codes in its phone numbers, which were just 7 digits long in the early systems. Area codes not only made phone numbers longer, adding 3 digits to the beginning of phone numbers, but these are codes also initially had 2 specific rules, memorialized in a little commercial ditty:</p>
+<p><em>The first number is never zero or one,<br />
+The second one always is...</em></p>
+<p>As the number of phone lines increased in recent years, especially with the explosion of cellular phones and other devices that need phone numbers, these rules were relaxed. But to help explain the example of how to write a regular expression, we will proceed as if we are using these rules for phone numbers. So we need to find a regular expression that will match a string of characters with the following characteristics:</p>
+<ul>
+<li>10 or 11 characters long</li>
+<li>Each character is a digit in the range of 0 to 9</li>
+<li>The first character cannot be a 0 or a 1</li>
+<li>The second character must be a 0 or a 1</li>
+<li>An optional country code of 1 can begin the string</li>
+</ul>
+<p>Let's start with the explicit version:</p>
+<p><code>^1?[23456789](0|1)[0123456789][0123456789][0123456789]<br />
+[0123456789][0123456789][0123456789][0123456789][0123456789]$</code></p>
+<p>We can see that there is a lot of repetition here, and we can use what we have already learned to immediately shorten this to <code>^1?[23456789](0|1)\\d{8}$</code></p>
+<p>From here, it should be easy to see that we can just shorten the bracket that's left to a range as well: <code>^1?[2-9](0|1)\\d{8}$</code></p>
+<p>So what this regular expression is saying is that a text string can have an optional first character of "1", its next character can be anything from 2 to 9, its next character must be either "0" or "1", and then must have exactly 8 more characters, all of which must be anything from 0 through 9.</p>
+<h4>Slightly More Real Life</h4>
+<p>In actuality, for the last 7 digits of a phone number, the first of these can't be "0" or "1". So <code>\\d{8}</code> isn't really accurate. Let's fix this.</p>
+<p>First, the last 6 digits actually can be anything from 0 through 9. So <code>\\d{6}</code> would work for the end.</p>
+<p>Before that, we need a range: <code>[2-9]</code></p>
+<p>And then, to represent the last character of the area code, a <code>\\d</code> will work fine. So here's our real-life phone number regular expression: <code>^1?[2-9](0|1)\\d[2-9]\\d{6}$</code></p>
+<h3>Set of Specific Phone Numbers</h3>
+<p>Let's say that you do not want your customers' calls to toll-free numbers to count against any voice plan minutes. To do this, you would create a voice policy with a filter that explicitly identifies only toll-free numbers. In the U.S., toll free numbers have one of the following area code prefixes: 800, 888, 877, 866, 855, or 844.</p>
+<p>One way to approach building a regular expression to match only these numbers is to break the regular expression into 3 parts. The front part and the back part we've seen already.</p>
+<p>The front would be this: <code>^1?</code></p>
+<p>The back would be this: <code>[2-9]\\d{6}$</code></p>
+<p>The challenge is to figure out what the middle would be.</p>
+<p>To start with, we could build the most explicit case: <code>(800|844|855|866|877|888)</code></p>
+<p>That leaves us with a somewhat long regular expression, even when the back part is concise: <code>^1?(800|844|855|866|877|888)[2-9]\\d{6}$</code></p>
+<p>We can shorten it a bit by noticing that there is one character that is the same for each alternative, so we can slim it down to this: <code>^1?8(00|44|55|66|77|88)[2-9]\\d{6}$</code></p>
+<p>So what this regular expression is saying is that a text string can have an optional first character of "1", its next character must be "8", its next 2 characters must be "00", "44", "55", "66", "77", or "88," it's next character must be anything from 2 through 9, and then must have exactly 6 more characters, all of which must be anything from 0 through 9.</p>
+<h3>Emergency Numbers</h3>
+<p>In many jurisdictions, the law mandates that any phone must be allowed to call the local emergency number. These numbers are different in many countries; many are different lengths, and in some countries, the emergency number is different for landlines and cell phones.</p>
+<p>To allow emergency calling, you will likely need policies with components that combine the network groups for a specific jurisdiction with a filter that allows dialing the emergency number for that jurisdiction.</p>
+<p>The filter that defines the allowed phone number will usually be pretty basic. The regular expression in that filter will almost always be nothing more than a literal. For example, the emergency number in the U.S. is 911, so the regular expression in a filter to allow dialing of 911 would be <code>^911$</code>.</p>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>

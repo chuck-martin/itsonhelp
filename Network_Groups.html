@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 10" />
+<title>Network Groups</title>
+<link rel="StyleSheet" href="itsonhelptopic.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        addTocInfo("Network Groups");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+
+        document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("index.htm", "", "&gt;", "Home", "Service_Design_Center_Help.htm");
+document.write("Network Groups<\/p>");
+
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+    
+onLoadHandler = function()
+{
+        if (window.setRelStartPage)
+        {
+    setTimeout("setRelStartPage('index.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+        window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+        window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+        autoSync(0);
+        sendSyncInfo();
+        sendAveInfoOut();
+}
+//-->
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(4);
+//-->
+//]]>
+</script><script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2">
+</script>
+<h1>Network Groups</h1>
+<p>Network groups allow you to easily define and manage segments of the entire network that your customers have access to. Network groups are one of the building blocks for <a hqid="232062" href="Policies_Service_Entitlement_Data_Session_WiFi_Behavior_and_Voice_Accounting.html">policies</a>, especially roaming policies, and for plans that you create for your customers to purchase when they are roaming on foreign networks in your home country or other countries. The network groups in a policy determine the segment of the network on which the policy should be enforced. When a device makes a transition between network segment boundaries, policy enforcement is re-evaluated, which is how you can identify when a device is roaming, and allows <a hqid="288853" href="#transitionNotifications">transition notifications</a> to trigger messaging.</p>
+<p>A network group represents a subset of the network with a list of one or more combinations of <a class="hq-tip" href="gl-sid">SID</a>s, <a class="hq-tip" href="gl-nid">NID</a>s, and <a class="hq-tip" href="gl-bsid">BSID</a>s for CDMA networks and one or more <a class="hq-tip" href="gl-mcc">MCC</a>/<a class="hq-tip" href="gl-mnc">MNC</a> (<a class="hq-tip" href="gl-hni">HNI</a>) tuples for GSM and LTE networks.</p>
+<p>Network groups are most helpful for CDMA carriers. A cellular network is made up of hundreds, even thousands, of transceivers, known as cell sites or base stations. Companies with which you have roaming agreements have many more base stations in their networks. Base stations also usually have multiple sectors. So if you had to list all the SID/NID/BSID values of all the base stations that a policy uses, you would almost always have to create a massive list. And if other policies use the same group of base stations, you'd have to enter the same long list. A single network group containing all these values solves this problem. In addition, when your network changes, such as when you add base stations or new sectors, you just have to update the network groups that the new base stations and sectors should be a part of, and the policies that use those network groups get updated automatically.</p>
+<p>The people who manage your cellular network infrastructure should know all the SID, NID, BSID, MCC, and MNC values used in the networks your customers access.</p>
+<p>For reporting purposes, it is generally a good idea to assign the network identifiers your customers can access to at least one network group. Two common and useful network groups (that would also fulfill this idea) are a Home group that would contain the network identifiers on your home network and a Roaming group that would contain the network identifiers your customers can access through all your roaming agreements. Another use for network groups is as a container for the network identifiers in specific regions. For example, if you're a carrier in the United States, you might want to create separate network groups for each state, perhaps even two per state, one for the identifiers of all your home network base stations in a state and one for the identifiers of all the roaming base stations in a state.</p>
+<div class="info"><strong>Best Practice</strong>: Design your network groups before you start building features. If you start creating ad hoc network groups, their management can become difficult.&#160;</div>
+<p>The Network Group page lists the following details for each subscriber group:</p>
+<ul>
+<li>Name</li>
+<li>Number of SIDs/NIDs/BSIDs</li>
+<li>Number of MCCs/MNCs</li>
+<li>When the network group was created</li>
+<li>Who created the network group</li>
+</ul>
+<p>The default list order is by name alphabetically.</p>
+<h1 id="NetworkGroups-NetworkGroupExamples">Network Group Examples</h1>
+<p>Some subscribers use microcells connected to a WiFi network where their cellular signal is not strong. If a microcell had a NID that is within a range of NIDs that typically defines roaming access points, you do not want devices connecting though that microcell to be classified as roaming. You could define a network group that uses wildcards for the SID value and the specific NID value(s) of microcells used by your subscribers. For example, a NID range of 2500 to 3000 defines roaming network access points, but you have microcells with NIDs of 2725 and 2825. In a network group, you could add SID/NID pairs of */2725 and */2825.</p>
+<p>Or you might have a microcell with a specific NID in an area of roaming SIDs. Like above, you would use a wildcard for the SID designation and specifically define the NID of the microcell, and when in a network group that is in a policy and configured to allow access, the allowed NID would override the otherwise blocked roaming SID.</p>
+<h1 id="NetworkGroups-ValidSIDs,NIDs,MCCs,andMNCs">Valid SIDs, NIDs, BSIDs, MCCs, and MNCs</h1>
+<p>Service Design Center automatically validates SIDs. NIDs, BSIDs, and MCC/MNC combinations as you enter them individually or paste multiple entries, as well as when you save the network group.&#160;You are not allowed to save a network group if it contains any invalid SIDs, NIDs, BSIDs, or MCC/MNC combinations.&#160;See&#160;<a hqid="232081" href="Validation_and_Fixing_Data_Errors.html">Validation and Fixing Data Errors</a>&#160;for more information on entering valid data and fixing invalid data.</p>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>
