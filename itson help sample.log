@@ -133,6 +133,7 @@ Behavior_Policy_Settings.html
 Catalog.html
 Catalog_Item_Workflow.html
 Categories.html
+Categories_for_Allowing_Product_Exchanges.html
 Categories_for_Custom_Store_Experiences.html
 Categories_for_Displaying_Plans_in_the_Store.html
 Categories_for_Featuring_Products.html
@@ -143,6 +144,8 @@ Change_the_Default_State_of_a_Network_Feature.html
 Change_the_Network_Enforcement_Used_in_a_Policy.html
 Change_the_Voice_Accounting_Policy_Used_in_an_eCommerce_Voice_Service_Policy.html
 Change_Your_Password.html
+Changes_to_Products_in_Exchange_Categories.html
+Compatibility_of_Plans_and_Bundles_in_Exchange_Categories.html
 Create_a_Basic_Plan.html
 Create_a_Favorites_Plan.html
 Create_a_Plan_With_Voice_Accounting.html
@@ -257,6 +260,7 @@ images\buttonDelete.png
 images\buttonView.png
 images\dialog_Select_Service_Policy_annotated.png
 images\buttonComponentDelete.png
+images\carousel.png
 images\buttonFilterDelete.png
 images\ecommerce_policy_north_america_voice_blank.png
 images\ecommerce_category_list_voice-plans.png
@@ -277,6 +281,7 @@ images\menu_Site_Updates_Approvals.png
 images\import-w5mxyva9zxvf\attachments\8980724\9109789.gif
 images\import-w5mxyva9zxvf\attachments\8980129\9109775.gif
 images\Items_pending_action.png
+images\accordion.png
 images\iconFilterCriteriaDelete.png
 images\dialog_New_Advanced_Voice_Accounting_Policy.png
 images\iconSortUpArrow.png
@@ -426,6 +431,15 @@ whxdata\package_117_xml.js
 whxdata\package_118_xml.js
 whxdata\package_119_xml.js
 whxdata\package_120_xml.js
+whxdata\package_121_xml.js
+whxdata\package_122_xml.js
+whxdata\package_123_xml.js
+whxdata\package_124_xml.js
+whxdata\package_125_xml.js
+whxdata\package_126_xml.js
+whxdata\package_127_xml.js
+whxdata\package_128_xml.js
+whxdata\package_129_xml.js
 whxdata\packageindex_xml.js
 whxdata\synonym.xml
 whxdata\synonym_xml.js
@@ -484,6 +498,7 @@ whgdata\whlstt27.htm
 whgdata\whlstt28.htm
 whgdata\whlstt29.htm
 whgdata\whlstt30.htm
+whgdata\whlstt31.htm
 whgdata\whlsti0.htm
 whgdata\whlstfl0.htm
 whgdata\whlstfl1.htm
@@ -615,6 +630,10 @@ whgdata\whlstf101.htm
 whgdata\whlstf102.htm
 whgdata\whlstf103.htm
 whgdata\whlstf104.htm
+whgdata\whlstf105.htm
+whgdata\whlstf106.htm
+whgdata\whlstf107.htm
+whgdata\whlstf108.htm
 whgdata\whlstg0.htm
 index.htm
 index_csh.htm
