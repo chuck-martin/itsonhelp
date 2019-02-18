@@ -253,13 +253,13 @@ AccountRuleSet.hts
 AccountTaskList.hts
 DeviceTaskList.hts
 DPAD.hts
+DPAD+Carousel.hts
 Feature-Change-Warning.hts
 ProductAvailabilitySettings.hts
 ProductGeneralSettings.hts
 ProductMediaTab.hts
 SimpleDPAD.hts
 SubscriberTaskList.hts
-DPAD+Carousel.hts
 index.glo
 itsonhelptopic.css
 style.css
