@@ -107,6 +107,7 @@ index.hhc
 index.hhk
 Add_a_Behavior_Policy.html
 Add_a_Behavior_Policy_to_a_Filter.html
+Add_a_Category.html
 Add_a_Certificate.html
 Add_a_Component_to_a_Service_Policy.html
 Add_a_Data_Session_Policy_to_a_Network_Feature.html
@@ -128,6 +129,7 @@ Add_Criteria_to_a_Policy_Event.html
 Add_Network_Enforcement_to_a_Data_Service_Policy.html
 Add_Network_Enforcement_to_a_Voice_or_Messaging_Service_Policy.html
 Add_Network_Enforcement_to_an_Entitlement_Policy.html
+Add_Products_to_a_Category.html
 Behavior_Policies.html
 Behavior_Policy_Settings.html
 Catalog.html
@@ -137,6 +139,7 @@ Categories_for_Allowing_Product_Exchanges.html
 Categories_for_Custom_Store_Experiences.html
 Categories_for_Displaying_Plans_in_the_Store.html
 Categories_for_Featuring_Products.html
+Category_Settings.html
 Certificates.html
 Change_Order_of_Components_or_Policy_Events.html
 Change_Partner_View.html
@@ -152,6 +155,7 @@ Create_a_Plan_With_Voice_Accounting.html
 Data_Filter_Settings.html
 Data_Session_Policies.html
 Define_the_Default_Voice_Accounting_Policy.html
+Delete_a_Category.html
 Delete_a_Certificate.html
 Delete_a_Filter_from_a_Component.html
 Delete_a_Network_Feature.html
@@ -168,6 +172,7 @@ eCommerce_Guide.html
 eCommerce_Policies.html
 eCommerce_Policy_Properties.html
 Edit_a_Behavior_Policy.html
+Edit_a_Category.html
 Edit_a_Data_Session_Policy_in_a_Network_Feature.html
 Edit_a_Filter_in_a_Component.html
 Edit_a_Network_Feature.html
@@ -203,7 +208,11 @@ Policy_Events.html
 Priority_Scenarios.html
 Provisioning.html
 Publish_a_Network_Feature_or_eCommerce_Policy.html
+Rearrange_Products_Within_a_Category.html
+Rearrange_SubCategories.html
 Regular_Expression_Tutorial_and_Examples.html
+Remove_a_Category_from_a_Product.html
+Remove_a_Product_from_a_Category.html
 Remove_the_Voice_Accounting_Policy_Used_in_an_eCommerce_Voice_Service_Policy.html
 Replace_a_Certificate.html
 Sandboxes_Workflow_and_Change_Management.html
@@ -221,12 +230,14 @@ Test_a_Network_Feature_or_eCommerce_Policy.html
 Test_Regular_Expressions.html
 Validation_and_Fixing_Data_Errors.html
 View_a_Behavior_Policy.html
+View_a_Category.html
 View_a_Network_Feature.html
 View_a_Network_Group.html
 View_a_Subscriber_Group.html
 View_a_Voice_Accounting_Policy.html
 View_an_eCommerce_Policy.html
 View_Certificate_Details.html
+View_the_Products_in_a_Category.html
 View_the_Voice_Accounting_Policy_Used_in_an_eCommerce_Voice_Service_Policy.html
 View_Your_Partners.html
 View_Your_Profile.html
@@ -248,9 +259,11 @@ ProductGeneralSettings.hts
 ProductMediaTab.hts
 SimpleDPAD.hts
 SubscriberTaskList.hts
+DPAD+Carousel.hts
 index.glo
 itsonhelptopic.css
 style.css
+images\carousel_example.png
 images\icon_pencil.png
 images\dialog_Add_Usage_Notification_Body.png
 images\page_My_Changes.png
@@ -440,6 +453,13 @@ whxdata\package_126_xml.js
 whxdata\package_127_xml.js
 whxdata\package_128_xml.js
 whxdata\package_129_xml.js
+whxdata\package_130_xml.js
+whxdata\package_131_xml.js
+whxdata\package_132_xml.js
+whxdata\package_133_xml.js
+whxdata\package_134_xml.js
+whxdata\package_135_xml.js
+whxdata\package_136_xml.js
 whxdata\packageindex_xml.js
 whxdata\synonym.xml
 whxdata\synonym_xml.js
@@ -634,6 +654,9 @@ whgdata\whlstf105.htm
 whgdata\whlstf106.htm
 whgdata\whlstf107.htm
 whgdata\whlstf108.htm
+whgdata\whlstf109.htm
+whgdata\whlstf110.htm
+whgdata\whlstf111.htm
 whgdata\whlstg0.htm
 index.htm
 index_csh.htm
