@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 10" />
+<title>Plan Settings</title>
+<link rel="StyleSheet" href="itsonhelptopic.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        addTocInfo("Products, Plans, Bundles, Fees, and Entitlements\nPlans\nPlan Settings");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+
+        document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("index.htm", "", "&gt;", "Home", "Service_Design_Center_Help.htm");
+document.write("<a href=\"Products_Plans_Bundles_Fees_and_Entitlements.html\">Products, Plans, Bundles, Fees, and Entitlements<\/a> &gt; <a href=\"Plans.html\">Plans<\/a> &gt; Plan Settings<\/p>");
+
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+    
+onLoadHandler = function()
+{
+        if (window.setRelStartPage)
+        {
+    setTimeout("setRelStartPage('index.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+        window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+        window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+        autoSync(0);
+        sendSyncInfo();
+        sendAveInfoOut();
+}
+//-->
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(4);
+//-->
+//]]>
+</script><script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2">
+</script>
+<h1>Plan Settings</h1>
+<p>This topic details all the settings for plans. This is the information you will need when you <a hqid="288793" href="Add_a_Plan.html">add</a> or <a hqid="288829" href="Edit_a_Plan.html">edit</a> plans.</p>
+<ul>
+<li><a href="#GeneralTab-AppearanceSettings">General tab, Appearance settings</a></li>
+<li><a href="#GeneralTab-RecipientSharingAssigningSettings">General tab, Recipient/Sharing/Assigning settings</a></li>
+<li><a href="#GeneralTab-ServiceSettings">General tab, Service settings</a></li>
+<li><a href="#GeneralTab-BehaviorSettings">General tab, Behavior settings</a></li>
+<li><a href="#GeneralTab-BillingSettings">General tab, Billing settings</a></li>
+<li><a hqid="1802130" href="#GeneralTab-AvailabilitySettings">General tab, Availability settings</a></li>
+<li><a hqid="1802130" href="#GeneralTab-GeneralSettings">General tab, General settings</a></li>
+<li><a href="#MediaTab">Media tab</a></li>
+<li><a href="#AdvancedTab">Advanced tab</a></li>
+</ul>
+<div>
+<div class="warning">
+<p>Service Design Center&#160;uses a change management process to track and approve all changes to any product. All of these changes, including additions, edits, and deletions, must go through the <a hqid="288799" href="#">promote</a>-<a hqid="288800" href="#">approve-deploy</a> process before they become available.</p>
+<p>Any changes you make (change a name, change a price, add or delete a product from a bundle, etc.) to any product do not affect any users that already have the product.</p>
+</div>
+</div>
+<h2><a name="GeneralTab" id="GeneralTab"></a>General Tab</h2>
+<p>The General tab contains most of the settings you will configure to determine how a plan looks, acts, is priced, and more.&#160;</p>
+<h3><a name="GeneralTab-AppearanceSettings" id="GeneralTab-AppearanceSettings"></a>Appearance Settings</h3>
+<p>These settings define how information about a product will appear to customers.</p>
+<table>
+<tr>
+<th width="150">Setting</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><strong>Name</strong></td>
+<td>Required. The name serves 2 primary purposes: it's what you see in product lists and it's what customers see as a descriptor when they are making purchase decisions. The name is limited to 115 characters.</td>
+</tr>
+<tr>
+<td><strong>Short Description</strong></td>
+<td>Brief plain-text information about the plan that sometimes&#160;appears with the plan name.&#160;</td>
+</tr>
+<tr>
+<td><strong>Marketing Message</strong></td>
+<td>
+<p>Descriptive rich-text information about the plan that appears on only the pre-purchase detail page above the content you add in the Description field. You can <a href="#">format the content you enter in several different ways</a> using the functions in the toolbar.</p>
+<div class="tip">This field is best for a small amount of marketing information that will help drive purchase decisions, such as offers customers will receive with purchase. Use the Description field for larger amounts of additional product information.</div>
+</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>
+<p>Detailed and descriptive rich-text information about the plan that appears on plan detail pages. The content you enter here is seen on the product detail page both pre- and post-purchase. You can <a hqid="288839" href="#">format the content you enter in several different ways</a> using the functions in the toolbar.</p>
+<div class="tip">This field is best for providing additional details about the product, for adding details to the brief marketing message, for legal boilerplate content, and so on.</div>
+</td>
+</tr>
+<tr>
+<td><strong>Fulfillment Type</strong></td>
+<td>
+<p>Required. This defines the system process by which customers receive the product or fee.</p>
+<div class="warning">Currently, <em>ItsOn Digital Delivery</em> is the only option that is supported. Selecting any other option may produce unpredictable results.</div>
+</td>
+</tr>
+</table>
+<h3><a name="GeneralTab-RecipientSharingAssigningSettings" id="GeneralTab-RecipientSharingAssigningSettings"></a>Recipient/Sharing/Assigning Settings</h3>
+<p>These settings determine who can receive the plan and how a plan's allotment can be allocated.</p>
+<table style="border-collapse: separate;" cellspacing="1" border="1">
+<tr>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;" width="200">Setting</th>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Description</th>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><strong>This product can be purchased for</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>Required. Determines who can receive a plan when it is purchased by a customer. Select</p>
+<ul>
+<li>Customer's account only - If you want the plan to stay with the purchaser's account.</li>
+<li>Gift recipient only - If you want the plan to be only giftable, that is, it can only be given to someone outside the purchaser's account.</li>
+<li>Customer's account or gift recipient - If you want the purchaser to have the option of purchasing either for that account or as a gift for someone outside the purchaser's account.</li>
+</ul>
+<div class="warning">Gifted products cannot have more than one cycle, because when you purchase a plan, you are purchasing only the first cycle, and gifting a plan with more than 1 cycle would require the gift recipient to either pay for subsequent cycles or cancel the plan before it renews. So if you choose
+<ul>
+<li><em>Gift recipient only</em>, the <strong>Recurring</strong> setting is constrained to <em>No</em>, which means that you cannot create a multi-cycle plan that is giftable only.</li>
+<li><em>Customer's account or gift recipient,</em> when a customer buys a plan and gifts it, the plan terminates after one cycle no matter what is entered in the <strong>Number of Cycles</strong> setting, which means the gift recipient will receive exactly one cycle.</li>
+</ul>
+</div>
+<p>A plan can be gifted only at purchase time. The purchase process of a gift requires a phone number to be input by the purchaser to identify the gift recipient. There are several issues that could occur and that would prevent the completion of a gift purchase, issues that include:</p>
+<ul>
+<li>Entry of an incomplete (not enough digits) or incompatible (too many digits, non-numeric digits) phone number.</li>
+<li>The phone number entered is for a subscriber in the same account. (Gifts can be made only to subscribers outside the purchaser's account.)</li>
+<li>The phone number entered is for a suspended subscriber.</li>
+<li>The phone number entered is for a subscriber in a suspended account.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><a name="GeneralTab-ReceiptSharingAssigningSettings-Allocation" id="GeneralTab-ReceiptSharingAssigningSettings-Allocation"></a><strong>Allocation</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>Required. Determines how a plan is allocated to subscribers. Select</p>
+<ul>
+<li>Exclusive - The plan allocation is available only to the subscriber that purchased the plan or to the recipient of a gifted plan.</li>
+<li>Assignable - The plan allocation is available to be used by only one subscriber at a time. The <em>Assignment Method</em> setting (available only when this option is selected) determines additional assignment options.</li>
+<li>Shareable - The plan allocation can potentially be used by any subscribers in the account. The <em>Share Method</em> and <em>Share Type</em> settings (available only when this option is selected) determines additional sharing options.</li>
+</ul>
+<div class="info">The Assignable and Shareable options are viable only when the <a href="#">tenant</a> offers more than one subscriber per account.</div>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><a name="GeneralTab-ReceiptSharingAssigningSettings-ShareMethod" id="GeneralTab-ReceiptSharingAssigningSettings-ShareMethod"></a><strong>Share Method</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>When <em>Shareable</em> is selected as the Allocation setting, determines how that sharing occurs. Available only when the Allocation setting is <em>Shareable</em>. Select:</p>
+<ul>
+<li>
+<p>Automatic: Sharing of plan allocation happens automatically among subscribers when they join or are removed from an account and when a plan is exchanged. On purchase, all subscribers receive equal allocations by default. The purchaser can change these allocations at any time.</p>
+</li>
+<li>Manual: Allocation of any amount of a plan to any subscriber happens manually. When a subscriber joins or is removed from an account or when a plan is exchanged, no automatic (re)allocation occurs. On purchase, only the purchaser receives an allocation, and that allocation is 100%. The purchaser can change these allocations at any time.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><a name="GeneralTab-ReceiptSharingAssigningSettings-ShareType" id="GeneralTab-ReceiptSharingAssigningSettings-ShareType"></a><strong>Share Type</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>Determines how plan allowance can be shared by subscribers. Available only when the Allocation setting is <em>Shareable</em>.</p>
+<ul>
+<li>Limited (aka never go below)</li>
+<li>Piñata</li>
+</ul>
+<p>Limited is considered a "hard allocation," which means that once a subscriber is allocated an amount from the plan, no other subscriber can use that allocated amount of the plan unless there is an explicit reallocation. The total of the subscriber allocations cannot exceed 100%. For Limited, the following is true:</p>
+<ul>
+<li>A subscriber allowance cannot be changed to lower than what the subscriber has already used in the cycle.</li>
+<li>A subscriber allowance cannot be changed to more than what remains in the plan allowance.</li>
+<li>The total of all subscriber allowances cannot be more than 100%.</li>
+<li>The total of all subscriber allowances can be less than 100%. That is, there can be unallocated plan allowance.</li>
+<li>The subscriber allowance percentages that are in place at the end of the cycle carry over to the next cycle.</li>
+</ul>
+<p>Piñata is like a large glass with each subscriber having a straw. Each subscriber can consume as much of the total plan allocation as they are allocated, each allocation can be any value up to the plan allocation, and the total of all allocations can be more than 100%. The amount each subscriber actually consumes each cycle is defined only by their usage pattern. For example, you have a shared 100MB data plan. An account with 2 subscribers purchases the plan and gives each subscriber 100%. The first day of the first cycle, subscriber A uses 100MB. Subscriber B's allocation for the rest of the cycle becomes 0MB. In the second cycle, subscriber B uses 100MB in the first day. Subscriber A's allocation for the rest of the cycle becomes 0MB.</p>
+<p>For both Limited and Piñata, the total allocation to subscribers can equal less than 100%, so there could be an unallocated amount in a cycle.</p>
+<p>See <a hqid="333167" href="#">Sharing Examples</a> for information on how sharing and allocation works.</p>
+<div class="info">The Share Type option is viable only when the <a href="#">tenant</a> offers more than one type of sharing.</div>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><a name="GeneralTab-ReceiptSharingAssigningSettings-AssignmentMethod" id="GeneralTab-ReceiptSharingAssigningSettings-AssignmentMethod"></a><strong>Assignment Method</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>When <em>Assignable</em> is selected as the Allocation setting, determines how that assignment occurs. Select:</p>
+<ul>
+<li>Assignable at purchase only: The plan allocation is available to be used by only one subscriber at once. The plan can be assigned one time, at purchase time only, to one other subscriber (including the purchaser), at which point that is the only subscriber who can use the plan allocation.</li>
+<li>Reassignable: The plan allocation is available to be used by only one subscriber at once, but it can be assigned and reassigned to any subscriber on the account for the duration of the plan.</li>
+</ul>
+</td>
+</tr>
+</table>
+<div class="info">Sharing, assigning, and gifting settings all affect what customers can do with plans. See&#160;<a hqid="363927" href="#">Sharing, Assigning, and Gifting</a> for more information on how these settings work together.</div>
+<p>There are a number of ways that customers receive plans where sharing, assigning, and gifting settings will not be available to them. In those cases, default plan sharablility and assignability occurs.</p>
+<p>Some sharing and assigning is done by the plan purchaser as part of the purchase process. In fact, some settings require sharing, assigning, or gifting selection at purchase time. But when a plan is <a hqid="288845" href="#">mandatory</a> to be received, is received via the complimentary or provisioning API, or is received as a <a hqid="1762747" href="#">benefit</a>, it is not included as a part of such a purchase flow, so sharing and assigning selections that are required within that flow cannot be made.</p>
+<p>A specific example of this is if a plan's <strong>Allocation</strong> setting is <em>Assignable</em> and the <strong>Assignment Method</strong> setting is <em>Assignable at purchase only</em>. If the plan is received as a benefit, it doesn't go through that customer-facing purchase flow, and so cannot be assigned. Another example is if a plan's T<strong>his product can be purchased for</strong> setting is <em>Gift recipient only</em>. If this plan was being purchased, the only option at purchase time would be to enter a phone number of a subscriber outside the account to receive the plan. But again, if the plan is received as a complimentary plan, the screen to enter a phone number isn't shown, so there's no way to gift the plan.</p>
+<p>The general rule is that if a plan is received outside of the customer-facing purchase flow, like when a plan is received automatically, and has a combination of settings that require decisions only in that customer-facing purchase flow, then the plan is assigned to the subscriber designated to receive the plan, and if that subscriber is not known, the plan is assigned to the first subscriber in the account.</p>
+<h3><a name="GeneralTab-ServiceSettings" id="GeneralTab-ServiceSettings"></a>Service Settings</h3>
+<p>These settings define which <a hqid="232073" href="#">service policy</a> is used in the product and what limits, if any, on the type of service used.</p>
+<table>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><strong>Service Policy</strong></td>
+<td>
+<p>Required. Select the service policy from Service Design Center necessary to provide customers the service you offer in the product.</p>
+<p>The type of service policy is in parentheses after the service policy names. Make sure you select a</p>
+<ul>
+<li>voice service policy for voice plans</li>
+<li>messaging service policy for text plans</li>
+<li>data service policy for data plans</li>
+</ul>
+<div class="warning">If you are not sure which service policy to choose or you do not see the service policy you want to use, contact your service policy designer.</div>
+<p>It's important to select the right type of service policy because service policies allow only one type of service. So if you intend to create a voice plan (with a name and a description that suggest voice service) and you accidentally select a messaging service policy (and it gets through all your testing and review), a customer would buy the plan to make voice calls. But when they try to make a voice call using the plan (and if they have no other voice plans that could be used as a fallback), they will be blocked because the policy upon which the plan they do have is based allows only text messaging.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Data Usage</strong></p>
+<p><strong>Voice Usage</strong></p>
+<p><strong>Messaging Usage</strong></p>
+</td>
+<td>
+<p>Required. Determines whether there are usage limits on the plan, and if so, what the limits are. Select</p>
+<ul>
+<li>Unlimited. <span>This means that there is no limit on usage of the plan.</span></li>
+<li>
+<p>Limited to. If you select Limited to, enter a number of megabytes (for a data product), minutes (for a voice product), or messages (for a messaging product).</p>
+<div class="warning">You can enter only positive integers (1, 37, 5287024, etc.) in this field. Zero, negative numbers, and decimal numbers (0, 0.5, 3.1415926, 2.5, etc.) are not allowed.</div>
+<p>1 megabyte equals 1,048,576 (or 2<sup>20</sup> or 1024<sup>2</sup>) bytes.</p>
+</li>
+</ul>
+<div class="tip">Plans can have time limits also, set in <em>Cycle Duration</em>, which means that the plan usage can also be limited by time. For example, a plan might offer 10MB of data for 30 days, and when the 30 days ends, any remaining data is forfeited.</div>
+</td>
+</tr>
+<tr>
+<td><strong>Per Call Limit</strong></td>
+<td>
+<p>Sets the time limit for voice calls. Available only when a voice service policy is selected in <em>Service Policy</em>. Select from:</p>
+<ul>
+<li>None. <span>This means that there is no limit on a voice call, up to the limit of the usage allocation of any purchased or provided voice plans.</span></li>
+<li>
+<p>Limited to. If you select Limited to, enter a number of minutes.</p>
+<div class="warning">You can enter only positive integers (1, 37, 5287024, etc.) in this field. Zero, negative numbers, and decimal numbers (0, 0.5, 3.1415926, 2.5, etc.) are not allowed.</div>
+</li>
+</ul>
+<p>This setting is sometimes used to create preferred destination plans.&#160;For more information, see&#160;<a href="#">Create a Favorites Plan</a>.</p>
+</td>
+</tr>
+</table>
+<h3><a name="GeneralTab-BehaviorSettings" id="GeneralTab-BehaviorSettings"></a>Behavior Settings</h3>
+<p>These settings determine how and when a plan is available in the store. See&#160;<a hqid="288855" href="#">Plan Behavior Settings Examples</a>&#160;for some scenarios on how these settings combine to produce desired product behavior.&#160;</p>
+<p>Several of the behavior settings relate to aspects of the plan cycle, aspects that include:</p>
+<ul>
+<li>Number of cycles</li>
+<li>Cycle alignment</li>
+<li>Cycle duration</li>
+<li>Cycle proration</li>
+</ul>
+<table>
+<tr>
+<th class="confluenceTh" width="115">Setting</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a name="GeneralTab-BehaviorSettings-Recurring" id="GeneralTab-BehaviorSettings-Recurring"></a><strong>Recurring</strong></td>
+<td>
+<p>Required. Defines whether the plan is a multi-cycle subscription, lasts for only one cycle, or lasts for one cycle with the option for customers to renew.</p>
+<div class="warning">If you selected <em>Giftable only</em> in the <strong>This product can be purchased for</strong> setting, the only option here is No. This is because plans that are gifted can have only one cycle because when you purchase a plan, you are purchasing only the first cycle, and gifting a plan with more than 1 cycle would require the gift recipient to either pay for subsequent cycles or cancel the plan before it renews.</div>
+<p>Select:</p>
+<ul>
+<li>Yes - To allow the plan to have as many cycles as defined in <em>Number of Cycles</em>. Once a customer receives the plan, it continues to renew until it is canceled.</li>
+<li>No - To restrict the plan to just one cycle.</li>
+<li>Optional - To give the plan for only one cycle initially, but to include a customer option to subscribe. When customers purchase the plan, they get only one cycle unless they select the option during purchase to subscribe and receive additional cycles. When customers receive the plan in any other way, such as through a benefit, the option to subscribe and receive additional cycles is on the plan details page in the self-service app and on their account page after the plan is received. The <em>Number of Cycles</em> setting determines the maximum amount of times the customer can receive the product subscription.<br />
+<br />
+During any last cycle (which is also the first cycle at purchase time or at the time the plan is received, such as from a benefit), customers have the option to toggle renewability. In other words, during the plan's last cycle, customers can decide that they want to continue receiving and paying for the plan up to the <em>Number of Cycles</em>. Customers can also stop plan renewal during any last cycle, in which case the plan terminates at the end of the current cycle.</li>
+</ul>
+<div class="tip">Any segmentation rules that include this setting, including restrictions and offers, will treat both <em>Yes</em> and <em>Optional</em> as the same. That is, if a rule is defined to match a recurring product, the rule will match if this setting for the product is either <em>Yes</em> or <em>Optional</em>.</div>
+</td>
+</tr>
+<tr>
+<td><a name="GeneralTab-BehaviorSettings-NumberOfCycles" id="GeneralTab-BehaviorSettings-NumberOfCycles"></a><strong>Number of Cycles</strong></td>
+<td>
+<p>Required. This defines the number of cycles a subscriber can receive the plan. The options determine if a plan repeats at the end of its duration. (The duration is defined either as the account cycle, if <em>Aligned to account cycle</em> is Yes, or as the plan's <em>Cycle Duration</em> value.) If so, the customer is grandfathered the plan rate and attributes when it is renewed, even if you have made <a hqid="311702" href="#">significant changes</a> to the plan or even deleted it from your catalog. Available only when <em>Recurring</em> is set to Yes or Optional. Select from:</p>
+<ul>
+<li>Unlimited: Subscribers can continue to receive (and pay for) the plan as long as they want.</li>
+<li>
+<p>Limited to: Enter the number of cycles of the plan that can be received.</p>
+<div class="warning">You can enter only positive integers (1, 37, 5287024, etc.) in this field. Zero, negative numbers, and decimal numbers (0, 0.5, 3.1415926, 2.5, etc.) are not allowed.</div>
+</li>
+</ul>
+<p>Plans renew when they are set to an unlimited number of cycles or when they are "limited" to more than one cycle, that is, the number in the <em>Limited to</em> option is greater than 1. Renewing means that at the end of a plan cycle's duration:</p>
+<ul>
+<li>The usage counter is reset.</li>
+<li>The cycle starts over.</li>
+<li>Billing occurs.</li>
+</ul>
+<p>If you are going to make the plan <a href="#PlanSettings-TypeSettings-Giftable">giftable</a>, then it cannot renew and you must select the <em>Limited to</em> option and enter 1. This is because when you purchase a plan, you are paying only for the first cycle. If gifting a plan with more than 1 cycle was allowed, the recipient would be responsible for either paying for subsequent cycles or canceling the plan before it renews.</p>
+</td>
+</tr>
+<tr>
+<td><a name="GeneralTab-BehaviorSettings-AlignedToAccountCycle" id="GeneralTab-BehaviorSettings-AlignedToAccountCycle"></a><strong>Aligned to account cycle</strong></td>
+<td>Required. This is the alignment, and it defines when renewals occur and are billed. Available only when Number of Cycles is set to <em>Unlimited</em> or set to <em>Limited to</em> and its value is greater than 1. Defines whether the plan is billed when the account cycles or when the plan is purchased.</td>
+</tr>
+<tr>
+<td><a name="GeneralTab-BehaviorSettings-CycleDuration" id="GeneralTab-BehaviorSettings-CycleDuration"></a><strong>Cycle Duration</strong></td>
+<td>
+<p>Required. This defines how long a plan cycle is. Available only when <strong>Aligned to account cycle</strong> is set to <em>No</em>. Select from:</p>
+<ul>
+<li>
+<p>Unlimited. This means that there is no time limit for subscribers to consume the allotment of the plan.</p>
+<div class="warning">If a plan cycle duration is unlimited, then you must select <em>Limited to</em> in the <strong>Number of Cycles</strong> setting and enter 1. Plans with an unlimited cycle duration may not have more than one cycle.</div>
+</li>
+<li>
+<p>Lasts, then enter a number and select a unit of measure from minute(s), hour(s), week(s), day(s), or month(s). This sets a time limit to consume the plan's allotment. Any allotment&#160;unused&#160;when the time limit is reached is lost.</p>
+<div class="warning">You can enter only positive integers (1, 37, 5287024, etc.) in this field. Zero, negative numbers, and decimal numbers (0, 0.5, 3.1415926, 2.5, etc.) are not allowed.</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Prorated on first cycle</strong></td>
+<td>
+<p>Required. This is proration, and it defines how much is billed and allotted for the first cycle. Available only when <em>Aligned to account cycle</em> is set to Yes.</p>
+<div class="info">
+<p><strong>Best Practice:</strong> When you have a plan that has more than one account cycle and aligned to the account cycle, you'll almost always want to set this to <em>Yes</em>. If you set it to <em>No</em>, a customer will be charged full price for the plan even if they buy it on the last day of the account cycle.</p>
+<p>While that may be OK for plans with a fixed amount of consumption, your business needs may dictate otherwise, especially for unlimited plans</p>
+<p>For example, if if a plan offers 30MB of data for $30/month and a customer whose account cycle begins on the 1st buys the plan of the 20th, they will get a prorated amount of 10MB for a prorated cost of $10. But if you offer an unlimited amount of data for $30/month and a customer whose account cycle begins on the 1st buys the plan on the 30th, they will get an unlimited amount of data for $1. So for unlimited plans, you may want to consider setting this option to <em>No</em>.</p>
+</div>
+<p>Even when a plan is prorated normally, when it is offered in an exchange category in a carousel and a customer receives the plan through the exchange category in the carousel, no proration occurs. The customer receives the full allotment for the remainder of the cycle in which it is received and is charged the full cycle price.</p>
+</td>
+</tr>
+<tr>
+<td><a name="GeneralTab-BehaviorSettings-UsageDisplay" id="GeneralTab-BehaviorSettings-UsageDisplay"></a><strong>Usage Display</strong></td>
+<td>
+<p>When customers buy plans, they can view how much they have used of that plan (or how much they have left to use) and how long they have used the plan (or how long they have left to use the plan) in the My Plans section of the self-care app. Plans can have a consumable element (it's allocation, in minutes, messages, or megabytes) and a duration element (how much time is available to use the plan).</p>
+<p>The usage display can show the allocation usage, the time usage, or both. The ItsOn system defines a default display of usage, and what's shown for that default depends on other plan settings. You can also define a custom usage display for the plan, which overrides the default. Select:</p>
+<ul>
+<li>Custom: To select what type of usage information your subscribers will see for this plan and how it will be shown. When you select Custom, two additional options become available: Duration and Units. Use these options to configure exactly what users will see on their devices.</li>
+<li>Default: To use the default usage display property (defined below) for the type of plan and its configuration.</li>
+</ul>
+<h4 id="PlanSettings-CustomUsageDisplayOptionsChoices">Default Usage Display</h4>
+<table>
+<tr>
+<th>Plan Configuration</th>
+<th>Usage Display Shows</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>
+<p>Plans with both unit-based and time-based limits. For example, a plan that offers 10 MB of data that must be used within a 1-month period.</p>
+<p>&#160;</p>
+</td>
+<td>
+<p>Units and Duration</p>
+<p>Shows a bar and label for both units used and available and time used and available.</p>
+</td>
+<td><img alt="" src="images/usage_display_duration_and_units3.png" style="border-width: 1px; border-style: solid;" border="1" /></td>
+</tr>
+<tr>
+<td>
+<p>Plans with time-based limits and unlimited usage. For example, a plan that offers unlimited usage that must be used within a 1-week period.</p>
+</td>
+<td>
+<p>Duration</p>
+<p>Shows a bar and label for time used and available.</p>
+</td>
+<td><img alt="" src="images/usage_display_cycle3.png" style="border-width: 1px; border-style: solid;" border="1" /></td>
+</tr>
+<tr>
+<td>Plans with unit-based limits and unlimited duration. For example, a plan that offers 100 MB of data that has an unlimited cycle.</td>
+<td>
+<p>Units</p>
+<p>Shows a bar and label for units used and available.</p>
+</td>
+<td><img alt="" src="images/usage_display_units3.png" style="border-width: 1px; border-style: solid;" border="1" /></td>
+</tr>
+<tr>
+<td>Plans with unlimited usage and unlimited duration. For example, a plan that offers unlimited data and an unlimited cycle.</td>
+<td>
+<p>Depends on the <em>Display Detailed Usage Data</em> setting:</p>
+<ul>
+<li>Yes: Shows a link to view a page with usage details.</li>
+<li>No: Shows nothing.</li>
+</ul>
+</td>
+<td>
+<p>&#160;</p>
+</td>
+</tr>
+</table>
+<h4 id="PlanSettings-SummaryofUsageDisplayOptionDefaults">Summary of Usage Display Defaults</h4>
+<p>Usage display defaults depend on your usage and duration choices in the Voice/Messaging/Data Usage and Cycle Duration settings:</p>
+<ul>
+<li>Unlimited usage and unlimited duration: summary or name only (no duration or unit bars or labels)</li>
+<li>Unlimited usage and limited duration: cycle duration only (duration bar &amp; label, no units bar or label)</li>
+<li>Limited usage and unlimited duration: unit data only (units bar &amp; label only, no duration bar or label)</li>
+<li>Limited usage and limited duration: unit and duration data (units bar and label and duration bar and label)</li>
+</ul>
+<h4>Bar and Label Direction and Position</h4>
+<p>The direction of bar movement and the position of labels in relation to the bar (to the right or left of the bar) depend on tenant settings and/or language (left-to-right or right-to-left) settings.</p>
+<p>First, whether the bars are count up (for example, Day 7 of 15 or 300 of 500 Mins) or count down (for example, 8 days remaining or 500 MB remaining) depends on a tenant setting.</p>
+<p>Then, the direction that the bar moves (or fills) depends on a tenant setting.</p>
+<p>Finally, if there is a label, its location depends on language settings. If the language setting is left-to-right, the label will be to the right of the bar. If the language setting is right-to-left, the label will be to the left of the bar.</p>
+</td>
+</tr>
+<tr>
+<td><strong>Duration</strong></td>
+<td>
+<p>Duration represents the length of the cycle. It is one of the options available for you to configure when you select <em>Custom</em> for the Usage Display setting. The duration display contains two components, a progress bar that shows the relative amount compared to the total amount of duration and a text label that shows the actual amount of the cycle. Select:</p>
+<ul>
+<li>Bar and Label (default): To show both the bar and the label.</li>
+<li>Bar: To show only the bar. (Note, exact number data, such as 20 of 30 days will not be shown).</li>
+<li>Label: To show only the label.</li>
+<li>None:: To show no duration information.</li>
+</ul>
+<p><img alt="" src="images/bar_label_example.png" style="border-width: 1px; border-style: solid;" border="1" /></p>
+</td>
+</tr>
+<tr>
+<td><strong>Unit</strong></td>
+<td>
+<p>Units represent the consumable element of a plan allocated to users. It is one of the options available for you to configure when you select <em>Custom</em> for the Usage Display setting. The units display contains two components, a progress bar that shows what part of the whole amount of time has been used and a text label that shows the actual amount of the time used. Select:</p>
+<ul>
+<li>Show (default): To show the Units bar and label.</li>
+<li>Hide: To hide the Units bar and label.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Display Detailed Usage Data</strong></td>
+<td>
+<p>Select <em>Yes</em> to allow users to see detailed per-call, per-message, and per-data-session information on their account page.</p>
+</td>
+</tr>
+<tr>
+<td><strong>Terminates when usage allowance runs out</strong></td>
+<td>
+<p>Available only when Renewal is <em>Does not renew</em> because this setting is used only for one-time plans. Determines if a plan is terminated when its usage allowance runs out. The choices are:</p>
+<ul>
+<li>Yes (default): When a plan's usage allowance runs out, the plan is terminated and is moved to the Subscription History or Plan History list immediately.</li>
+<li>No: When a plan's usage allowance runs out, the plan remains unterminated and in the Subscriptions or My Plans list until it expires based on the validity duration.</li>
+</ul>
+<div class="info"><strong>Note:</strong> A reason why you might want to choose No here is so that customers can upgrade one-time plans if the usage allowance runs out before its expiration. Once a plan terminates, it can't be upgraded.</div>
+<p>This is how a depleted plan would look when you select No:</p>
+<p><img alt="" src="images/usage_plan_depleted.png" style="border-width: 1px; border-style: solid;" border="1" /></p>
+<p>The choice here can also affect when <a hqid="288842" href="#">intercept notifications</a> are triggered. One of the intercept notification rule options is a reason, and the two choices are <em>Plan Capped</em> and <em>Plan Not Present</em>. If a plan terminates, then it would match the <em>Plan Not Present</em> option in the notification. If a plan is not terminated when its allocation runs out (the <em>No</em> option of this setting), the plan would still be considered active until its duration expires. This matches the <em>Plan Capped</em> intercept notification option, and you could design an intercept notification to provide easy upgrade options.</p>
+</td>
+</tr>
+<tr>
+<td><strong>Visibility</strong></td>
+<td>
+<p>Determines whether or not the plan is visible to customers.</p>
+<p>If this is set to <em>Hide</em>, the plan is not visible for purchase in the store nor is it visible in a customer's account information. It is not shown as part of a <a hqid="288804" href="#">bundle</a> when included in a bundle, and usage and intercept <a hqid="288853" href="#">notifications</a> are not triggered by hidden plans. For more on how hidden plans work in bundles, see <a hqid="288841" href="#">Hidden Products in Bundles</a>.</p>
+<div class="warning">A plan cannot be hidden unless its price is equal to 0 (zero). This is because at checkout, a non-zero priced plan in the cart will result in a total price that is different from the sum of the prices of the visible products, which could cause customer confusion. So this setting is unavailable until a price value greater than 0 (zero) has been entered for the plan.</div>
+</td>
+</tr>
+</table>
+<h3><a name="GeneralTab-BillingSettings" id="GeneralTab-BillingSettings"></a>Billing Settings</h3>
+<table>
+<tr>
+<th class="confluenceTh" width="100">Setting</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><strong>Retail Price</strong></td>
+<td>Defines the default, standard price for the product (plan, fee, or bundle). This is the price customers will see unless overridden by the Sale Price field or other available offer mechanisms. If no value is entered, 0 is used.</td>
+</tr>
+<tr>
+<td><strong>Sale Price</strong></td>
+<td>
+<p>Overrides the Retail Price while allowing you to keep a record of the retail price. To return to the Retail Price, delete the contents of this field.</p>
+<div class="tip">A Sale Price can affect whether customers qualify for <a hqid="1679949" href="#">offers</a> (benefits and discounts), depending on the value of the <em>Apply to sale price</em> setting in the offer.</div>
+<p>When a customer is viewing the catalog, both the sale price and the retail price are visible in the product listing. The exact appearance will depend on your branding. The following graphic is an example of what customers might see in a product where the Retail Price is 1.00 and the Sale Price is 0.80:</p>
+<p><img src="images/client_sale_price.png" alt="" style="border-width: 1px; border-style: solid;" border="1" /></p>
+<div class="info">Some research suggests that consumers believe prices with more syllables are higher than the same prices with fewer syllables, and this is seen in both spoken and printed prices. Both commas and decimal points add to the "syllables," so, for example, $1,199.00 is viewed as more than $1199. ItsOn provides a client-side branding setting that can present catalog prices without the decimal and the digits after the decimal for whole number prices. If this setting were used for the example above, the values seen in the catalog presentation would be $1 and $0.80. This setting does not affect the amounts you enter in the Retail Price Price or the Sale Price fields, nor the amounts shown during checkout, in customer invoices, and in customer service records.</div>
+</td>
+</tr>
+<tr>
+<td><strong>Tax Classification</strong></td>
+<td>
+<p>This defines what specific taxes should be charged, if at all. Different municipalities and other political units charge varying amounts of and types of taxes and fees on specific types of goods and services. This selection drives the correct type and amount of taxes to be collected based on the customer's location and type of service purchased. Select from:</p>
+<ul>
+<li>Data Plan</li>
+<li>Voice Plan</li>
+<li>Text Plan</li>
+<li>Line-Based Fees</li>
+<li>Equipment</li>
+<li>Not Taxable</li>
+</ul>
+</td>
+</tr>
+</table>
+<p>&#160;</p>
+<p>&#160;</p>
+<p>&#160;</p>
+<div class="pageSection group">&#160;
+<div class="greybox" style="text-align: left;">&#160;</div>
+</div>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>

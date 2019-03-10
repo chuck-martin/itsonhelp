@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 10" />
+<title>Plan Behavior Settings Examples</title>
+<link rel="stylesheet" type="text/css" href="itsonhelptopic.css" ctype="topic" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        addTocInfo("Products, Plans, Bundles, Fees, and Entitlements\nPlans\nPlan Settings\nPlan Behavior Settings Examples");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+
+        document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("index.htm", "", "&gt;", "Home", "Service_Design_Center_Help.htm");
+document.write("<a href=\"Products_Plans_Bundles_Fees_and_Entitlements.html\">Products, Plans, Bundles, Fees, and Entitlements<\/a> &gt; <a href=\"Plans.html\">Plans<\/a> &gt; <a href=\"Plan_Settings.html\">Plan Settings<\/a> &gt; Plan Behavior Settings Examples<\/p>");
+
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+    
+onLoadHandler = function()
+{
+        if (window.setRelStartPage)
+        {
+    setTimeout("setRelStartPage('index.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+        window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+        window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+        autoSync(0);
+        sendSyncInfo();
+        sendAveInfoOut();
+}
+//-->
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(4);
+//-->
+//]]>
+</script><script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2">
+</script>
+<h1>Plan Behavior Settings Examples</h1>
+<p>The flexibility of a product's settings means that you can create hundreds of combinations of plan behavior. This topic gives some examples of desired product behavior and how you would configure Behavior and other settings to ensure that behavior.&#160;</p>
+<div class="tip">Some of these scenarios require additional product settings to be configured in specific ways to have the desired behavior. This topic focuses on how specific settings in the <a hqid="288857" href="Plan_Settings.html#GeneralTab-RecipientSharingAssigningSettings">Receipt/Sharing/Assigning</a> and the <a hqid="288857" href="Plan_Settings.html#GeneralTab-BehaviorSettings">Behavior</a> sections of the General tab work together.</div>
+<h2 id="PlanBehaviorSettingsExamples-BasicMonthlyDataPlan">Basic Monthly Data Plan</h2>
+<p>You want to offer basic monthly data plans for single devices, perhaps with different caps for different prices, but their behavior would be the same-and (relatively) simple. Here are the settings and the reason for each:</p>
+<table>
+<tr>
+<th width="160">Setting</th>
+<th width="180">Value</th>
+<th>Reason</th>
+</tr>
+<tr>
+<td>Customer can buy for</td>
+<td>Customer's account only</td>
+<td>This plan is for the subscriber's account only.</td>
+</tr>
+<tr>
+<td>Allocation</td>
+<td>Exclusive</td>
+<td>Only the purchaser can use the plan.</td>
+</tr>
+<tr>
+<td>Share Method</td>
+<td>n/a</td>
+<td>The Share Method setting is not used when the Allocation setting is <em>Exclusive</em>.</td>
+</tr>
+<tr>
+<td>Share Type</td>
+<td>n/a</td>
+<td>The Share Type setting is not used when the Allocation setting is <em>Exclusive</em>.</td>
+</tr>
+<tr>
+<td>Assignment Method</td>
+<td>Assignable at purchase only</td>
+<td>&#160;</td>
+</tr>
+<tr>
+<td>Number of Cycles</td>
+<td>Unlimited</td>
+<td>
+<p>The purchaser of the plan receives and pays for it again at the end of each period. The plan renews until it is canceled by the purchaser, even if you discontinue the plan.</p>
+</td>
+</tr>
+<tr>
+<td>Aligned to account cycle</td>
+<td>Yes</td>
+<td>Making monthly charges aligned with a customer's account cycle makes your accounting and your customer's understanding easiest because your customers pay just once per cycle.</td>
+</tr>
+<tr>
+<td>Cycle Duration</td>
+<td>n/a</td>
+<td>When a plan is aligned to the account cycle, the duration equals the account cycle length, which can be anywhere from 28 to 31 days for monthly plans.</td>
+</tr>
+<tr>
+<td>Prorated on first cycle</td>
+<td>Yes</td>
+<td>
+<p>Both the amount paid and the amount of usage available is prorated. For example, an account cycle that starts on the 1st, and a 30MB data plan for $30 bought on the 20th. For the last 10 days of the account cycle, the customer pays $10 for 10MB of data usage.</p>
+</td>
+</tr>
+</table>
+<h2 id="PlanBehaviorSettingsExamples-One-TimePlan">One-Time Plan</h2>
+<p>You want to offer a product that users get one time only.</p>
+<table>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+<th>Reason</th>
+</tr>
+<tr>
+<td>Customer can buy for</td>
+<td>Customer's account only</td>
+<td>You want the user who buys the product to be the one who uses it, so the plan is for the the subscriber's account only.</td>
+</tr>
+<tr>
+<td>Allocation</td>
+<td>Exclusive</td>
+<td>Only the purchaser can use the plan.</td>
+</tr>
+<tr>
+<td>Share Method</td>
+<td>n/a</td>
+<td>The Share Method setting is not used when the Allocation setting is <em>Exclusive</em>.</td>
+</tr>
+<tr>
+<td>Share Type</td>
+<td>n/a</td>
+<td>The Share Type setting is not used when the Allocation setting is <em>Exclusive</em>.</td>
+</tr>
+<tr>
+<td>Assignment Method</td>
+<td>n/a</td>
+<td>The Assignment Method setting is not used when the Allocation setting is <em>Exclusive</em>.</td>
+</tr>
+<tr>
+<td>Number of Cycles</td>
+<td>Limited to 1</td>
+<td>This is a one-time plan.</td>
+</tr>
+<tr>
+<td>Aligned to account cycle</td>
+<td>n/a</td>
+<td>This setting applies only when plans are renewable.</td>
+</tr>
+<tr>
+<td>Cycle duration</td>
+<td>12 months</td>
+<td>You decide that you want a use-it-or-lose-it aspect, and that a year is a generous amount of time to use the plan.</td>
+</tr>
+<tr>
+<td>Prorated on first cycle</td>
+<td>n/a</td>
+<td>Because the plan is not aligned to the account cycle (it begins as soon as it is given to the customer), there's no proration.</td>
+</tr>
+</table>
+<h2 family="" id="PlanBehaviorSettingsExamples-Shared">Shared "Family" Plan</h2>
+<p>One of the latest trends in the cell phone market is "family" plans, plans that give customers some amount of some type of service that can be shared with multiple users and devices on the account. Many of the settings are similar to the Basic plan above.</p>
+<table>
+<tr>
+<th width="160">Setting</th>
+<th width="160">Value</th>
+<th>Reason</th>
+</tr>
+<tr>
+<td>Customer can buy for</td>
+<td>Customer's account only</td>
+<td>
+<p>This plan is for the subscriber's account only.</p>
+</td>
+</tr>
+<tr>
+<td>Allocation</td>
+<td>Shareable</td>
+<td>When an account has more than one subscriber, the plan's allocation may be used by all subscribers.</td>
+</tr>
+<tr>
+<td>Share Method</td>
+<td>Automatic</td>
+<td>Subscribers are allowed to use any existing plan allocation as soon as they join the account.</td>
+</tr>
+<tr>
+<td>Share Type</td>
+<td>Piñata</td>
+<td>This plan is a "pool" of product that all subscribers in the account can use. When the entire "pool" is depleted, no matter who consumes it, no more of the product is available within the cycle.</td>
+</tr>
+<tr>
+<td>Assignment Method</td>
+<td>n/a</td>
+<td>The Assignment Method setting is not used when the Allocation setting is <em>Shareable</em>.</td>
+</tr>
+<tr>
+<td>Number of Cycles</td>
+<td>Unlimited</td>
+<td><span>The purchaser of the plan receives and pays for it again at the end of each period. The plan renews until it is canceled by the purchaser, even if you discontinue the plan.</span></td>
+</tr>
+<tr>
+<td>Aligned to account cycle</td>
+<td>Yes</td>
+<td><span>Making monthly charges aligned with a customer's account cycle makes your accounting and your customer's understanding easiest because your customers pay just once per cycle.</span></td>
+</tr>
+<tr>
+<td>Plan duration</td>
+<td>n/a</td>
+<td>When a plan is aligned to the account cycle, the duration equals the plan cycle length.</td>
+</tr>
+<tr>
+<td>Prorated on first cycle</td>
+<td>Yes</td>
+<td>
+<p><span>Both the amount paid and the amount of usage available is prorated. For example, an account cycle that starts on the 1st, and a 30MB data plan for $30 bought on the 20th. For the last 10 days of the account cycle, the customer pays $10 for 10MB of data usage.</span></p>
+</td>
+</tr>
+</table>
+<h2 id="PlanBehaviorSettingsExamples-10-DayFacebookPlan">10-Day Facebook Plan</h2>
+<p>Most plans that you offer limit what your users can receive along two axes: amount and time. Some of the Behavior settings address specifics for the time axis.&#160;</p>
+<table>
+<tr>
+<th width="160">Setting</th>
+<th width="180">Value</th>
+<th class="confluenceTh">Reason</th>
+</tr>
+<tr>
+<td>Customer can buy for</td>
+<td>Customer's account only</td>
+<td>The idea is that because the plan duration is short, either a subscriber on the account buys it for just themselves, or the account holder buys it for just one subscriber on the account. A classic example would be a parent buying the plan for a child on a family account. So the plan can't be passed around from subscriber to subscriber (<em>Reassignable</em> for the Assignment Method setting), nor can the plan be consumed by multiple subscribers (<em>Shareable</em> for the Allocation setting).</td>
+</tr>
+<tr>
+<td>Allocation</td>
+<td>Assignable</td>
+<td>For accounts with just one subscriber, only the purchaser gets the plan allocation. For accounts wth more that one subscriber, the purchaser can designate a different subscriber in the account to get the plan allocation, at which point that subscriber is the only subscriber that can consume the plan allocation.</td>
+</tr>
+<tr>
+<td>Share Method</td>
+<td>n/a</td>
+<td>The Share Method setting is not used when the Allocation setting is <em>Exclusive</em>.</td>
+</tr>
+<tr>
+<td>Share Type</td>
+<td>n/a</td>
+<td>The Share Type setting is not used when the Allocation setting is <em>Exclusive</em>.</td>
+</tr>
+<tr>
+<td>Assignment Method</td>
+<td>Assignable at purchase only</td>
+<td>The ability to consume allocation from the plan cannot be passed from subscriber to subscriber in the account.</td>
+</tr>
+<tr>
+<td>Number of Cycles</td>
+<td>Limited to 1</td>
+<td>This plan is not automatically renewed at the end of the 10 days.</td>
+</tr>
+<tr>
+<td>Aligned to account cycle</td>
+<td>n/a</td>
+<td>This plan is valid for 10 days from its purchase date.</td>
+</tr>
+<tr>
+<td>Cycle duration</td>
+<td>10 days</td>
+<td>This one's easy. The cycle length.</td>
+</tr>
+<tr>
+<td>Prorated on first cycle</td>
+<td>n/a</td>
+<td>Proration applies only to renewable plans.</td>
+</tr>
+</table>
+<h2 id="PlanBehaviorSettingsExamples-90DaysofService:Recurringvs.Non-recurring">90 Days of Service: Recurring vs. Non-recurring</h2>
+<p>You can offer a set amount of service in different ways. This example shows the differences in 90 days of service offered in a 30-day plan that renews 2 times (finite recurring) vs. a 90-day plan. In this example, you want to offer up to 30GB of data during the 90 days.</p>
+<table>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+<th>Reason</th>
+</tr>
+<tr>
+<td>Customer can buy for</td>
+<td>any</td>
+<td>For this scenario, the choice here doesn't matter.</td>
+</tr>
+<tr>
+<td>Allocation</td>
+<td>any</td>
+<td>For this scenario, the choice here doesn't matter.</td>
+</tr>
+<tr>
+<td>Share Method</td>
+<td>any</td>
+<td>For this scenario, the choice here doesn't matter.</td>
+</tr>
+<tr>
+<td>Share Type</td>
+<td>any</td>
+<td>For this scenario, the choice here doesn't matter.</td>
+</tr>
+<tr>
+<td>Assignment Method</td>
+<td>n/a</td>
+<td>For this scenario, the choice here doesn't matter.</td>
+</tr>
+<tr>
+<td rowspan="2">Number of Cycles</td>
+<td>Limited to 3</td>
+<td>For the 30-day plan. The idea is to give the same amount of time as the 90-day plan.</td>
+</tr>
+<tr>
+<td>Limited to 1</td>
+<td>For the 90-day plan.</td>
+</tr>
+<tr>
+<td>Aligned to account cycle</td>
+<td>No</td>
+<td>
+<p>The cycle for the plan and payment start on the purchase date.</p>
+<div class="tip">
+<p>If the plan is not free, customers that do not purchase the plan on the first day of their account cycle will be charged on the plan cycle date, which can result in charges for different plans at different times each month.</p>
+<p>But if you align the plan to the account cycle and prorate the first month, customers will not get the full 90 days (unless they purchase the plan on the first day of their account cycle) because the plan can be renewed only twice.</p>
+<p>Your business and customer needs should dictate when you want plans configured like this. Consider limiting this configuration to plans that you do not charge for.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" rowspan="2">Cycle duration</td>
+<td width="143">30 days</td>
+<td width="938">For the 30-day plan. The plan lasts 30 days, and the renewable setting allows to to occur 3 times (the initial, plus 2 renewals), for 90 days total.</td>
+</tr>
+<tr>
+<td width="143">90 days</td>
+<td width="938">For the 90-day plan.</td>
+</tr>
+<tr>
+<td>Prorated on first cycle</td>
+<td width="143">n/a</td>
+<td width="938">If the plan is not aligned to the account cycle, there is no proration.</td>
+</tr>
+<tr>
+<td class="confluenceTd" rowspan="2">Data usage</td>
+<td width="143">Limited to 10,240 megabytes</td>
+<td width="938">For the 30-day plan.</td>
+</tr>
+<tr>
+<td width="143">Limited to 30,720 megabytes</td>
+<td width="938">For the 90-day plan.</td>
+</tr>
+</table>
+<p>The different settings determine how much data a user can consume, and when. In the 30-day plan scenario, users get 10GB per 30 days. If they use 10GB in the first day, they have no more data under the plan until the 30 days is complete. Conversely, if they use only 10MB of data during the entirety of the 30 days, they lose all the rest of the 10GB allocated for that 30 days and the "counter" begins again at the start of the next 30-day cycle.</p>
+<p>In the 90-day plan scenario, users can consume the 30GB of data at any time during the 90 days of the plan.&#160;</p>
+<h2 id="PlanBehaviorSettingsExamples-GameAppPlan">Game App Plan</h2>
+<p>You want to create some plans that are designed for users who like to play games. The idea is that the usage of each plan will be restricted to a single subscriber so the person who wants to play the game can consume all that the plan offers.</p>
+<table>
+<tr>
+<th width="160">Setting</th>
+<th width="180">Value</th>
+<th>Reason</th>
+</tr>
+<tr>
+<td>Customer can buy for</td>
+<td>Customer's account only</td>
+<td>Because this is a renewable plan, it cannot be gifted.</td>
+</tr>
+<tr>
+<td>Allocation</td>
+<td>Assignable</td>
+<td>This plan is for one user only. Assignable allows for any one user in the account, rather than only the purchaser.</td>
+</tr>
+<tr>
+<td>Share Method</td>
+<td>n/a</td>
+<td>The Share Method setting is not used when the Allocation setting is <em>Assignable</em>.</td>
+</tr>
+<tr>
+<td>Share Type</td>
+<td>n/a</td>
+<td>The Share Type setting is not used when the Allocation setting is <em>Assignable</em>.</td>
+</tr>
+<tr>
+<td>Assignment Method</td>
+<td>Assignable at purchase only</td>
+<td>The plan is designed for one person to use.</td>
+</tr>
+<tr>
+<td>Renewable</td>
+<td>Renews indefinitely</td>
+<td><span>The purchaser of the plan receives and pays for it again at the end of each period. The plan renews until it is canceled by the purchaser, even if you discontinue the plan.</span></td>
+</tr>
+<tr>
+<td>Aligned to account cycle</td>
+<td>Yes</td>
+<td><span>Making monthly charges aligned with a customer's account cycle makes your accounting and your customer's understanding easiest because your customers pay just once per cycle.</span></td>
+</tr>
+<tr>
+<td>Plan duration</td>
+<td>n/a</td>
+<td>The duration is the account cycle.</td>
+</tr>
+<tr>
+<td>Prorated on first cycle</td>
+<td>Yes</td>
+<td><span>Both the amount paid and the amount of usage available is prorated. For example, an account cycle that starts on the 1st, and a 30MB data plan for $30 bought on the 20th. For the last 10 days of the account cycle, the customer pays $10 for 10MB of data usage.</span></td>
+</tr>
+</table>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>
