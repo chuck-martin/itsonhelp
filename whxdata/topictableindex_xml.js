@@ -1,1 +1,1 @@
-gXMLBuffer="<?xml version=\"1.0\" encoding=\"UTF-8\"?><cki><ck fm=\"Add a Behavior Policy\" to=\"Delete a Category\" num=\"52\"/><ck fm=\"Delete a Certificate\" to=\"Priority Scenarios\" num=\"55\"/><ck fm=\"Products, Plans, Bundles, Fees, and Entitlements\" to=\"WiFi Spot Check Policies\" num=\"45\"/></cki>";
+gXMLBuffer="<?xml version=\"1.0\" encoding=\"UTF-8\"?><cki><ck fm=\"Add a Basic Bundle\" to=\"Data Filter Settings\" num=\"53\"/><ck fm=\"Data Session Policies\" to=\"Plan Settings\" num=\"55\"/><ck fm=\"Plans\" to=\"WiFi Spot Check Policies\" num=\"50\"/></cki>";

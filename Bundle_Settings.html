@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 10" />
+<title>Bundle Settings</title>
+<link rel="StyleSheet" href="itsonhelptopic.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        addTocInfo("Products, Plans, Bundles, Fees, and Entitlements\nBundles\nBundle Settings");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+
+        document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("index.htm", "", "&gt;", "Home", "Service_Design_Center_Help.htm");
+document.write("<a href=\"Products_Plans_Bundles_Fees_and_Entitlements.html\">Products, Plans, Bundles, Fees, and Entitlements<\/a> &gt; <a href=\"Bundles.html\">Bundles<\/a> &gt; Bundle Settings<\/p>");
+
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+    
+onLoadHandler = function()
+{
+        if (window.setRelStartPage)
+        {
+    setTimeout("setRelStartPage('index.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+        window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+        window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+        autoSync(0);
+        sendSyncInfo();
+        sendAveInfoOut();
+}
+//-->
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(4);
+//-->
+//]]>
+</script><script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2">
+</script>
+<h1>Bundle Settings</h1>
+<p>This topic contains information about the settings for both basic and compound bundles.&#160;</p>
+<ul>
+<li><a href="#GeneralTab-AppearanceSettings">General tab, Appearance settings</a></li>
+<li><a href="#GeneralTab-PriceSettings">General tab, Price settings</a></li>
+<li><a href="#GeneralTab-RecipientSharingAssigningSettings">General tab, Recipient/Sharing/Assigning settings</a></li>
+<li><a href="#GeneralTab-BehaviorSettings">General tab, Behavior settings</a></li>
+<li><a href="#GenaralTab-BillingSettings">General tab, Billing settings</a></li>
+<li><a hqid="1802130" href="#GeneralTab-AvailabilitySettings">General tab, Availability settings</a></li>
+<li><a hqid="1802130" href="#GeneralTab-GeneralSettings">General tab, General settings</a></li>
+<li><a href="#GeneralTab-SkuBundleItemsSettings">General tab, Sku Bundle Items settings</a></li>
+<li><a href="#MediaTab">Media tab</a></li>
+<li><a href="#AdvancedTab">Advanced tab</a></li>
+</ul>
+<div>
+<div class="warning">
+<p>Service Design Center&#160;uses a change management process to track and approve all changes to any product. All of these changes, including additions, edits, and deletions, must go through the <a hqid="288799" href="#">promote</a>-<a hqid="288800" href="#">approve-deploy</a> process before they become available.</p>
+<p>Any changes you make (change a name, change a price, add or delete a product from a bundle, etc.) to any product do not affect any users that already have the product.</p>
+</div>
+</div>
+<h2 id="BundleSettings-GeneralTab">General Tab</h2>
+<p>The General tab contains most of the settings you will configure to determine how a bundle looks, acts, is priced, and more.</p>
+<h3 id="BundleSettings-AppearanceSettings"><a name="GeneralTab-AppearanceSettings" id="GeneralTab-AppearanceSettings"></a>Appearance Settings</h3>
+<p>These settings define how information about a product will appear to customers.</p>
+<table>
+<tr>
+<th scope="row">Setting</th>
+<th scope="col">Description</th>
+</tr>
+<tr>
+<td><strong>Name</strong></td>
+<td>Required. The name serves 2 primary purposes: it's what you see in product lists and it's what customers see as a descriptor when they are making purchase decisions. The name is limited to 115 characters.</td>
+</tr>
+<tr>
+<td><strong>Short Description</strong></td>
+<td><span style="font-family: 'Open Sans', Arial, sans-serif; background-color: rgb(249, 249, 249);">Brief plain-text information about the bundle that sometimes appears with the bundle name.&#160;</span></td>
+</tr>
+<tr>
+<td><strong>Marketing Message</strong></td>
+<td>
+<div class="warning">The Marketing Message setting is available only in compound bundles.</div>
+<p>Descriptive rich-text information about the bundle that appears on only the pre-purchase detail page above the content you add in the Description field. You can <a href="#">format the content you enter in several different ways</a> using the functions in the toolbar.</p>
+<div class="tip">This field is best for a small amount of marketing information that will help drive purchase decisions, such as offers customers will receive with purchase. Use the Description field for larger amounts of additional product information.</div>
+</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>
+<p>Detailed and descriptive rich-text information about the bundle that appears on bundle detail pages. The content you enter here is seen on the product detail page both pre- and post-purchase. You can <a href="#">format the content you enter in several different ways</a> using the functions in the toolbar.</p>
+<div class="tip">This field is best for providing additional details about the product, for adding details to the brief marketing message, for legal boilerplate content, and so on.</div>
+</td>
+</tr>
+<tr>
+<td><strong>Fulfillment Type</strong></td>
+<td>
+<p>Required. This defines the system process by which customers receive the product or fee.</p>
+<div class="warning">Currently, <em>ItsOn Digital Delivery</em> is the only option that is supported. Selecting any other option may produce unpredictable results.</div>
+</td>
+</tr>
+</table>
+<div class="info"><strong>Best Practice:</strong> The bundle description is information that subscribers will see in the store before purchase (for basic and compound bundles) and on their account pages after purchase (for compound bundles). It is a good place to summarize information about all the plans and fees you put in the bundle so they can see at a glance what they are getting in the bundle.</div>
+<p>Depending on what types of plans and fees are in the bundle, you may also want to provide short summaries of each. For example:</p>
+<ul>
+<li>100 minute voice plan</li>
+<li>250 messages text plan</li>
+<li>100MB data plan</li>
+<li>10MB Facebook plan that lasts 10 days</li>
+</ul>
+<h3 id="BundleSettings-PriceSettings"><a name="GeneralTab-PriceSettings" id="GeneralTab-PriceSettings"></a>Price Settings</h3>
+<table>
+<tr>
+<th scope="row">Setting</th>
+<th scope="col">Description</th>
+</tr>
+<tr>
+<td><strong>Pricing Model</strong></td>
+<td>
+<p>Required. Determines how the bundle price is calculated. Select from:</p>
+<ul>
+<li>
+<p>Bundle: The bundle price is determined by the amount entered in the Billing section.</p>
+<div class="tip">
+<p>When you use bundle pricing for basic bundles and the basic bundle contains products that renew, the renewal price of each product is proportional to the bundle price and is not the product's defined price.</p>
+<p>For example, you have 2 renewable plans in a bundle. Plan 1 costs $20 and Plan 2 costs $10. You give the bundle a price of $15, which is half the total price of the plans if they were bought individually. A customer who buys the bundle can renew one or both plans. The renewal cost for Plan 1 would be $10 and the renewal cost for Plan 2 would be $5.</p>
+</div>
+</li>
+<li>
+<p>Item Sum: The bundle price is determined by adding the prices of all the items in the bundle.</p>
+<div class="tip">If you choose Item Sum and enter a price in the Billing section, the Billing section value will override the Item Sum calculated price.</div>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+<h3><a name="GeneralTab-RecipientSharingAssigningSettings" id="GeneralTab-RecipientSharingAssigningSettings"></a>Recipient/Sharing/Assigning Settings</h3>
+<div class="warning">Recipient/Sharing/Assigning settings are used only for compound bundles. In compound bundles, these settings override the individual product settings. However, once a compound bundle is purchased, sharing or assigning can be adjusted only on the individual product level.</div>
+<p>These settings determine who can receive the bundle and how a bundle's allotment can be allocated.</p>
+<table style="border-collapse: separate;" cellspacing="1" border="1">
+<tr>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;" width="200">Setting</th>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Description</th>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><strong>This compound bundle can be purchased for</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>Required. Determines who can receive a compound bundle when it is purchased by a customer. Select</p>
+<ul>
+<li>Customer's account only - If you want the compound bundle to stay with the purchaser's account.</li>
+<li>Gift recipient only - If you want the compound bundle to be only giftable, that is, it can only be given to someone outside the purchaser's account.</li>
+<li>Customer's account or gift recipient - If you want the purchaser to have the option of purchasing either for that account or as a gift for someone outside the purchaser's account.</li>
+</ul>
+<div class="warning">Gifted products cannot have more than one cycle, because when you purchase a compound bundle, you are purchasing only the first cycle, and gifting a compound bundle with more than 1 cycle would require the gift recipient to either pay for subsequent cycles or cancel the compound bundle before it renews. So if you choose
+<ul>
+<li><em>Gift recipient only</em>, the <strong>Recurring</strong> setting is constrained to <em>No</em>, which means that you cannot create a multi-cycle compound bundle that is giftable only.</li>
+<li><em>Customer's account or gift recipient,</em> when a customer buys a compound bundle and gifts it, the compound bundle terminates after one cycle no matter what is entered in the <strong>Number of Cycles</strong> setting, which means the gift recipient will receive exactly one cycle.</li>
+</ul>
+</div>
+<p>A compound bundle can be gifted only at purchase time. The purchase process of a gift requires a phone number to be input by the purchaser to identify the gift recipient. There are several issues that could occur and that would prevent the completion of a gift purchase, issues that include:</p>
+<ul>
+<li>Entry of an incomplete (not enough digits) or incompatible (too many digits, non-numeric digits) phone number.</li>
+<li>The phone number entered is for a subscriber in the same account. (Gifts can be made only to subscribers outside the purchaser's account.)</li>
+<li>The phone number entered is for a suspended subscriber.</li>
+<li>The phone number entered is for a subscriber in a suspended account.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><strong><a name="GeneralTab-ReceiptSharingAssigningSettings-Allocation" id="GeneralTab-ReceiptSharingAssigningSettings-Allocation"></a>Allocation</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>Required. Determines how the plans in a compound bundle are allocated to subscribers. Select</p>
+<ul>
+<li>Exclusive - Allocation of products in the bundle is available only to the subscriber that purchased the compound bundle or to the recipient of a gifted compound bundle.</li>
+<li>Assignable - Allocation of products in the bundle is available to be used by only one subscriber at a time. The <em>Assignment Method</em> setting (available only when this option is selected) determines additional assignment options.</li>
+<li>Shareable - Allocation of products in the bundle can potentially be used by any subscribers in the account. The <em>Share Method</em> and <em>Share Type</em> settings (available only when this option is selected) determines additional sharing options.</li>
+</ul>
+<div class="info">The Assignable and Shareable options are viable only when the <a href="#">tenant</a> offers more than one subscriber per account.</div>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><a name="GeneralTab-ReceiptSharingAssigningSettings-ShareMethod" id="GeneralTab-ReceiptSharingAssigningSettings-ShareMethod"></a><strong>Share Method</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>When <em>Shareable</em> is selected as the <strong>Allocation</strong> setting, determines how that sharing occurs. Available only when the Allocation setting is <em>Shareable</em>. Select:</p>
+<ul>
+<li>
+<p>Automatic: Sharing of plan allocation happens automatically among subscribers when they join or are removed from an account and when a compound bundle is exchanged. On purchase, all subscribers receive equal allocations of each product in the bundle by default. The purchaser can change these allocations at any time.</p>
+</li>
+<li>Manual: Allocation of any amount of a plan in the compound bundle to any subscriber happens manually. When a subscriber joins or is removed from an account or when a plan is exchanged, no automatic (re)allocation occurs. On purchase, only the purchaser receives an allocation, and that allocation is 100%. The purchaser can change these allocations at any time.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><a name="GeneralTab-ReceiptSharingAssigningSettings-ShareType" id="GeneralTab-ReceiptSharingAssigningSettings-ShareType"></a><strong>Share Type</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>Determines how allowance of products in the compound bundle can be shared by subscribers. Available only when the Allocation setting is <em>Shareable</em>.</p>
+<ul>
+<li>Limited (aka never go below)</li>
+<li>Piñata</li>
+</ul>
+<p>Limited is considered a "hard allocation," which means that once a subscriber is allocated an amount from a product, no other subscriber can use that allocated amount of that product unless there is an explicit reallocation. The total of the subscriber allocations cannot exceed 100%. For Limited, the following is true:</p>
+<ul>
+<li>A subscriber allowance cannot be changed to lower than what the subscriber has already used in the cycle.</li>
+<li>A subscriber allowance cannot be changed to more than what remains in the product allowance.</li>
+<li>The total of all subscriber allowances cannot be more than 100%.</li>
+<li>The total of all subscriber allowances can be less than 100%. That is, there can be unallocated product allowance.</li>
+<li>The subscriber allowance percentages that are in place at the end of the cycle carry over to the next cycle.</li>
+</ul>
+<p>Piñata is like a large glass with each subscriber having a straw. Each subscriber can consume as much of the total plan allocation as they are allocated, each allocation can be any value up to the plan allocation, and the total of all allocations can be more than 100%. The amount each subscriber actually consumes each cycle is defined only by their usage pattern. For example, you have a shared 100MB data plan. An account with 2 subscribers purchases the plan and gives each subscriber 100%. The first day of the first cycle, subscriber A uses 100MB. Subscriber B's allocation for the rest of the cycle becomes 0MB. In the second cycle, subscriber B uses 100MB in the first day. Subscriber A's allocation for the rest of the cycle becomes 0MB.</p>
+<p>For both Limited and Piñata, the total allocation to subscribers can equal less than 100%, so there could be an unallocated amount in a cycle.</p>
+<p>See <a href="#">Sharing Examples</a> for information on how sharing and allocation works.</p>
+<div class="info">The Share Type option is viable only when the <a href="#">tenant</a> offers more than one type of sharing.</div>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><a name="GeneralTab-ReceiptSharingAssigningSettings-AssignmentMethod" id="GeneralTab-ReceiptSharingAssigningSettings-AssignmentMethod"></a><strong>Assignment Method</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>When <em>Assignable</em> is selected as the <strong>Allocation</strong> setting, determines how that assignment occurs. Select:</p>
+<ul>
+<li>Assignable at purchase only: The allocation of the products in the compound bundle is available to be used by only one subscriber at once. The allocation of each product in the compound bundle can be assigned one time, at purchase time only, to one other subscriber (including the purchaser), at which point that is the only subscriber that can use the product allocation.</li>
+<li>Reassignable: The allocation of each product in the compound bundle is available to be used by only one subscriber at once, but it can be assigned and reassigned to any subscriber in the account for the duration of the compound bundle.</li>
+</ul>
+</td>
+</tr>
+</table>
+<div class="info">Sharing, assigning, and gifting settings all affect what customers can do with plans. See&#160;<a href="#">Sharing, Assigning, and Gifting</a> for more information on how these settings work together.</div>
+<p>There are a number of ways that customers receive bundles where sharing, assigning, and gifting settings will not be available to them. In those cases, default bundle sharablility and assignability occurs.</p>
+<p>Some sharing and assigning is done by the bundle purchaser as part of the purchase process. In fact, some settings require sharing, assigning, or gifting selection at purchase time. But when a bundle is <a href="#">mandatory</a> to be received, is received via the complimentary or provisioning API, or is received as a <a href="#">benefit</a>, it is not included as a part of such a purchase flow, so sharing and assigning selections that are required within that flow cannot be made.</p>
+<p>A specific example of this is if a bundle's <strong>Allocation</strong> setting is <em>Assignable</em> and the <strong>Assignment Method</strong> setting is <em>Assignable at purchase only</em>. If the bundle is received as a benefit, it doesn't go through that customer-facing purchase flow, and so cannot be assigned. Another example is if a bundle's T<strong>his product can be purchased for</strong> setting is <em>Gift recipient only</em>. If this bundle was being purchased, the only option at purchase time would be to enter a phone number of a subscriber outside the account to receive the bundle. But again, if the bundle is received as a complimentary bundle, the screen to enter a phone number isn't shown, so there's no way to gift the bundle.</p>
+<p>The general rule is that if a bundle is received outside of the customer-facing purchase flow, like when a bundle is received automatically, and has a combination of settings that require decisions only in that customer-facing purchase flow, then the bundle is assigned to the subscriber designated to receive the bundle, and if that subscriber is not known, the bundle is assigned to the first subscriber in the account.</p>
+<h3><a name="GeneralTab-BehaviorSettings" id="GeneralTab-BehaviorSettings"></a>Behavior Settings</h3>
+<div class="warning">Behavior settings are used only for compound bundles. In compound bundles, these settings override the individual product settings.</div>
+<p>These settings determine how and when a compound bundle is available in the store. See&#160;<a href="#">Plan Behavior Settings Examples</a>&#160;for some scenarios on how these settings combine to produce desired product behavior.&#160;</p>
+<p>Several of the behavior settings relate to aspects of the plan cycle, aspects that include:</p>
+<ul>
+<li>Number of cycles</li>
+<li>Cycle alignment</li>
+<li>Cycle duration</li>
+<li>Cycle proration</li>
+</ul>
+<table>
+<tr>
+<th class="confluenceTh" width="140">Setting</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a name="GeneralTab-BehaviorSettings-Recurring" id="GeneralTab-BehaviorSettings-Recurring"></a><strong>Recurring</strong></td>
+<td>
+<p>Required. Defines whether the bundle is a multi-cycle subscription, lasts for only one cycle, or lasts for one cycle with the option for customers to renew.</p>
+<div class="warning">If you selected <em>Giftable only</em> in the <strong>This product can be purchased for</strong> setting, the only option here is No. This is because bundles that are gifted can have only one cycle because when you purchase a bundle, you are purchasing only the first cycle, and gifting a bundle with more than 1 cycle would require the gift recipient to either pay for subsequent cycles or cancel the bundle before it renews.</div>
+<p>Select:</p>
+<ul>
+<li>Yes - To allow the bundle to have as many cycles as defined in <em>Number of Cycles</em>. Once a customer receives the bundle, it continues to renew until it is canceled.</li>
+<li>No - To restrict the bundle to just one cycle.</li>
+<li>Optional - To give the bundle for only one cycle initially, but to include a customer option to subscribe. When customers purchase the bundle, they get only one cycle unless they select the option during purchase to subscribe and receive additional cycles. When customers receive the bundle in any other way, such as through a benefit, the option to subscribe and receive additional cycles is on the bundle details page in the self-service app and on their account page after the bundle is received. The <em>Number of Cycles</em> setting determines the maximum amount of times the customer can receive the product subscription.<br />
+<br />
+During any last cycle (which is also the first cycle at purchase time or at the time the bundle is received, such as from a benefit), customers have the option to toggle renewability. In other words, during the bundle's last cycle, customers can decide that they want to continue receiving and paying for the bundle up to the <em>Number of Cycles</em>. Customers can also stop bundle renewal during any last cycle, in which case the bundle terminates at the end of the current cycle.</li>
+</ul>
+<div class="tip">Any segmentation rules that include this setting, including restrictions and offers, will treat both <em>Yes</em> and <em>Optional</em> as the same. That is, if a rule is defined to match a recurring product, the rule will match if this setting for the product is either <em>Yes</em> or <em>Optional</em>.</div>
+</td>
+</tr>
+<tr>
+<td><a name="GeneralTab-BehaviorSettings-NumberOfCycles" id="GeneralTab-BehaviorSettings-NumberOfCycles"></a><strong>Number of Cycles</strong></td>
+<td>
+<p>Required. This defines the number of cycles a subscriber can receive the compound bundle. The options determine if a compound bundle repeats at the end of its duration. (The duration is defined either as the account cycle, if <strong>Aligned to account cycle</strong> is <em>Yes</em>, or as the compound bundle's <strong>Cycle Duration</strong> value.) If so, the customer is grandfathered the compound bundle rate and attributes when it is renewed, even if you have made <a href="#">significant changes</a> to the compound bundle or even deleted it from your catalog. Select from:</p>
+<ul>
+<li>Unlimited: Subscribers can continue to receive (and pay for) the compound bundle as long as they want.</li>
+<li>
+<p>Limited to: Enter the number of cycles of the compound bundle that can be received.</p>
+<div class="warning">You can enter only positive integers (1, 37, 5287024, etc.) in this field. Zero, negative numbers, and decimal numbers (0, 0.5, 3.1415926, 2.5, etc.) are not allowed.</div>
+</li>
+</ul>
+<p>Compound bundles renew when they are set to an unlimited number of cycles or when they are "limited" to more than one cycle, that is, the number in the <em>Limited to</em> option is greater than 1. Renewing means that at the end of a compound bundle cycle's duration:</p>
+<ul>
+<li>The usage counter is reset.</li>
+<li>The cycle starts over.</li>
+<li>Billing occurs.</li>
+</ul>
+<p>If you are going to make the compound bundle <a href="#PlanSettings-TypeSettings-Giftable">giftable</a>, then it cannot renew and you must select the <em>Limited to</em> option and enter 1. This is because when you purchase a compound bundle, you are paying only for the first cycle. If gifting a compound bundle with more than 1 cycle was allowed, the recipient would be responsible for either paying for subsequent cycles or canceling the compound bundle before it renews.</p>
+</td>
+</tr>
+<tr>
+<td><a name="GeneralTab-BehaviorSettings-AlignedToAccountCycle" id="GeneralTab-BehaviorSettings-AlignedToAccountCycle"></a><strong>Aligned to account cycle</strong></td>
+<td>Required. This is the alignment, and it defines when renewals occur and are billed. Available only when <strong>Number of Cycles</strong> is set to <em>Unlimited</em> or is set to <em>Limited to</em> and its value is greater than 1. Defines whether the compound bundle is billed when the account cycles or when the compound bundle is purchased.</td>
+</tr>
+<tr>
+<td><a name="GeneralTab-BehaviorSettings-CycleDuration" id="GeneralTab-BehaviorSettings-CycleDuration"></a><strong>Cycle Duration</strong></td>
+<td>
+<p>Required. This defines how long a compound bundle cycle is. Available only when <strong>Aligned to account cycle</strong> is set to <em>No</em>. Select from:</p>
+<ul>
+<li>
+<p>Unlimited. This means that there is no time limit for subscribers to consume the allotment of the plans in the compound bundle.</p>
+<div class="warning">If a compound bundle cycle duration is unlimited, then you must select <em>Limited to</em> in the <strong>Number of Cycles</strong> setting and enter 1. Compound bundles with an unlimited cycle duration may not have more than one cycle.</div>
+</li>
+<li>
+<p>Lasts, then enter a number and select a unit of measure from minute(s), hour(s), week(s), day(s), or month(s). This sets a time limit to consume the allotment of the plans in the compound bundle. Any allotment&#160;unused&#160;when the time limit is reached is lost.</p>
+<div class="warning">You can enter only positive integers (1, 37, 5287024, etc.) in this field. Zero, negative numbers, and decimal numbers (0, 0.5, 3.1415926, 2.5, etc.) are not allowed.</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Prorated on first cycle</strong></td>
+<td>
+<p>Required. This is proration, and it defines how much is billed and allotted for the first cycle. Available only when <strong>Aligned to account cycle</strong> is set to <strong>Yes</strong>.</p>
+<div class="info">
+<p><strong>Best Practice:</strong> When you have a compound bundle that has more than 1 cycle and is aligned to the account cycle, you'll almost always want to set this to <em>Yes</em>. If you set it to <em>No</em>, a customer will be charged full price for the compound bundle even if they buy it on the last day of the account cycle.</p>
+<p>While that may be OK for compound bundles with a fixed amount of consumption, your business needs may dictate otherwise, especially for compound bundles with unlimited plans</p>
+<p>For example, if if a plan in a compound bundle offers 30MB of data for $30/month and a customer whose account cycle begins on the 1st buys the plan of the 20th, they will get a prorated amount of 10MB for a prorated cost of $10. But if you offer an unlimited amount of data for $30/month and a customer whose account cycle begins on the 1st buys the plan on the 30th, they will get an unlimited amount of data for $1. So if you have unlimited plans in he compound bundle, you may want to consider setting this option to <em>No</em>.</p>
+</div>
+<p>Even when a compound bundle is prorated normally, when it is offered in an exchange category in a carousel and a customer receives the compound bundle through the exchange category in the carousel, no proration occurs. The customer receives the full allotment for the remainder of the cycle in which it is received and is charged the full cycle price.</p>
+</td>
+</tr>
+<tr>
+<td><strong>Terminates when all product usage allowances run out</strong></td>
+<td>
+<p>Available only when <strong>Number of Cycles</strong> is set to <em>Limited to</em> and its value is 1 because this setting is used only for one-time compound bundles. Determines if a compound bundle is terminated when the usage allowance of all the plans in the compound bundle run out. The choices are:</p>
+<ul>
+<li>Yes (default): When the usage allowance of all plans in a compound bundle run out, the compound bundle is terminated and is moved to the Subscription History or Plan History list immediately.</li>
+<li>No: When the usage allowance of all plans in a compound bundle run out, the compound bundle remains unterminated and in the Subscriptions or My Plans list until it expires based on the validity duration.</li>
+</ul>
+<div class="info"><strong>Note:</strong> A reason why you might want to choose No here is so that customers can upgrade one-time compound bundles if the usage allowance of all its plans run out before the expiration of the compound bundle. Once a compound bundle terminates, it can't be upgraded.</div>
+<p>The choice here can also affect when <a href="#">intercept notifications</a> are triggered. One of the intercept notification rule options is a reason, and the two choices are <em>Plan Capped</em> and <em>Plan Not Present</em>. If a bundle terminates, then it would match the <em>Plan Not Present</em> option in the notification. If a bundle is not terminated when the usage allowance of all the plans in the bundle run out (the <em>No</em> option of this setting), the bundle would still be considered active until its duration expires. This matches the <em>Plan Capped</em> intercept notification option, and you could design an intercept notification to provide easy upgrade options.</p>
+</td>
+</tr>
+<tr>
+<td><strong>Visibility</strong></td>
+<td>
+<p>Determines whether or not the compound bundle is visible to customers.</p>
+<p>If this is set to <em>Hide</em>, the bundle is not visible for purchase in the store nor is it visible in a customer's account information. It is not shown as part of a <a href="#">bundle</a> when included in another bundle, and usage&#160;<a href="#">notifications</a> are not triggered by plans within a hidden bundle, regardless of the visibility setting of the plans.</p>
+<div class="warning">A bundle cannot be hidden unless its price is equal to 0 (zero). This is because at checkout, a non-zero priced bundle in the cart will result in a total price that is different from the sum of the prices of the visible products, which could cause customer confusion. So this setting is unavailable until a price value greater than 0 (zero) has been entered for the bundle.</div>
+</td>
+</tr>
+<tr>
+<td><a name="GeneralTab-BehaviorSettings-UsageDisplay" id="GeneralTab-BehaviorSettings-UsageDisplay"></a><strong>Usage Display</strong></td>
+<td>
+<p>This setting defines how bundle usage information is viewed on devices.</p>
+<p>Each bundle has a default set of usage information that is displayed to users that is based on other bundle behavior settings, but you can override the default and specify different usage information to be displayed on devices for that product. Select:</p>
+<ul>
+<li>Default: To use the default usage display property (defined below) for the type of bundle and its configuration.</li>
+<li>Custom: To select what type of usage data your subscribers will see for this bundle.</li>
+</ul>
+<h4 id="BundleSettings-CustomUsageDisplayOptions">Custom Usage Display Options</h4>
+<table>
+<tr>
+<th>Usage Display Property</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>Duration</td>
+<td>
+<p>Default for bundles with time-based limits.</p>
+<p>Shows the amount of time used and the total time available.</p>
+</td>
+<td><img alt="" src="images/usage_display_cycle3.png" style="border-width: 1px; border-style: solid;" border="1" /></td>
+</tr>
+<tr>
+<td>None</td>
+<td>
+<p>Default for bundles with unlimited duration.</p>
+<p>Shows the bundle name only.</p>
+<p>Does not show any units or duration.</p>
+</td>
+<td>
+<p>&#160;</p>
+</td>
+</tr>
+</table>
+<h4 id="PlanSettings-SummaryofUsageDisplayOptionDefaults">Summary of Usage Display Option Defaults</h4>
+<p>Usage display defaults depend on your usage and duration choices:</p>
+<ul>
+<li>Unlimited duration: summary only</li>
+<li>Limited duration: cycle duration only</li>
+</ul>
+<h4>Bar and Label Direction and Position</h4>
+<p>The direction of bar movement and the position of labels in relation to the bar (to the right or left of the bar) depend on tenant settings and/or language (left-to-right or right-to-left) settings.</p>
+<p>First, whether the bars are count up (for example, Day 7 of 15) or count down (for example, 8 days remaining) depends on a tenant setting.</p>
+<p>Then, the direction that the bar moves (or fills) depends on a tenant setting.</p>
+<p>Finally, if there is a label, its location depends on language settings. If the language setting is left-to-right, the label will be to the right of the bar. If the language setting is right-to-left, the label will be to the left of the bar.</p>
+</td>
+</tr>
+</table>
+<h3 id="BundleSettings-BillingSettings"><a name="GenaralTab-BillingSettings" id="GenaralTab-BillingSettings"></a>Billing Settings</h3>
+<table>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Retail Price</td>
+<td>Defines the default, standard price for the bundle. This is the price customers will see unless overridden by the Sale Price field or other available offer mechanisms. <span>&#160;If no value is entered, 0 is used.</span></td>
+</tr>
+<tr>
+<td>Sale Price</td>
+<td>
+<p>Overrides the Retail Price while allowing you to keep a record of the retail price. To return to the Retail Price, delete the contents of this field.</p>
+<div class="tip">A Sale Price can affect whether customers qualify for <a href="#">offers</a> (benefits and discounts), depending on the value of the <em>Apply to sale price</em> setting in the offer.</div>
+<p>When a customer is viewing the catalog, both the sale price and the retail price are visible in the product listing. The exact appearance will depend on your branding. The following graphic is an example of what customers might see in a product where the Retail Price is 1.00 and the Sale Price is 0.80:</p>
+<p><img src="images/client_sale_price.png" alt="" style="border-width: 1px; border-style: solid;" width="204" height="69" border="1" /></p>
+<div class="info">Some research suggests that consumers believe prices with more syllables are higher than the same prices with fewer syllables, and this is seen in both spoken and printed prices. Both commas and decimal points add to the "syllables," so, for example, $1,199.00 is viewed as more than $1199. ItsOn provides a client-side branding setting that can present catalog prices without the decimal and the digits after the decimal for whole number prices. If this setting were used for the example above, the values seen in the catalog presentation would be $1 and $0.80. This setting does not affect the amounts you enter in the Retail Price Price or the Sale Price fields, nor the amounts shown during checkout, in customer invoices, and in customer service records.</div>
+</td>
+</tr>
+</table>
+<div class="aui-message hint shadowed information-macro">
+<h4 class="title">Taxes and Bundles</h4>
+<div class="message-content">
+<p>Unlike with plans and fees, you do not set a tax type with bundles. Taxes are charged based on the tax settings of the products within a bundle.</p>
+<p>However, bundles are taxed based on the relative proportion of the retail price of their parts applied to the bundle price. For example, let's say you have a voice plan (P1) and a Messaging Plan (M1) and the tax rate on both is 5%. You charge $6 for the voice plan and $4 for the messaging plan, and you put them both in a bundle that you charge $8 for.</p>
+<p>If bought individually, the tax for P1 would be $0.30 and the tax for M1 would be $0.20. Total taxes for the 2 products is $0.50.</p>
+<p>The proportional cost for P1 in the bundle is $6/($6 + $4) = 60% * $8 = $4.80. Tax would be $0.24.</p>
+<p>The proportional cost for M1 in the bundle is $4/($6 + $4) = 40% * 8 = $3.20. Tax would be $0.16.</p>
+<p>Total tax for the bundle is $0.40.</p>
+</div>
+</div>
+<h3 id="BundleSettings-SkuBundleItems"><a name="GeneralTab-SkuBundleItemsSettings" id="GeneralTab-SkuBundleItemsSettings"></a>Sku Bundle Items</h3>
+<p>This is where you manage the products in a bundle. You can:</p>
+<ul>
+<li><a hqid="288780" href="#">Add products to a bundle</a></li>
+<li><a hqid="288810" href="#">Change the quantity of a product in a bundle</a></li>
+<li><a hqid="288865" href="#">Rearrange products in a bundle</a></li>
+</ul>
+<table>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Sku</td>
+<td>The product name.</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>How many of the product are in the bundle.</td>
+</tr>
+<tr>
+<td>Item Sale Price</td>
+<td>The price of the product when it is sold as part of the bundle.</td>
+</tr>
+<tr>
+<td>Options</td>
+<td>Not used.</td>
+</tr>
+</table>
+<p>Certain product types can and cannot be added to different types of bundles. The following table illustrates this.</p>
+<table style="border-collapse: separate;" cellspacing="1" border="1">
+<tr>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">&#160;</th>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Basic Bundle</th>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Compound Bundle</th>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>OK to add</p>
+<p style="text-align: center;"><img src="https://dzf8vqv24eqhg.cloudfront.net/userfiles/1949/3014/ckfinder/images/iconCheck.png?dc=201607142200-1" alt="" width="18" height="19" border="0" /></p>
+</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<ul>
+<li><a hqid="288858" href="#">Plan</a></li>
+<li><a hqid="288837" href="#">Fee</a></li>
+<li><a hqid="1603431" href="#">eMoney</a></li>
+<li><a hqid="1723759" href="#">Entitlement</a></li>
+</ul>
+</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<ul>
+<li><a hqid="288858" href="#">Plan</a></li>
+<li><a hqid="1723759" href="#">Entitlement</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>Do not add</p>
+<p style="text-align: center;"><img src="https://dzf8vqv24eqhg.cloudfront.net/userfiles/1949/3014/ckfinder/images/iconNo.png?dc=201607142201-1" alt="" width="26" height="26" border="0" /></p>
+</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<ul>
+<li><a hqid="365483" href="#">Preferred destination change fee</a></li>
+<li><a hqid="355964" href="#">External product</a></li>
+<li>Basic bundle</li>
+<li>Compound bundle</li>
+</ul>
+</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<ul>
+<li><a hqid="288837" href="#">Fee</a></li>
+<li><a hqid="1603431" href="#">eMoney</a></li>
+<li><a hqid="365483" href="#">Preferred destination change fee</a></li>
+<li><a hqid="355964" href="#">External product</a></li>
+<li>Basic bundle</li>
+<li>Compound bundle</li>
+</ul>
+</td>
+</tr>
+</table>
+<p>If you attempt to <a hqid="288860" href="#">promote a change</a> that includes a bundle that contains an ineligible product, the promotion will fail and you will see an error message.</p>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>
