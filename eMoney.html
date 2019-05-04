@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>eMoney</title>
+<link rel="stylesheet" type="text/css" href="itsonhelptopic.css" ctype="topic" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        addTocInfo("Products, Plans, Bundles, Fees, and Entitlements\neMoney");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+
+        document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("index.htm", "", "&gt;", "Home", "Service_Design_Center_Help.htm");
+document.write("<a href=\"Products_Plans_Bundles_Fees_and_Entitlements.html\">Products, Plans, Bundles, Fees, and Entitlements<\/a> &gt; eMoney<\/p>");
+
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+    
+onLoadHandler = function()
+{
+        if (window.setRelStartPage)
+        {
+    setTimeout("setRelStartPage('index.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+        window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+        window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+        autoSync(0);
+        sendSyncInfo();
+        sendAveInfoOut();
+}
+//-->
+//]]>
+</script>
+<meta name="generator" content="Adobe RoboHelp 10" />
+</head>
+<body>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(4);
+//-->
+//]]>
+</script><script type="text/javascript" src="ehlpdhtm.js">
+</script>
+<h1>eMoney</h1>
+<p>eMoney is a way of transferring money to subscribers within an account or to other accounts. eMoney contains value that your customers can use to purchase products and services, typically pay-as-you-go services. An analogy to a real-world product might be a gift card.</p>
+<div class="warning">eMoney cannot be added to compound bundles or exchange categories. If you attempt to promote a change that includes a compound bundle or exchange category that contains an eMoney product, the promotion will fail and you will see an error.</div>
+<p>eMoney can go into account wallets or subscriber wallets<sup><a class="hq-tip" href="id=note-configurable">(*)</a></sup>. An account wallet is the same as a customer account balance. A subscriber wallet is where the value of a <a class="hq-tip" href="gl-subscriber">subscriber</a>'s eMoney products is held.</p>
+<p>Customers are not allowed to use their account wallet or subscriber wallet to purchase eMoney for their account wallet.</p>
+<h2>Account Wallet vs. Subscriber Wallet</h2>
+<p>You can have two types of wallets in an account:</p>
+<ul>
+<li>An account wallet is used to pay for products and services that you create and offer through ItsOn Smart Services.</li>
+<li>A subscriber wallet is used to pay for your own pay-as-you-go services.</li>
+</ul>
+<p>When an eMoney product is purchased, its value goes to a subscriber wallet if it is being bought for a subscriber in the purchaser's account and to an account wallet if it is being bought for the account or if it is being gifted to a subscriber in another account. In the latter case, a subscriber with account control in the giftee's account can then transfer the eMoney account value to the giftee's subscriber wallet.</p>
+<h4>See Also</h4>
+<ul>
+<li><a hqid="288859" href="#">Products: Plans, Bundles, and Fees</a></li>
+<li><a hqid="1603436" href="#">Add an eMoney Product</a></li>
+<li><a hqid="1603437" href="#">Edit an eMoney Product</a></li>
+<li><a hqid="1603438" href="#">Delete an eMoney Product</a></li>
+<li><a hqid="1603439" href="#">eMoney Settings</a></li>
+<li><a hqid="1795232" href="#">eMoney Allocation Customer Experience</a></li>
+</ul>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>

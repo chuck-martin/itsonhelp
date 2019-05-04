@@ -113,6 +113,7 @@ Add_a_Certificate.html
 Add_a_Component_to_a_Service_Policy.html
 Add_a_Compound_Bundle.html
 Add_a_Data_Session_Policy_to_a_Network_Feature.html
+Add_a_Fee.html
 Add_a_Filter_to_a_Component.html
 Add_a_Network_Feature.html
 Add_a_Network_Group.html
@@ -132,6 +133,7 @@ Add_Criteria_to_a_Policy_Event.html
 Add_Network_Enforcement_to_a_Data_Service_Policy.html
 Add_Network_Enforcement_to_a_Voice_or_Messaging_Service_Policy.html
 Add_Network_Enforcement_to_an_Entitlement_Policy.html
+Add_Products_to_a_Bundle.html
 Add_Products_to_a_Category.html
 Behavior_Policies.html
 Behavior_Policy_Settings.html
@@ -150,6 +152,7 @@ Change_Order_of_Components_or_Policy_Events.html
 Change_Partner_View.html
 Change_the_Default_State_of_a_Network_Feature.html
 Change_the_Network_Enforcement_Used_in_a_Policy.html
+Change_the_Quantity_of_a_Product_in_a_Bundle.html
 Change_the_Voice_Accounting_Policy_Used_in_an_eCommerce_Voice_Service_Policy.html
 Change_Your_Password.html
 Changes_to_Products_in_Exchange_Categories.html
@@ -163,6 +166,7 @@ Define_the_Default_Voice_Accounting_Policy.html
 Delete_a_Bundle.html
 Delete_a_Category.html
 Delete_a_Certificate.html
+Delete_a_Fee.html
 Delete_a_Filter_from_a_Component.html
 Delete_a_Network_Feature.html
 Delete_a_Network_Group.html
@@ -182,6 +186,7 @@ Edit_a_Behavior_Policy.html
 Edit_a_Bundle.html
 Edit_a_Category.html
 Edit_a_Data_Session_Policy_in_a_Network_Feature.html
+Edit_a_Fee.html
 Edit_a_Filter_in_a_Component.html
 Edit_a_Network_Feature.html
 Edit_a_Network_Group.html
@@ -198,11 +203,15 @@ Edit_an_Entitlement_Policy_in_a_Network_Feature.html
 Edit_Criteria_in_a_Policy_Event.html
 Edit_Network_Feature_Properties.html
 Edit_Your_Profile_Name.html
+eMoney.html
 Entitlement_Policies.html
+Fee_Settings.html
+Fees.html
 Filters.html
 Find_App_IDs.html
 Finding_Information_and_Data_in_Service_Design_Center.html
 Getting_Started_With_ItsOn_Smart_Services.html
+Hidden_Products_in_Bundles.html
 Identify_and_Secure_Apps_in_Filters.html
 Message_Filter_Settings.html
 Network_Enforcement_in_Policies.html
@@ -221,6 +230,7 @@ Priority_Scenarios.html
 Products_Plans_Bundles_Fees_and_Entitlements.html
 Provisioning.html
 Publish_a_Network_Feature_or_eCommerce_Policy.html
+Rearrange_Products_in_a_Bundle.html
 Rearrange_Products_Within_a_Category.html
 Rearrange_SubCategories.html
 Regular_Expression_Tutorial_and_Examples.html
@@ -286,6 +296,7 @@ images\iconMoveUp.png
 images\buttonDelete.png
 images\buttonView.png
 images\dialog_Select_Service_Policy_annotated.png
+images\usage_display_duration.png
 images\client_sale_price.png
 images\bar_label_example.png
 images\buttonComponentDelete.png
@@ -303,12 +314,14 @@ images\menu_Add_Criteria_Filter_by_Behavior_Policy.png
 images\dialog_Add_Feature.png
 images\dialog_Add_Behavior_Policy_3_favorites_5_minutes.png
 images\component_Simple_Voice.png
+images\9109916.png
 images\changed_name.png
 images\buttonDownArrow.png
 images\dialog_Add_Plan_3_favorites_5_minutes.png
 images\menu_Policy_Behavior_Policy.png
 images\menu_Policy_Features.png
 images\menu_Site_Updates_Approvals.png
+images\9109914.png
 images\import-w5mxyva9zxvf\attachments\8980724\9109789.gif
 images\import-w5mxyva9zxvf\attachments\8980129\9109775.gif
 images\Items_pending_action.png
@@ -511,12 +524,19 @@ whxdata\package_163_xml.js
 whxdata\package_164_xml.js
 whxdata\package_165_xml.js
 whxdata\package_166_xml.js
+whxdata\package_167_xml.js
+whxdata\package_168_xml.js
+whxdata\package_169_xml.js
+whxdata\package_170_xml.js
+whxdata\package_171_xml.js
+whxdata\package_172_xml.js
 whxdata\packageindex_xml.js
 whxdata\synonym.xml
 whxdata\synonym_xml.js
 whxdata\topictable_0_xml.js
 whxdata\topictable_1_xml.js
 whxdata\topictable_2_xml.js
+whxdata\topictable_3_xml.js
 whxdata\topictableindex_xml.js
 whxdata\whfts.xml
 whxdata\whfts_xml.js
@@ -576,6 +596,7 @@ whgdata\whlstt32.htm
 whgdata\whlstt33.htm
 whgdata\whlstt34.htm
 whgdata\whlstt35.htm
+whgdata\whlstt36.htm
 whgdata\whlsti0.htm
 whgdata\whlstfl0.htm
 whgdata\whlstfl1.htm
@@ -727,6 +748,10 @@ whgdata\whlstf120.htm
 whgdata\whlstf121.htm
 whgdata\whlstf122.htm
 whgdata\whlstf123.htm
+whgdata\whlstf124.htm
+whgdata\whlstf125.htm
+whgdata\whlstf126.htm
+whgdata\whlstf127.htm
 whgdata\whlstg0.htm
 index.htm
 index_csh.htm
