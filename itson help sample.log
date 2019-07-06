@@ -127,6 +127,7 @@ Add_a_Subscriber_Group.html
 Add_a_Voice_Accounting_Policy.html
 Add_a_Voice_Accounting_Policy_to_an_eCommerce_Voice_Service_Policy.html
 Add_a_WiFi_Policy_to_a_Network_Feature.html
+Add_an_eMoney_Product.html
 Add_an_Entitlement_eCommerce_Policy.html
 Add_an_Entitlement_Policy_to_a_Network_Feature.html
 Add_Criteria_to_a_Policy_Event.html
@@ -177,6 +178,7 @@ Delete_a_Sandbox.html
 Delete_a_Subscriber_Group.html
 Delete_a_Voice_Accounting_Policy.html
 Delete_an_eCommerce_Policy.html
+Delete_an_eMoney_Product.html
 Delete_an_Entitlement_Policy_in_a_Network_Feature.html
 Delete_Criteria_from_a_Policy_Event.html
 eCommerce_Guide.html
@@ -199,11 +201,14 @@ Edit_a_Subscriber_Group.html
 Edit_a_Voice_Accounting_Policy.html
 Edit_a_WiFi_Policy_in_a_Network_Feature.html
 Edit_an_eCommerce_Policy.html
+Edit_an_eMoney_Product.html
 Edit_an_Entitlement_Policy_in_a_Network_Feature.html
 Edit_Criteria_in_a_Policy_Event.html
 Edit_Network_Feature_Properties.html
 Edit_Your_Profile_Name.html
 eMoney.html
+eMoney_Allocation_Customer_Experience.html
+eMoney_Settings.html
 Entitlement_Policies.html
 Fee_Settings.html
 Fees.html
@@ -530,6 +535,12 @@ whxdata\package_169_xml.js
 whxdata\package_170_xml.js
 whxdata\package_171_xml.js
 whxdata\package_172_xml.js
+whxdata\package_173_xml.js
+whxdata\package_174_xml.js
+whxdata\package_175_xml.js
+whxdata\package_176_xml.js
+whxdata\package_177_xml.js
+whxdata\package_178_xml.js
 whxdata\packageindex_xml.js
 whxdata\synonym.xml
 whxdata\synonym_xml.js
@@ -597,6 +608,7 @@ whgdata\whlstt33.htm
 whgdata\whlstt34.htm
 whgdata\whlstt35.htm
 whgdata\whlstt36.htm
+whgdata\whlstt37.htm
 whgdata\whlsti0.htm
 whgdata\whlstfl0.htm
 whgdata\whlstfl1.htm
@@ -752,6 +764,7 @@ whgdata\whlstf124.htm
 whgdata\whlstf125.htm
 whgdata\whlstf126.htm
 whgdata\whlstf127.htm
+whgdata\whlstf128.htm
 whgdata\whlstg0.htm
 index.htm
 index_csh.htm
