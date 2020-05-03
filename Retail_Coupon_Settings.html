@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 10" />
+<title>Retail Coupon Settings</title>
+<link rel="StyleSheet" href="itsonhelptopic.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        addTocInfo("Products, Plans, Bundles, Fees, and Entitlements\nRetail Coupons\nRetail Coupon Settings");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+
+        document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("index.htm", "", "&gt;", "Home", "Service_Design_Center_Help.htm");
+document.write("<a href=\"Products_Plans_Bundles_Fees_and_Entitlements.html\">Products, Plans, Bundles, Fees, and Entitlements<\/a> &gt; <a href=\"Retail_Coupons.html\">Retail Coupons<\/a> &gt; Retail Coupon Settings<\/p>");
+
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+    
+onLoadHandler = function()
+{
+        if (window.setRelStartPage)
+        {
+    setTimeout("setRelStartPage('index.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+        window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+        window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+        autoSync(0);
+        sendSyncInfo();
+        sendAveInfoOut();
+}
+//-->
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(4);
+//-->
+//]]>
+</script><script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2">
+</script>
+<h1>Retail Coupon Settings</h1>
+<p>This topic details all the settings for retail coupon products. This is the information you will need when you <a href="#">add</a> or <a href="#">edit</a> retail coupon products.</p>
+<ul>
+<li><a href="#GeneralTab-AppearanceSettings">General tab, Appearance settings</a></li>
+<li><a href="#GeneralTab-CouponCodesSettings">General tab, Coupon Codes settings</a></li>
+<li><a href="#GeneralTab-BehaviorSettings">General tab, Behavior settings</a></li>
+<li><a href="#GeneralTab-BillingSettings">General tab, Billing settings</a></li>
+<li><a hqid="1802130" href="#GeneralTab-AvailabilitySettings">General tab, Availability settings</a></li>
+<li><a hqid="1802130" href="#GeneralTab-GeneralSettings">General tab, General settings</a></li>
+<li><a hqid="1802130" href="#MediaTab">Media tab</a></li>
+<li><a hqid="1802130" href="#AdvancedTab">Advanced tab</a></li>
+</ul>
+<div>
+<div class="warning">
+<p>Service Design Center&#160;uses a change management process to track and approve all changes to any product. All of these changes, including additions, edits, and deletions, must go through the <a hqid="288799" href="#">promote</a>-<a hqid="288800" href="#">approve-deploy</a> process before they become available.</p>
+<p>Any changes you make (change a name, change a price, add or delete a product from a bundle, etc.) to any product do not affect any users that already have the product.</p>
+</div>
+</div>
+<h2><a name="GeneralTab" id="GeneralTab"></a>General Tab</h2>
+<p>The General tab contains most of the settings you will configure to determine how a retail coupon product looks, acts, is priced, and more.&#160;</p>
+<h3><a name="GeneralTab-AppearanceSettings" id="GeneralTab-AppearanceSettings"></a>Appearance Settings</h3>
+<p>These settings define how information about a retail coupon product will appear to customers.</p>
+<table>
+<tr>
+<th width="150">Setting</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><strong>Name</strong></td>
+<td>Required. The name serves 2 primary purposes: it's what you see in product lists and it's what customers see as a descriptor when they are making purchase decisions. The name is limited to 115 characters.</td>
+</tr>
+<tr>
+<td><strong>Short Description</strong></td>
+<td>Brief plain-text information about the retail coupon product that sometimes&#160;appears with the retail coupon product name.&#160;</td>
+</tr>
+<tr>
+<td><strong>Marketing Message</strong></td>
+<td>
+<p>Descriptive rich-text information about the retail coupon product that appears on only the pre-purchase detail page above the content you add in the Description field. You can <a href="#">format the content you enter in several different ways</a> using the functions in the toolbar.</p>
+<div class="tip">This field is best for a small amount of marketing information that will help drive purchase decisions, such as offers customers will receive with purchase. Use the Description field for larger amounts of additional product information.</div>
+</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>
+<p>Detailed and descriptive rich-text information about the retail coupon product that appears on retail coupon product detail pages. The content you enter here is seen on the product detail page both pre- and post-purchase. You can <a href="#">format the content you enter in several different ways</a> using the functions in the toolbar.</p>
+<div class="tip">This field is best for providing additional details about the product, for adding details to the brief marketing message, for legal boilerplate content, and so on.</div>
+</td>
+</tr>
+</table>
+<h3><a name="GeneralTab-CouponCodesSettings" id="GeneralTab-CouponCodesSettings"></a>Coupon Codes Settings</h3>
+<p>These settings define the type, quantity, and longevity, of the coupon codes.</p>
+<table style="border-collapse: separate;" cellspacing="1" border="1">
+<tr>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Setting</th>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Description</th>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><strong><a name="GeneralTab-CouponCodesSettings-Type" id="GeneralTab-CouponCodesSettings-Type"></a>Type</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>Required. Determines whether this retail coupon product uses a single coupon code or a list of coupon codes. Select:</p>
+<ul>
+<li>Unique (from file) - Requires an upload of a <strong>Code File</strong>, which contains a list of one or more unique coupon codes. Each code can be used only once. When a customer receives a coupon code&#160;&#160;from a retail coupon product of this type, one code is selected from this list to be delivered to the customer, and that code is never used again.</li>
+<li>Universal (entered manually): Requires an entry of a coupon code value in the <strong>Coupon Code</strong> field and a number value in the <strong>Quantity</strong> field. This code is used over and over up to the limit in the <strong>Quantity</strong> field. Every customer who receives a coupon code from a retail coupon product of this type will be delivered the same code.</li>
+</ul>
+<div class="warning">Once the retail coupon product is saved, this value cannot be changed.</div>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><strong><a name="GeneralTab-CouponCodesSettings-CodeFile" id="GeneralTab-CouponCodesSettings-CodeFile"></a>Code File</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>Required when you select <em>Unique (from file)</em> in <strong>Type</strong>. This is a comma-separated values (CSV) file that you upload from your computer and that contains a list of all the coupon codes. The number of coupon codes in the file determines how many coupons this retail coupon product will have to offer customers. For example, if the file contains 100 codes, once the 100th customer has received this retail coupon product, no more of these coupons will be available for purchase.</p>
+<div class="tip">Customers may still be able to view the coupon product in the catalog, but they will not be able to purchase it.</div>
+<p>The first line of the file must be the code format, which tells the system how the coupon code will be rendered on customers' devices when they receive the coupon code product. This line must be one of the following values, which correspond to the <em>Standard Name</em> in the <strong>Render Codes As</strong> setting:</p>
+<ul>
+<li>EAN_13</li>
+<li>PDF417</li>
+<li>QR_CODE</li>
+<li>TEXT</li>
+</ul>
+<p>When you select a file to upload, it gets put into an internal staging area. When you save the retail coupon product,&#160;{{tag.Product Name}} processes the code file and validates the codes in the file. This validation checks two things:</p>
+<ul>
+<li>That the codes adhere to the barcode standard requirements (when coupons are rendered as a barcode) or contain letters and numbers only (when coupons are rendered as plain text)</li>
+<li>That all codes in the file are unique.</li>
+</ul>
+<p>Before you initially save the retail coupon product, you can upload a different code file (for example, if you realize you selected the wrong one), and the new file will replace the one you uploaded originally.</p>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><strong><a name="GeneralTab-CouponCodesSettings-CouponCode" id="GeneralTab-CouponCodesSettings-CouponCode"></a>Coupon Code</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>Required when you select <em>Universal (entered manually)</em> in <strong>Type</strong>. Enter the value for the code. The value must contain only letters and numbers. No spaces or other characters are allowed.</p>
+<p>If you select <em>EAN-13</em>, <em>PDF417</em>, or <em>QR Code</em> in the Render Codes As field,&#160;{{tag.Product Name}} will validate the entry to make sure it conforms to a valid value for the code standard.</p>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><strong><a name="GeneralTab-CouponCodesSettings-Quantity" id="GeneralTab-CouponCodesSettings-Quantity"></a>Quantity</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>Required when you select <em>Universal (entered manually)</em> in <strong>Type</strong>. Enter a number to determine how many coupons, also known as the coupon inventory, customers will be able to purchase.</p>
+<p>You can <a hqid="1842964" href="#">modify the coupon inventory</a> after you have saved and deployed the retail coupon product.</p>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><strong>Codes Valid Until</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>Required. Defines the date and time that the coupon codes expire (can no longer be used at the merchant), also known as the validity date. This date and time is defined by the merchant offering the coupon, and so you should work with the merchant to determine the correct date and time to enter in this field.</p>
+<p>This is different from the <strong>End</strong> date in the <a hqid="1802130" href="#GeneralTab-AvailabilitySettings">Availability section</a>, which is the date and time the retail coupon product itself is available in the store.</p>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><strong>Render Codes As</strong></td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>Required when you select <em>Universal (entered manually)</em> in <strong>Type</strong>. Defines how the coupon code will appear on a customers device. This can be as plain text or as one of several scan code standards. Select:</p>
+<table style="border-collapse: separate;" cellspacing="1" border="1">
+<tr>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Standard Name</th>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Description</th>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Example</th>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">EAN-13</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>EAN-13 is a standard numbering system used in global trade that identifies a specific product type, in a specific packaging configuration, from one manufacturer. "EAN" stands for European Article Number, which is now more properly known as International Article Number, and 13 represents the number of digits used in the encoding. The EAN-13 standard also describes the barcode symbology, or how to render a barcode from the numeric code. The EAN-13 standard extends the 12-digit Universal Product Code (UPC) developed in the U.S. in 1970.</p>
+<p>EAN-13 codes are ubiquitous on product packaging and are what is scanned at point-of-sale terminals. If the coupon is to allow a customer to obtain a physical product from a partner retailer, this is probably the correct choice for code rendering.</p>
+<h4>Valid Code Format</h4>
+<p>The valid format for the codes that will render as EAN-13 and that will be in the code file that you upload or the text you enter in the Coupon Code field is as follows.</p>
+<p>An EAN-13 code is 13 digits long and consists of 4 components, in the following order:</p>
+<ul>
+<li>GS1 prefix: 3 digits</li>
+<li>Manufacturer code: variable length</li>
+<li>Product code: variable length</li>
+<li>Check digit: 1 digit</li>
+</ul>
+<p>The check digit is used to verify that a barcode has been scanned correctly. It is computed modulo 10, where the weights in the checksum calculation alternate 3 and 1. This means that a valid EAN-13 code cannot be any 13 numbers, but must follow a specifically defined pattern. This is how&#160;{{tag.Product Name}} validates EAN-13 codes for correctness.</p>
+</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><img alt="" src="images/CodeRender-EAN-13.png" style="border-width: 1px; border-style: solid;" width="124" height="90" border="1" /></td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">PDF417</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>PDF417 is a barcode format used primarily in transport, inventory management, and identification cards. "PDF" stands for Portable Data File. The 417 specifies that each pattern in the barcode contains 4 bars and spaces and that each pattern is 17 units long.</p>
+<h4>Valid Code Format</h4>
+<p>Because PDF417 is a two-dimensional barcode, the valid format for the codes that will render as PDF417 and that will be in the code file that you upload or the text you enter in the Coupon Code field can be complex.</p>
+<p>The code contains a series of ASCII characters. The size of the code depends on how much data encoded in the barcode and how much error correction is used, and its size is often measured in both bytes and characters.</p>
+<p>For general binary data with no error correction enabled, a single PDF417 symbol can hold up to 1108 bytes. If the data consists of all numeric digits, then a single PDF417 symbol can hold up to 2725 digits. If the data consists of alphanumeric data, you can encode a maximum of 1850 bytes. If you have a mix of alphanumeric and binary data, the capacity will be somewhere between 1108 and 1850 bytes and will depend on the content of the data. However, it is generally recommended to limit the amount of data to 800 characters or fewer.</p>
+</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><img alt="" src="images/CodeRender-PDF417.png" style="border-width: 1px; border-style: solid;" width="175" height="76" border="1" /></td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">QR Code</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>QR Code is a two-dimensional barcode format designed originally for the automotive industry in Japan and now used for many purposes, including product tracking, item identification, time tracking, document management, and general marketing. It became popular outside the automotive industry because it can be read faster and store more data than EAN-13 codes.</p>
+<h4>Valid Code Format</h4>
+<p>As a two-dimensional barcode format, the amount of data that can be encoded in a QR Code is large. The valid format for the codes that will render as QR Code and that will be in the code file that you upload or the text you enter in the Coupon Code field is as follows.</p>
+<p>The code contains a series of characters. The number and type of characters depends on the datatype, also known as the mode or character set. This can be summarized as follows:</p>
+<table style="border-collapse: separate;" cellspacing="1" border="1">
+<tr>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Datatype</th>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Max. Characters</th>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">bits/character</th>
+<th scope="col" style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Valid characters/encoding</th>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Numeric</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">7089</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">3 1/3</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Numerals</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Alphanumeric</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">4296</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">5 1/2</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Numerals, letters (UPPER CASE only), space, $,&#160;%, *, +, -, ., /,&#160;:</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Binary/byte</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">2953</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">8</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">ISO 8859-1</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Kanji/kana</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">1817</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">13</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Shift JIS X 0208</td>
+</tr>
+</table>
+<div class="tip">The alphanumeric datatype is the only one used in Service Design Center.</div>
+</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><img alt="" src="images/CodeRender-QRCode.png" style="border-width: 1px; border-style: solid;" width="110" height="110" border="1" /></td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">Plain Text</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+<p>The code will be displayed exactly as uploaded (if <em>Unique</em> is selected in <strong>Type</strong>) or entered (if <em>Universal</em> is selected in <strong>Type</strong>), in plain text.</p>
+<h4>Valid Code Format</h4>
+<p>The valid format for the codes in the code file that you upload or the text you enter in the Coupon Code field is a string that can contain only letters or numbers.</p>
+</td>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">abcdeFGHI1234</td>
+</tr>
+</table>
+<p>&#160;</p>
+</td>
+</tr>
+</table>
+<p>&#160;</p>
+<p>&#160;</p>
+<h3><a name="GeneralTab-BehaviorSettings" id="GeneralTab-BehaviorSettings"></a>Behavior Settings</h3>
+<p>These settings determine how long customers can view the coupon code product on their devices and how that information is presented.</p>
+<table>
+<tr>
+<th class="confluenceTh" width="115">Setting</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a name="GeneralTab-BehaviorSettings-CycleDuration" id="GeneralTab-BehaviorSettings-CycleDuration"></a><strong>Cycle Duration</strong></td>
+<td>
+<p>Required. This defines how long a coupon code product cycle is. The product cycle as defined for a retail coupon product is the amount of time that customers will see the retail coupon product on their current subscriptions list. Once the cycle duration time ends, the retail coupon product is moved to the subscription history list. Customers can still use the coupon from there up until the date and time defined in the <strong>Codes Valid Until</strong> setting.</p>
+<div class="info"><strong>Best Practice</strong>: Align the <strong>Cycle Duration</strong> setting with the <strong>Codes Valid Until</strong> setting so the coupon will remain in the customer's current subscription list for the entire time it is valid.</div>
+<p>Select from:</p>
+<ul>
+<li>
+<p>Unlimited. This means that the coupon code will stay on the customer's current subscriptions list.</p>
+</li>
+<li>
+<p>Lasts, then enter a number and select a unit of measure from minute(s), hour(s), week(s), day(s), or month(s). This sets a time limit for the coupon code to remain on the customer's current subscriptions list. When the cycle duration ends, the coupon code is moved into the customer's subscription history list. However, if the coupon's expiration date (the time and date in the Codes Valid Until setting) has not yet occurred, customers can still view the coupon in the subscription history list and use it from there.</p>
+<div class="warning">You can enter only positive integers (1, 37, 5287024, etc.) in this field. Zero, negative numbers, and decimal numbers (0, 0.5, 3.1415926, 2.5, etc.) are not allowed.</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><a name="GeneralTab-BehaviorSettings-UsageDisplay" id="GeneralTab-BehaviorSettings-UsageDisplay"></a><strong>Usage Display</strong></td>
+<td>
+<p>When customers buy retail coupon products, they can view how long the coupon will remain on the My Plans page of the self-care app.</p>
+<p>The usage display shows the time usage. Select:</p>
+<ul>
+<li>Duration: To show a bar and label for time used and available.<br />
+<img alt="" src="images/usage_display_cycle3.png" style="border-width: 1px; border-style: solid;" border="1" /></li>
+<li>None: To show no duration information. Customers will have no information about how long the coupon will remain on the My Pans page.</li>
+</ul>
+<h4>Bar and Label Direction and Position</h4>
+<p>The direction of bar movement and the position of labels in relation to the bar (to the right or left of the bar) depend on tenant settings and/or language (left-to-right or right-to-left) settings.</p>
+<p>First, whether the bars are count up (for example, Day 7 of 15) or count down (for example, 8 days remaining) depends on a tenant setting.</p>
+<p>Then, the direction that the bar moves (or fills) depends on a tenant setting.</p>
+<p>Finally, if there is a label, its location depends on language settings. If the language setting is left-to-right, the label will be to the right of the bar. If the language setting is right-to-left, the label will be to the left of the bar.</p>
+</td>
+</tr>
+<tr>
+<td><strong>Visibility</strong></td>
+<td>
+<p>Determines whether or not the retail coupon product is visible to customers.</p>
+<p>If this is set to <em>Hide</em>, the retail coupon product is not visible for purchase in the store nor is it visible in a customer's account information. It is not shown as part of a <a href="#">bundle</a> when included in a bundle.</p>
+<div class="warning">A retail coupon product cannot be hidden unless its price is equal to 0 (zero). This is because at checkout, a non-zero priced retail coupon product in the cart will result in a total price that is different from the sum of the prices of the visible products, which could cause customer confusion. So this setting is unavailable until a price value greater than 0 (zero) has been entered for the retail coupon product.</div>
+</td>
+</tr>
+</table>
+<h3><a name="GeneralTab-BillingSettings" id="GeneralTab-BillingSettings"></a>Billing Settings</h3>
+<table>
+<tr>
+<th class="confluenceTh" width="100">Setting</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><strong>Retail Price</strong></td>
+<td>Defines the default, standard price for the product (plan, fee, bundle, etc.). This is the price customers will see unless overridden by the Sale Price field or other available <a hqid="1679949" href="#">offer</a> mechanisms. If no value is entered, 0 is used.</td>
+</tr>
+<tr>
+<td><strong>Sale Price</strong></td>
+<td>
+<p>Overrides the <em>Retail Price</em> while allowing you to keep a record of the retail price. To return to the <em>Retail Price</em>, delete the contents of this field.</p>
+<div class="tip">A Sale Price can affect whether customers qualify for <a href="#">offers</a> (benefits and discounts), depending on the value of the <em>Apply to sale price</em> setting in the offer.</div>
+<p>When a customer is viewing the catalog, both the sale price and the retail price are visible in the product listing. The exact appearance will depend on your branding. The following graphic is an example of what customers might see in a product where the Retail Price is 1.00 and the Sale Price is 0.80:</p>
+<p><img src="images/client_sale_price.png" alt="" style="border-width: 1px; border-style: solid;" width="204" height="69" border="1" /></p>
+<div class="info">Some research suggests that consumers believe prices with more syllables are higher than the same prices with fewer syllables, and this is seen in both spoken and printed prices. Both commas and decimal points add to the "syllables," so, for example, $1,199.00 is viewed as more than $1199. ItsOn provides a client-side branding setting that can present catalog prices without the decimal and the digits after the decimal for whole number prices. If this setting were used for the example above, the values seen in the catalog presentation would be $1 and $0.80. This setting does not affect the amounts you enter in the Retail Price Price or the Sale Price fields, nor the amounts shown during checkout, in customer invoices, and in customer service records.</div>
+</td>
+</tr>
+<tr>
+<td><strong>Tax Classification</strong></td>
+<td>
+<p>This defines what specific taxes should be charged, if at all. Different municipalities and other political units charge varying amounts of and types of taxes and fees on specific types of goods and services. This selection drives the correct type and amount of taxes to be collected based on the customer's location and type of service purchased. Select from:</p>
+<ul>
+<li>Data Plan</li>
+<li>Voice Plan</li>
+<li>Text Plan</li>
+<li>Line-Based Fees</li>
+<li>Equipment</li>
+<li>Not Taxable</li>
+</ul>
+</td>
+</tr>
+</table>
+<p>&#160;</p>
+<h4>See Also</h4>
+<ul>
+<li><a href="#">Retail Coupons</a></li>
+<li><a href="#">Add a Retail Coupon Product</a></li>
+<li><a href="#">Edit a Retail Coupon Product</a></li>
+<li><a href="#">View Retail Coupon Inventory</a></li>
+<li><a href="#">Modify Retail Coupon Inventory</a></li>
+<li><a href="#">Delete a Retail Coupon Product</a></li>
+</ul>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>
