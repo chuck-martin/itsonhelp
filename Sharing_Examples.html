@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sharing Examples</title>
+<link rel="stylesheet" type="text/css" href="itsonhelptopic.css" ctype="topic" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8">
+</script>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        addTocInfo("Sharing Examples");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+
+        document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("index.htm", "", "&gt;", "Home", "Service_Design_Center_Help.htm");
+document.write("Sharing Examples<\/p>");
+
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+    
+onLoadHandler = function()
+{
+        if (window.setRelStartPage)
+        {
+    setTimeout("setRelStartPage('index.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+        window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+        window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+        autoSync(0);
+        sendSyncInfo();
+        sendAveInfoOut();
+}
+//-->
+//]]>
+</script>
+<meta name="generator" content="Adobe RoboHelp 10" />
+</head>
+<body>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(4);
+//-->
+//]]>
+</script><script type="text/javascript" src="ehlpdhtm.js">
+</script>
+<h1>Sharing Examples</h1>
+<p>From a plan designer's point of view, sharing seems as simple as two plan settings. For a tenant that allows multiple subscribers in an account, the Shareable/Assignable setting of a plan or bundle determines whether or not it can be shared among subscribers in the account. And if a plan or bundle can be shared, the Share Type setting determines whether the sharing occurs automatically or manually. But what happens to subscriber allocations when either the allocations are re-allocated or when a plan or bundle is upgraded or downgraded? The answer depends on the combination of these two settings. There are several events to consider:</p>
+<ul>
+<li>Initial allocation: When the plan or bundle is first purchased, the default allocation at the time of purchase. (Purchaser can change allocations before proceeding to buy.)</li>
+<li>Allocation change: When subscriber allocation is changed any time after plan or bundle purchase or receipt.</li>
+<li>Subscriber join: When a subscriber joins (is added to) the account.</li>
+<li>Subscriber unjoin: When a subscriber unjoins (is removed from) the account.</li>
+<li>Downgrade: When the plan or bundle is exchanged for one with less total allowance.</li>
+<li>Upgrade: When the plan or bundle is exchanged for one with more total allowance.</li>
+</ul>
+<div class="info">Sharing scenarios are viable only when the <a hqid="301951" href="#">tenant</a> offers more than one subscriber per account.</div>
+<h2>Sharing Combinations</h2>
+<p>With 2 Share Method options that enable sharing and with 2 Share Type options, there are 4 setting combinations to consider:</p>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr>
+<th scope="row" style="width: 200px; text-align: right;">Share Method →</th>
+<th rowspan="2" scope="col" style="vertical-align: top; text-align: center;">Automatic</th>
+<th rowspan="2" scope="col" style="vertical-align: top; text-align: center;">Manual</th>
+</tr>
+<tr>
+<th scope="row">Share Type ↓</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Piñata</th>
+<td>Individual allocations can be up to 100%, the total of all subscriber allocations can be more than 100%, and subscriber allocations are automatically adjusted.</td>
+<td>Individual allocations can be up to 100%, the total of all subscriber allocations can be more than 100%, and subscriber allocations are set explicitly.</td>
+</tr>
+<tr>
+<th scope="row">Limited</th>
+<td>Individual allocations can be up to 100%, the total of all subscriber allocations can not be more than 100%, and subscriber allocations are automatically adjusted.</td>
+<td>Individual allocations can be up to 100%, the total of all subscriber allocations can not be more than 100%, and subscriber allocations are set explicitly.</td>
+</tr>
+</tbody>
+</table>
+<p>&#160;</p>
+<p>The following sections describe how allocations are affected be events for each of these combinations.</p>
+<h2>Share Automatically: Piñata</h2>
+<p>With a <a hqid="288857" href="#GeneralTab-ReceiptSharingAssigningSettings-ShareMethod">Share Method</a> setting of <em>Automatic</em> and a <a hqid="288857" href="#PlanSettings-TypeSettings-ShareType">Share Type</a> setting of <em>Piñata</em>, this is how plan and bundle allocation behaves.</p>
+<h3>Initial Allocation</h3>
+<p>Each subscriber in the account gets allocated 100%. The purchaser/account controller can change the initial allocation from the default before completing the purchase.</p>
+<h3>Allocation Change</h3>
+<div class="info">The account controller changes subscriber allowances.</div>
+<ul>
+<li>Subscriber allowances can be changed at any time to any whole number percentage from 0% to 100%.</li>
+<li>The total of individual allowance percentage can be greater than 100%.</li>
+<li>If a subscriber's current cycle usage exceeds the new allowance, the subscriber will have no more usage for the current cycle.</li>
+</ul>
+<p>The following examples assume you start with a 500MB data plan with 3 subscribers sharing it.</p>
+<h4>Allocation Change Example 1</h4>
+<ul>
+<li>Subscriber A was allocated 40% (200MB) and has consumed 2% (10MB).</li>
+<li>Subscriber B was allocated 80% (400MB) and has consumed 19.8% (99MB).</li>
+<li>Subscriber C was allocated 20% (100MB) and has consumed 0% (0MB).</li>
+<li>Total consumption during the cycle: 109MB, leaving 391MB.</li>
+</ul>
+<p>The account controller changes subscriber B's allocation from 80% (400MB) to 20% (100MB) and subscriber C's allocation from 20% (100MB) to 40% (200MB).</p>
+<ul>
+<li>Subscriber A's allocation and remaining usage does not change.</li>
+<li>Subscriber B's allocation changes from 80% (400MB) to 20% (100MB). Usage for the cycle is now recorded as 99/100, so subscriber B has 1MB left to consume this cycle. In subsequent cycles, subscriber B will continue to have a 20% allocation of the plan allotment.</li>
+<li>Subscriber C's allocation changes from 20% (100MB) to 40% (200MB). Usage for this cycle is now recorded as 0/200, so subscriber C has 200MB left to consume this cycle. In subsequent cycles, subscriber C will continue to have a 40% allocation of the plan allotment.</li>
+<li>Total consumption during the cycle: 109MB. There is 391MB remaining for subscribers A, B, and C to share. Subscriber A can use up to 190MB more, subscriber B can use up to 1MB more, and subscriber C can use up to 200MB more.</li>
+</ul>
+<h4>Allocation Change Example 2</h4>
+<ul>
+<li>Subscriber A was allocated 40% (200MB) and has consumed 2% (10MB).</li>
+<li>Subscriber B was allocated 80% (400MB) and has consumed 50% (200MB).</li>
+<li>Subscriber C was allocated 20% (100MB) and has consumed 0% (0MB).</li>
+<li>Total consumption during the cycle: 201MB, leaving 299MB.</li>
+</ul>
+<p>The account controller changes subscriber B's allocation from 80% (400MB) to 20% (100MB) and subscriber C's allocation from 20% (100MB) to 40% (200MB).</p>
+<ul>
+<li>Subscriber A's allocation and remaining usage does not change.</li>
+<li>Subscriber B's allocation changes from 80% (400MB) to 20% (100MB). Because subscriber B's current cycle usage has already exceeded the new allocation, usage for the cycle is now recorded as 100/100, and subscriber B has 0MB left to consume this cycle. In subsequent cycles, subscriber B will continue to have a 20% allocation of the plan allotment.</li>
+<li>Subscriber C's allocation changes from 20% (100MB) to 40% (200MB). Usage for this cycle is now recorded as 0/200, so subscriber C has 200MB left to consume this cycle. In subsequent cycles, subscriber C will continue to have a 40% allocation of the plan allotment.</li>
+<li>Total consumption during the cycle is 210MB. There is 290MB remaining for subscribers A and C to share. Subscriber A can use up to 190MB more and subscriber C can use up to 200MB.</li>
+</ul>
+<h4>Allocation Change Example 3</h4>
+<ul>
+<li>Subscriber A was allocated 40% (200MB) and has consumed 2% (10MB).</li>
+<li>Subscriber B was allocated 80% (400MB) and has consumed 75% (300MB).</li>
+<li>Subscriber C was allocated 20% (100MB) and has consumed 0% (0MB).</li>
+<li>Total consumption during the cycle: 310MB, leaving 190MB.</li>
+</ul>
+<p>The account controller changes subscriber B's allocation from 80% (400MB) to 20% (100MB) and subscriber C's allocation from 20% (100MB) to 40% (200MB).</p>
+<ul>
+<li>Subscriber A's allocation and remaining usage does not change.</li>
+<li>Subscriber B's allocation changes from 80% (400MB) to 20% (100MB). Because subscriber B's current cycle usage has already exceeded the new allocation, usage for the cycle is now recorded as 100/100, and subscriber B has 0MB left to consume this cycle. In subsequent cycles, subscriber B will continue to have a 20% allocation of the plan allotment.</li>
+<li>Subscriber C's allocation changes from 20% (100MB) to 40% (200MB). Usage for this cycle is now recorded as 10/200 because there is just 190MB left in the plan to consume. In subsequent cycles, subscriber C will continue to have a 40% allocation of the plan allotment.</li>
+<li>Total consumption during the cycle is 310MB. There is 190MB remaining for subscribers A and C to share. Subscribers A and C combined can use up to the 190MB remaining on the plan cycle.</li>
+</ul>
+<h3>Subscriber Join</h3>
+<p>The new subscriber is allocated 100%.</p>
+<h3>Subscriber Unjoin</h3>
+<p>No change to allocations of remaining subscribers, except that if the number of subscribers becomes 1, the remaining subscriber's allocation changes to 100%.</p>
+<h3>Downgrade</h3>
+<p>The 500MB plan is exchanged for one with 250MB.</p>
+<div class="info">On systems that allow immediate downgrades (vs. downgrades being delayed until the next cycle), customers can downgrade only to plans and bundles that are at least as large as the amount consumed during the current cycle. (In the case of bundles, each plan in the bundle is considered separately.) In the above example, if total use during the cycle exceeded 250MB, a downgrade to that plan could not occur. Of if you had a bundle with 500MB data, 500 voice minutes, and 200 text messages and an exchange was desired for a bundle with 250MB data, 200 voice minutes, and 100 text messages, if data use during the cycle exceeded 250MB, voice minutes during the cycle exceeded 200 minutes, or more than 100 text messages were used, a downgrade to that bundle could not occur.</div>
+<h4>Downgrade Example 1</h4>
+<p>Before the downgrade:</p>
+<ul>
+<li>Subscriber A is allocated 40% (200MB) and has consumed 2% (10MB). Usage shows 10/200.</li>
+<li>Subscriber B is allocated 40% (200MB) and has consumed 49.5% (99MB). Usage shows 99/200.</li>
+<li>Subscriber C is allocated 20% (100MB) and has consumed 0% (0MB). Usage shows 0/100.</li>
+<li>Total consumption during the cycle: 109MB. Total remaining for the cycle: 391MB. Consumption has not exceeded capacity of exchanged plan, so downgrade is allowed.</li>
+</ul>
+<p>After the downgrade:</p>
+<ul>
+<li>Subscriber A's 40% allocation is reduced from 200MB to 100MB. Usage shows 10/100, which leaves up to 90MB.</li>
+<li>Subscriber B's 40% allocation is reduced from 200MB to 100MB. Usage shows 99/100, which leaves up to 1MB.</li>
+<li>Subscriber C's 20% allocation is reduced from 100MB to 50MB. Usage shows 0/50, which leaves up to 50MB.</li>
+<li>Total consumption during the cycle: 109MB. There is now 141MB remaining for subscribers A, B, and C to share. Subscriber A can use up to 90MB more, subscriber B can use up to 1MB more, and subscriber C can use up to 50MB more.</li>
+</ul>
+<h4>Downgrade Example 2</h4>
+<p>Before the downgrade:</p>
+<ul>
+<li>Subscriber A is allocated 40% (200MB) and has consumed 2% (10MB). Usage shows 10/200.</li>
+<li>Subscriber B is allocated 40% (200MB) and has consumed 50.5% (101MB). Usage shows 101/200.</li>
+<li>Subscriber C is allocated 20% (100MB) and has consumed 0% (0MB). Usage shows 0/100.</li>
+<li>Total consumption during the cycle: 111MB. Total remaining for the cycle: 389MB. Consumption has not exceeded capacity of exchanged plan, so downgrade is allowed.</li>
+</ul>
+<p>After the downgrade:</p>
+<ul>
+<li>Subscriber A's 40% allocation is reduced from 200MB to 100MB. Usage shows 10/100, which leaves up to 90MB.</li>
+<li>Subscriber B's 40% allocation is reduced from 200MB to 100MB. Usage shows 100/100 (because usage display cannot be greater than actual allocation, so the usage display indicates how much a user has remaining), which leaves 0MB.</li>
+<li>Subscriber C's 20% allocation is reduced from 100MB to 50MB. Usage shows 0/50, which leaves up to 50MB.</li>
+<li>Total consumption during the cycle: 111MB. There is now 139MB remaining for subscribers A and C to share. Subscriber A can use up to 90MB more and subscriber C can use up to 50MB more.</li>
+</ul>
+<h4>Downgrade Example 3</h4>
+<p>Before the downgrade:</p>
+<ul>
+<li>Subscriber A is allocated 40% (200MB) and has consumed 2% (10MB). Usage shows 10/200.</li>
+<li>Subscriber B is allocated 40% (200MB) and has consumed 75.5% (151MB). Usage shows 151/200.</li>
+<li>Subscriber C is allocated 20% (100MB) and has consumed 0% (0MB). Usage shows 0/100.</li>
+<li>Total consumption during the cycle: 161MB. Total remaining for the cycle: 339MB. Consumption has not exceeded capacity of exchanged plan, so downgrade is allowed.</li>
+</ul>
+<p>After the downgrade:</p>
+<ul>
+<li>Subscriber A's 40% allocation is reduced from 200MB to 100MB. Usage shows 11/100, which leaves 89MB. (While actual usage was 10MB to this point, only 89MB is available to be used, so the usage adjusts to indicate this.)</li>
+<li>Subscriber B's 40% allocation is reduced from 200MB to 100MB. Usage shows 100/100 (because usage display cannot be greater than actual allocation, so the usage display indicates how much a user has remaining), which leaves 0MB.</li>
+<li>Subscriber C's 20% allocation is reduced from 100MB to 50MB. Usage shows 0/50, which leaves 50MB.</li>
+<li>Total consumption during the cycle: 161MB. There is now 89MB remaining for subscribers A and C to share. Subscriber A can use up to 89MB more and subscriber C can use up to 50MB more.</li>
+</ul>
+<h4>Downgrade Example 4</h4>
+<p>Before the downgrade:</p>
+<ul>
+<li>Subscriber A is allocated 40% (200MB) and has consumed 2% (10MB). Usage shows 10/200.</li>
+<li>Subscriber B is allocated 40% (200MB) and has consumed 95.5% (191MB). Usage shows 191/200.</li>
+<li>Subscriber C is allocated 20% (100MB) and has consumed 0% (0MB). Usage shows 0/100.</li>
+<li>Total consumption during the cycle: 201MB. Total remaining for the cycle: 49MB.</li>
+</ul>
+<p>After the downgrade:</p>
+<ul>
+<li>Subscriber A's 40% allocation is reduced from 200MB to 100MB. Usage shows 51/100, which leaves 49MB. (While actual usage was 10MB to this point, only 49MB is available to be used, so the usage adjusts to indicate this.)</li>
+<li>Subscriber B's 40% allocation is reduced from 200MB to 100MB. Usage shows 100/100 (because usage display cannot be greater than actual allocation, so the usage display indicates how much a user has remaining), which leaves 0MB.</li>
+<li>Subscriber C's 20% allocation is reduced from 100MB to 50MB. Usage shows 1/50, which leaves 49MB. (While actual usage was 0MB to this point, only 49MB is available to be used, so the usage adjusts to indicate this.)</li>
+<li>Total consumption during the cycle: 201MB. There is now 49MB remaining for subscribers A and C to share. Subscriber A can use up to 49MB more and subscriber C can use up to 49MB more.</li>
+</ul>
+<h3>Upgrade</h3>
+<p>No changes to any subscriber allocation.</p>
+<h2>Share On Request: Piñata</h2>
+<p>With a <a hqid="288857" href="#GeneralTab-ReceiptSharingAssigningSettings-ShareMethod">Share Method</a> setting of <em>Manual</em> and a <a hqid="288857" href="#PlanSettings-TypeSettings-ShareType">Share Type</a> setting of <em>Piñata</em>, this is how plan allocation behaves.</p>
+<h3>Initial Allocation</h3>
+<p>The plan or bundle purchaser receives 100% allocation. Any other subscribers in the account receive 0% initially. The purchaser/account controller can change the initial allocation from the default before completing the purchase.</p>
+<h3>Allocation Change</h3>
+<div class="info">The account controller changes subscriber allowances.</div>
+<ul>
+<li>Subscriber allowances can be changed at any time to any whole number percentage from 0% to 100%.</li>
+<li>The total of individual allowance percentage can be greater than 100%.</li>
+<li>If a subscriber's current cycle usage exceeds the new allowance, the subscriber will have no more usage for the current cycle.</li>
+</ul>
+<p>The following examples assume you start with a 500MB data plan with 3 subscribers sharing it.</p>
+<h4>Allocation Change Example 1</h4>
+<ul>
+<li>Subscriber A was allocated 40% (200MB) and has consumed 2% (10MB).</li>
+<li>Subscriber B was allocated 80% (400MB) and has consumed 19.8% (99MB).</li>
+<li>Subscriber C was allocated 20% (100MB) and has consumed 0% (0MB).</li>
+<li>Total consumption during the cycle: 109MB, leaving 391MB.</li>
+</ul>
+<p>The account controller changes subscriber B's allocation from 80% (400MB) to 20% (100MB) and subscriber C's allocation from 20% (100MB) to 40% (200MB).</p>
+<ul>
+<li>Subscriber A's allocation and remaining usage does not change.</li>
+<li>Subscriber B's allocation changes from 80% (400MB) to 20% (100MB). Usage for the cycle is now recorded as 99/100, so subscriber B has 1MB left to consume this cycle. In subsequent cycles, subscriber B will continue to have a 20% allocation of the plan allotment.</li>
+<li>Subscriber C's allocation changes from 20% (100MB) to 40% (200MB). Usage for this cycle is now recorded as 0/200, so subscriber C has 200MB left to consume this cycle. In subsequent cycles, subscriber C will continue to have a 40% allocation of the plan allotment.</li>
+<li>Total consumption during the cycle: 109MB. There is 391MB remaining. Subscriber A can use up to 190MB more, subscriber B can use up to 1MB more, and subscriber C can use up to 200MB more.</li>
+</ul>
+<h4>Allocation Change Example 2</h4>
+<ul>
+<li>Subscriber A was allocated 40% (200MB) and has consumed 2% (10MB).</li>
+<li>Subscriber B was allocated 80% (400MB) and has consumed 40% (200MB).</li>
+<li>Subscriber C was allocated 20% (100MB) and has consumed 0% (0MB).</li>
+<li>Total consumption during the cycle: 210MB, leaving 290MB.</li>
+</ul>
+<p>The account controller changes subscriber B's allocation from 80% (400MB) to 20% (100MB) and subscriber C's allocation from 20% (100MB) to 40% (200MB).</p>
+<ul>
+<li>Subscriber A's allocation and remaining usage does not change.</li>
+<li>Subscriber B's allocation changes from 80% (400MB) to 20% (100MB). Because subscriber B's current cycle usage has already exceeded the new allocation, usage for the cycle is now recorded as 100/100, and subscriber B has 0MB left to consume this cycle. In subsequent cycles, subscriber B will continue to have a 20% allocation of the plan allotment.</li>
+<li>Subscriber C's allocation changes from 20% (100MB) to 40% (200MB). Usage for this cycle is now recorded as 0/200, so subscriber C has 200MB left to consume this cycle. In subsequent cycles, subscriber C will continue to have a 40% allocation of the plan allotment.</li>
+<li>Total consumption of the plan is 210MB. There is 290MB remaining. Subscriber A can use up to 190MB and subscriber B can use up to 200MB.</li>
+</ul>
+<h4>Allocation Change Example 3</h4>
+<ul>
+<li>Subscriber A was allocated 40% (200MB) and has consumed 2% (10MB).</li>
+<li>Subscriber B was allocated 80% (400MB) and has consumed 60% (300MB).</li>
+<li>Subscriber C was allocated 20% (100MB) and has consumed 0% (0MB).</li>
+<li>Total plan consumption during the cycle: 310MB, leaving 190MB.</li>
+</ul>
+<p>The account controller changes subscriber B's allocation from 80% (400MB) to 20% (100MB) and subscriber C's allocation from 20% (100MB) to 40% (200MB).</p>
+<ul>
+<li>Subscriber A's allocation and remaining usage does not change.</li>
+<li>Subscriber B's allocation changes from 80% (400MB) to 20% (100MB). Because subscriber B's current cycle usage has already exceeded the new allocation, usage for the cycle is now recorded as 100/100, and subscriber B has 0MB left to consume this cycle. In subsequent cycles, subscriber B will continue to have a 20% allocation of the plan allotment.</li>
+<li>Subscriber C's allocation changes from 20% (100MB) to 40% (200MB). Usage for this cycle is now recorded as 10/200 because there is just 190MB left in the plan to consume. In subsequent cycles, subscriber C will continue to have a 40% allocation of the plan allotment.</li>
+<li>Total consumption is 310MB. There is 190MB remaining. Subscribers A and C can use up to the 190MB remaining in the cycle.</li>
+</ul>
+<h3>Subscriber Join</h3>
+<p>The new subscriber is allocated 0%.</p>
+<h3>Subscriber Unjoin</h3>
+<p>No change to allocations of remaining subscribers, except that if the number of subscribers becomes 1, the remaining subscriber's allocation changes to 100%.</p>
+<h3>Downgrade</h3>
+<p>The 500MB plan is exchanged for one with 250MB.</p>
+<h4>Downgrade Example 1</h4>
+<p>Before the downgrade:</p>
+<ul>
+<li>Subscriber A is allocated 40% (200MB) and has consumed 2% (10MB). Usage shows 10/200.</li>
+<li>Subscriber B is allocated 40% (200MB) and has consumed 19.8% (99MB). Usage shows 99/200.</li>
+<li>Subscriber C is allocated 20% (100MB) and has consumed 0% (0MB). Usage shows 0/100.</li>
+<li>Total consumption during the cycle: 109MB. Total remaining for the cycle: 391MB. Consumption has not exceeded capacity of exchanged plan, so downgrade is allowed.</li>
+</ul>
+<p>After the downgrade:</p>
+<ul>
+<li>Subscriber A's 40% allocation is reduced from 200MB to 100MB. Usage shows 10/100, which leaves 90MB.</li>
+<li>Subscriber B's 40% allocation is reduced from 200MB to 100MB. Usage shows 99/100, which leaves 1MB.</li>
+<li>Subscriber C's 20% allocation is reduced from 100MB to 50MB. Usage shows 0/50, which leaves 50MB.</li>
+<li>Total consumption during the cycle: 109MB. There is now 141MB remaining for subscribers A, B, and C to share. Subscriber A can use up to 90MB more, subscriber B can use up to 1MB more, and subscriber C can use up to 50MB more.</li>
+</ul>
+<h4>Downgrade Example 2</h4>
+<p>Before the downgrade:</p>
+<ul>
+<li>Subscriber A is allocated 40% (200MB) and has consumed 2% (10MB). Usage shows 10/200.</li>
+<li>Subscriber B is allocated 40% (200MB) and has consumed 20.2% (101MB). Usage shows 101/200.</li>
+<li>Subscriber C is allocated 20% (100MB) and has consumed 0% (0MB). Usage shows 0/100.</li>
+<li>Total consumption during the cycle: 111MB. Total remaining for the cycle: 389MB. Consumption has not exceeded capacity of exchanged plan, so downgrade is allowed.</li>
+</ul>
+<p>After the downgrade:</p>
+<ul>
+<li>Subscriber A's 40% allocation is reduced from 200MB to 100MB. Usage shows 10/100, which leaves 90MB.</li>
+<li>Subscriber B's 40% allocation is reduced from 200MB to 100MB. Usage shows 100/100 (because usage display cannot be greater than actual allocation, so the usage display indicates how much a user has remaining), which leaves 0MB.</li>
+<li>Subscriber C's 20% allocation is reduced from 100MB to 50MB. Usage shows 0/50, which leaves 50MB.</li>
+<li>Total consumption during the cycle: 111MB. There is now 139MB remaining for subscribers A, B, and C to share. Subscriber A can use up to 90MB more, subscriber B can use up to 1MB more, and subscriber C can use up to 50MB more.</li>
+</ul>
+<h4>Downgrade Example 3</h4>
+<p>Before the downgrade:</p>
+<ul>
+<li>Subscriber A is allocated 40% (200MB) and has consumed 2% (10MB). Usage shows 10/200.</li>
+<li>Subscriber B is allocated 40% (200MB) and has consumed 30.2% (151MB). Usage shows 151/200.</li>
+<li>Subscriber C is allocated 20% (100MB) and has consumed 0% (0MB). Usage shows 0/100.</li>
+<li>Total consumption during the cycle: 161MB. Total remaining for the cycle: 339MB. Consumption has not exceeded capacity of exchanged plan, so downgrade is allowed.</li>
+</ul>
+<p>After the downgrade:</p>
+<ul>
+<li>Subscriber A's 40% allocation is reduced from 200MB to 100MB. Usage shows 11/100, which leaves 89MB. (While actual usage was 10MB to this point, only 89MB is available to be used, so the usage adjusts to indicate this.)</li>
+<li>Subscriber B's 40% allocation is reduced from 200MB to 100MB. Usage shows 100/100 (because usage display cannot be greater than actual allocation, so the usage display indicates how much a user has remaining), which leaves 0MB.</li>
+<li>Subscriber C's 20% allocation is reduced from 100MB to 50MB. Usage shows 0/50, which leaves 50MB.</li>
+<li>Total consumption during the cycle: 161MB. There is now 89MB remaining for subscribers A and C to share. Subscriber A can use up to 89MB more and subscriber C can use up to 50MB more.</li>
+</ul>
+<h4>Downgrade Example 4</h4>
+<p>Before the downgrade:</p>
+<ul>
+<li>Subscriber A is allocated 40% (200MB) and has consumed 2% (10MB). Usage shows 10/200.</li>
+<li>Subscriber B is allocated 40% (200MB) and has consumed 38.2% (191MB). Usage shows 191/200.</li>
+<li>Subscriber C is allocated 20% (100MB) and has consumed 0% (0MB). Usage shows 0/100.</li>
+<li>Total consumption during the cycle: 201MB. Total remaining for the cycle: 299MB. Consumption has not exceeded capacity of exchanged plan, so downgrade is allowed.</li>
+</ul>
+<p>After the downgrade:</p>
+<ul>
+<li>Subscriber A's 40% allocation is reduced from 200MB to 100MB. Usage shows 51/100, which leaves 49MB. (While actual usage was 10MB to this point, only 49MB is available to be used, so the usage adjusts to indicate this.)</li>
+<li>Subscriber B's 40% allocation is reduced from 200MB to 100MB. Usage shows 100/100 (because usage display cannot be greater than actual allocation, so the usage display indicates how much a user has remaining), which leaves 0MB.</li>
+<li>Subscriber C's 20% allocation is reduced from 100MB to 50MB. Usage shows 1/50, which leaves 49MB. (While actual usage was 0MB to this point, only 49MB is available to be used, so the usage adjusts to indicate this.)</li>
+<li>Total consumption during the cycle: 201MB. There is now 49MB remaining for subscribers A and C to share. Subscriber A can use up to 49MB more and subscriber C can use up to 49MB more.</li>
+</ul>
+<h3>Upgrade</h3>
+<p>No changes to any subscriber allocation.</p>
+<h2>Share Automatically: Limited</h2>
+<p>With a <a href="#GeneralTab-ReceiptSharingAssigningSettings-ShareMethod">Share Method</a> setting of <em>Automatic</em> and a <a hqid="288857" href="#PlanSettings-TypeSettings-ShareType">Share Type</a> setting of <em>Limited</em>, this is how allocation behaves.</p>
+<h3>Initial Allocation</h3>
+<p>Each subscriber in the account gets allocated an equal amount. The purchaser/account controller can change the initial allocation from the default before completing the purchase.</p>
+<h3>Allocation Change</h3>
+<div class="info">The account controller changes subscriber allowances.</div>
+<ul>
+<li>Subscriber allowances can be changed at any time to any whole number percentage from 0% to 100%.</li>
+<li>A subscriber allowance cannot be changed to lower than what the subscriber has already used.</li>
+<li>A subscriber allowance cannot be changed to higher than the remaining available plan usage.</li>
+<li>The total of individual allowance percentage cannot be greater than 100%.</li>
+</ul>
+<p>The following examples assume you start with a 500MB data plan with 3 subscribers sharing it.</p>
+<h4>Allocation Change Example 1</h4>
+<ul>
+<li>Subscriber A was allocated 40% (200MB) and has consumed 2% (10MB).</li>
+<li>Subscriber B was allocated 40% (200MB) and has consumed 19.8% (99MB).</li>
+<li>Subscriber C was allocated 20% (100MB) and has consumed 0% (0MB).</li>
+<li>Total consumption during the cycle: 109MB, leaving 391MB.</li>
+</ul>
+<p>Subscriber A cannot be reallocated to less than 2% and Subscriber B cannot be reallocated to less than 20%. No subscriber can have their allocation changed to more than what they have used plus the remaining plan allocation, which means:</p>
+<ul>
+<li>Subscriber A's allocation cannot be increased to more than 80%.</li>
+<li>Subscriber B's allocation cannot be increased to more than 97%.</li>
+<li>Subscriber C's allocation cannot be increased to more than 78%.</li>
+</ul>
+<p>The account controller changes subscriber A's allocation from 40% (200MB) to 50% (250MB) and subscriber B's allocation from 40% (200MB) to 20% (100MB).</p>
+<ul>
+<li>Subscriber A's allocation changes from 40% (200MB) to 50% (250MB). Usage for the cycle is now recorded as 10/250, so subscriber A has 240MB left to consume this cycle. In subsequent cycles, subscriber A will continue to have a 50% allocation of the plan allotment.</li>
+<li>Subscriber B's allocation changes from 40% (200MB) to 20% (100MB). Usage for the cycle is now recorded as 99/100, so subscriber B has 1MB left to consume this cycle. In subsequent cycles, subscriber B will continue to have a 20% allocation of the plan allotment.</li>
+<li>Subscriber C's allocation and remaining usage does not change.</li>
+<li>There is 10% (50MB) unallocated.</li>
+</ul>
+<h4>Allocation Change Example 2</h4>
+<ul>
+<li>Subscriber A was allocated 40% (200MB) and has consumed 22% (110MB).</li>
+<li>Subscriber B was allocated 40% (200MB) and has consumed 40% (200MB).</li>
+<li>Subscriber C was allocated 20% (100MB) and has consumed 0% (0MB).</li>
+<li>Total consumption during the cycle: 310MB, leaving 190MB.</li>
+</ul>
+<p>Subscriber A cannot be reallocated to less than 22% and Subscriber B cannot be reallocated to less than 40%. No subscriber can have their allocation changed to more than what they have used plus the remaining plan allocation, which means:</p>
+<ul>
+<li>Subscriber A's allocation cannot be increased to more than 60%.</li>
+<li>Subscriber B's allocation cannot be increased to more than 78%.</li>
+<li>Subscriber C's allocation cannot be increased to more than 38%.</li>
+</ul>
+<p>The account controller changes subscriber A's allocation from 40% (200MB) to 60% (300MB).</p>
+<ul>
+<li>Subscriber A's allocation changes from 40% (200MB) to 60% (300MB). Usage for the cycle is now recorded as 200/300, so subscriber A has 100MB left to consume this cycle. In subsequent cycles, subscriber A will continue to have a 60% allocation of the plan allotment.</li>
+<li>Subscriber B's allocation and remaining usage does not change. Usage for the cycle is recorded as 200/200, so subscriber B has 0MB left to consume this cycle.</li>
+<li>Subscriber C's allocation is reduced to 0% (0MB). Usage for the cycle is now recorded as 0/0. In subsequent cycles, subscriber C will continue to have 0% of the plan allotment.</li>
+</ul>
+<h4>Allocation Change Example 3</h4>
+<ul>
+<li>Subscriber A was allocated 40% (200MB) and has consumed 22% (110MB).</li>
+<li>Subscriber B was allocated 40% (200MB) and has consumed 30% (150MB).</li>
+<li>Subscriber C was allocated 20% (100MB) and has consumed 2% (10MB).</li>
+<li>Total consumption during the cycle: 270MB, leaving 230MB.</li>
+</ul>
+<p>Subscriber A cannot be reallocated to less than 22%, Subscriber B cannot be reallocated to less than 30%, and Subscriber C cannot be reallocated to less than 2%. No subscriber can have their allocation changed to more than what they have used plus the remaining plan allocation, which means:</p>
+<ul>
+<li>Subscriber A's allocation cannot be increased to more than 68%.</li>
+<li>Subscriber B's allocation cannot be increased to more than 76%.</li>
+<li>Subscriber C's allocation cannot be increased to more than 48%.</li>
+</ul>
+<p>The account controller changes subscriber A's allocation from 40% (200MB) to 50% (250MB).</p>
+<ul>
+<li>Subscriber A's allocation changes from 40% (200MB) to 50% (250MB). Usage for the cycle is now recorded as 110/250, so subscriber A has 140MB left to consume this cycle. In subsequent cycles, subscriber A will continue to have a 50% allocation.</li>
+<li>Subscriber B's allocation and remaining usage does not change. Usage for the cycle is recorded as 150/200, so subscriber B has 50MB left to consume this cycle.</li>
+<li>Subscriber C's allocation is reduced to 10% (50MB). Usage for the cycle is now recorded as 10/50, so Subscriber C has 40MB left to consume this cycle. In subsequent cycles, subscriber C will continue to have a 10% allocation.</li>
+</ul>
+<h3>Subscriber Join</h3>
+<p>If there is an unallocated amount, 100% of that is allocated to the new subscriber. If there is no unallocated amount, the new subscriber is allocated 0%.</p>
+<h3>Subscriber Unjoin</h3>
+<p>No change to allocations of remaining subscribers, except that if the number of subscribers becomes 1, the remaining subscriber's allocation changes to 100%.</p>
+<h3>Downgrade</h3>
+<p>For downgrades, the following rules apply:</p>
+<ul>
+<li>If no subscribers have exceeded their new allowances, there are no changes to allocations.</li>
+<li>If at any subscribers have exceeded their new allowance, those subscribers have a new allowance calculated as their current cycle use divided by the new allowance. Any remaining allocation is divided among other subscribers proportional to their existing allowance.</li>
+<li>If after the above adjustments, any other subscribers have exceeded their new allowance, their usage for the cycle is capped at that amount. Any remaining allocation is shared among subscribers not adjusted as above.</li>
+</ul>
+<p>The 500MB plan is exchanged for one with 250MB.</p>
+<h4>Downgrade Example 1</h4>
+<p>Before the downgrade:</p>
+<ul>
+<li>Subscriber A is allocated 40% (200MB) and has consumed 2% (10MB). Usage shows 10/200.</li>
+<li>Subscriber B is allocated 40% (200MB) and has consumed 19.8% (99MB). Usage shows 99/200.</li>
+<li>Subscriber C is allocated 20% (100MB) and has consumed 0% (0MB). Usage shows 0/100.</li>
+<li>Total consumption during the cycle: 109MB. Total remaining for the cycle: 391MB.</li>
+</ul>
+<p>After the downgrade:</p>
+<ul>
+<li>Total allotment remaining for the cycle: 141MB.</li>
+<li>Subscriber A's 40% allocation is reduced from 200MB to 100MB. Usage shows 10/100, which leaves 90MB.</li>
+<li>Subscriber B's 40% allocation is reduced from 200MB to 100MB. Usage shows 99/100, which leaves 1MB.</li>
+<li>Subscriber C's 20% allocation is reduced from 100MB to 50MB. Usage shows 0/50, which leaves 50MB.</li>
+</ul>
+<h4>Downgrade Example 2</h4>
+<p>Before the downgrade:</p>
+<ul>
+<li>Subscriber A is allocated 40% (200MB) and has consumed 4% (20MB). Usage shows 20/200.</li>
+<li>Subscriber B is allocated 40% (200MB) and has consumed 22.2% (111MB). Usage shows 111/200.</li>
+<li>Subscriber C is allocated 20% (100MB) and has consumed 0% (0MB). Usage shows 0/100.</li>
+<li>Total consumption during the cycle: 131MB. Total remaining for the cycle: 369MB.</li>
+</ul>
+<p>After the downgrade:</p>
+<ul>
+<li>Total allotment remaining for the cycle: 119MB.</li>
+<li>Subscriber A had 2/3 of the allocation of subscriber A and subscriber C combined (40 / (40 + 20)). Subscriber A now gets 2/3 of the remaining allocation of 56%, or 37.3%, which is rounded to 37%. Subscriber A's 40% allocation is reduced to 37%, from 200MB to 92.5MB. Usage shows 10/92.5, which leaves 82.5MB.</li>
+<li>Subscriber B has used more than the 40% of 100MB, so the allocation percentage changes to equal usage. Subscriber B's 40% allocation percentage is changed to 44.4% (111 of 250), which is rounded to 44% leaving 56% for the rest of the subscribers, and allocation is reduced from 200MB to 111MB. Usage shows 111/111, which leaves 0MB.</li>
+<li>Subscriber C had 1/3 of the allocation of subscriber A and subscriber C combined (20 / (40 + 20)). Subscriber C now gets 1/3 of the remaining allocation of 56%, or 18.7%, which is rounded to 19%. Subscriber C's 20% allocation is reduced to 19%, from 100MB to 47.5MB. Usage shows 0/47.5, which leaves 47.5MB.</li>
+</ul>
+<h4>Downgrade Example 3</h4>
+<p>Before the downgrade:</p>
+<ul>
+<li>Subscriber A is allocated 40% (200MB) and has consumed 2% (10MB). Usage shows 10/200.</li>
+<li>Subscriber B is allocated 40% (200MB) and has consumed 40% (200MB). Usage shows 200/200.</li>
+<li>Subscriber C is allocated 20% (100MB) and has consumed 0% (0MB). Usage shows 0/100.</li>
+<li>Total consumption during the cycle: 210MB. Total remaining for the cycle: 290MB.</li>
+</ul>
+<p>After the downgrade:</p>
+<ul>
+<li>Total allotment remaining for the cycle: 40MB.</li>
+<li>Subscriber A had 2/3 of the allocation of subscriber A and subscriber C combined (40 / (40 + 20)). Subscriber A now gets 2/3 of the remaining allocation of 20% (what's left after subscriber B's adjustment), or 13.3%, which is rounded to 13%. Subscriber A's 40% allocation is reduced to 13%, from 200MB to 32.5MB. Usage shows 10/32.5, which leaves 22.5MB.</li>
+<li>Subscriber B has used more than the 40% of 100MB, so the allocation percentage changes to equal usage. Subscriber B's 40% allocation percentage is changed to 80% (200 of 250), leaving 20% for the rest of the subscribers. Allocation remains at 200MB. Usage shows 200/200, which leaves 0MB.</li>
+<li>Subscriber C had 1/3 of the allocation of subscriber A and subscriber C combined (20 / (40 + 20)). Subscriber C now gets 1/3 of the remaining allocation of 20% (what's left after subscriber B's adjustment), or 6.7%, which is rounded to 7%. Subscriber C's 20% allocation is reduced to 7%, from 100MB to 17.5MB. Usage shows 0/17.5, which leaves 17.5MB.</li>
+</ul>
+<h4>Downgrade Example 4</h4>
+<p>Before the downgrade:</p>
+<ul>
+<li>Subscriber A is allocated 40% (200MB) and has consumed 2% (10MB). Usage shows 10/200.</li>
+<li>Subscriber B is allocated 40% (200MB) and has consumed 40% (200MB). Usage shows 200/200.</li>
+<li>Subscriber C is allocated 20% (100MB) and has consumed 4% (20MB). Usage shows 20/100.</li>
+<li>Total consumption during the cycle: 230MB. Total remaining for the cycle: 270MB.</li>
+</ul>
+<p>After the downgrade:</p>
+<ul>
+<li>Total allotment remaining for the cycle: 20MB.</li>
+<li>Subscriber A had 2/3 of the allocation of subscriber A and subscriber C combined (40 / (40 + 20)). Subscriber A now gets 2/3 of the remaining allocation of 20%, or 13.3%, which is rounded to 13% and is 32.5MB. But after subscriber B's usage and subscriber C's usage, there is only 20MB left to consume. 20MB is 8%, so while subscriber A's 40% allocation is reduced from 200MB to 32.5MB, Usage shows 12.5/32.5, reflecting the 20MB remaining to be used in the cycle.</li>
+<li>Subscriber B has used more than the 40% of 100MB, so the allocation percentage changes to equal usage. Subscriber B's 40% allocation percentage is changed to 80% (200 of 250), leaving 20% for the rest of the subscribers. Allocation remains at 200MB. Usage shows 200/200, which leaves 0MB.</li>
+<li>Subscriber C had 1/3 of the allocation of subscriber A and subscriber C combined (20 / (40 + 20)). Subscriber C now gets 1/3 of the remaining allocation of 20%, or 6.7%, which is rounded to 7% and is 17.5MB. But subscriber C has already used 20MB, which is 8% of 250MB. So Subscriber C's 20% allocation is changed to 8%, not 7%, from 100MB to 20MB. Usage shows 20/20, which leaves 0MB.</li>
+</ul>
+<h3>Upgrade</h3>
+<p>No changes to any subscriber allocation.</p>
+<h2>Share On Request: Limited</h2>
+<p>With a <a href="#GeneralTab-ReceiptSharingAssigningSettings-ShareMethod">Share Method</a> setting of <em>Manual</em> and a <a hqid="288857" href="#PlanSettings-TypeSettings-ShareType">Share Type</a> setting of Limited, this is how allocation behaves.</p>
+<h3>Initial Allocation</h3>
+<p>The purchaser receives 100% allocation. Any other subscribers in the account receive 0% initially.</p>
+<h3>Allocation Change</h3>
+<div class="info">The account controller changes subscriber allowances.</div>
+<ul>
+<li>Subscriber allowances can be changed at any time to any whole number percentage from 0% to 100%.</li>
+<li>A subscriber allowance cannot be changed to lower than what the subscriber has already used.</li>
+<li>A subscriber allowance cannot be changed to higher than the remaining available plan usage.</li>
+<li>The total of individual allowance percentage cannot be greater than 100%.</li>
+</ul>
+<p>The following examples assume you start with a 500MB data plan with 3 subscribers sharing it.</p>
+<h4>Allocation Change Example 1</h4>
+<ul>
+<li>Subscriber A was allocated 40% (200MB) and has consumed 2% (10MB).</li>
+<li>Subscriber B was allocated 40% (200MB) and has consumed 19.8% (99MB).</li>
+<li>Subscriber C was allocated 20% (100MB) and has consumed 0% (0MB).</li>
+<li>Total consumption during the cycle: 109MB (21.8%), leaving 391MB (78.2%).</li>
+</ul>
+<p>Subscriber A cannot be reallocated to less than 2% and Subscriber B cannot be reallocated to less than 20%. No subscriber can have their allocation changed to more than what they have used plus the remaining plan allocation, which means:</p>
+<ul>
+<li>Subscriber A's allocation cannot be increased to more than 80%.</li>
+<li>Subscriber B's allocation cannot be increased to more than 97%.</li>
+<li>Subscriber C's allocation cannot be increased to more than 78%.</li>
+</ul>
+<p>The account controller changes subscriber A's allocation from 40% (200MB) to 50% (250MB) and subscriber B's allocation from 40% (200MB) to 20% (100MB).</p>
+<ul>
+<li>Subscriber A's allocation changes from 40% (200MB) to 50% (250MB). Usage for the cycle is now recorded as 10/250, so subscriber A has 240MB left to consume this cycle. In subsequent cycles, subscriber A will continue to have a 50% allocation of the allotment.</li>
+<li>Subscriber B's allocation changes from 40% (200MB) to 20% (100MB). Usage for the cycle is now recorded as 99/100, so subscriber B has 1MB left to consume this cycle. In subsequent cycles, subscriber B will continue to have a 20% allocation of the allotment.</li>
+<li>Subscriber C's allocation and remaining usage does not change.</li>
+<li>There is 10% (50MB) unallocated.</li>
+</ul>
+<h4>Allocation Change Example 2</h4>
+<ul>
+<li>Subscriber A was allocated 40% (200MB) and has consumed 22% (110MB).</li>
+<li>Subscriber B was allocated 40% (200MB) and has consumed 100% (200MB).</li>
+<li>Subscriber C was allocated 20% (100MB) and has consumed 0% (0MB).</li>
+<li>Total consumption during the cycle: 310MB (62%), leaving 190MB (38%).</li>
+</ul>
+<p>Subscriber A cannot be reallocated to less than 22% and Subscriber B cannot be reallocated to less than 40%. No subscriber can have their allocation changed to more than what they have used plus the remaining plan allocation, which means:</p>
+<ul>
+<li>Subscriber A's allocation cannot be increased to more than 60%.</li>
+<li>Subscriber B's allocation cannot be increased to more than 78%.</li>
+<li>Subscriber C's allocation cannot be increased to more than 38%.</li>
+</ul>
+<p>The account controller changes subscriber A's allocation from 40% (200MB) to 60% (300MB).</p>
+<ul>
+<li>Subscriber A's allocation changes from 40% (200MB) to 60% (300MB). Usage for the cycle is now recorded as 200/300, so subscriber A has 100MB left to consume this cycle. In subsequent cycles, subscriber A will continue to have a 60% allocation of the allotment.</li>
+<li>Subscriber B's allocation and remaining usage does not change. Usage for the cycle is recorded as 200/200, so subscriber B has 0MB left to consume this cycle.</li>
+<li>Subscriber C's allocation is reduced to 0% (0MB). Usage for the cycle is now recorded as 0/0. In subsequent cycles, subscriber C will continue to have 0% of the allotment.</li>
+</ul>
+<h4>Allocation Change Example 3</h4>
+<ul>
+<li>Subscriber A was allocated 40% (200MB) and has consumed 22% (110MB).</li>
+<li>Subscriber B was allocated 40% (200MB) and has consumed 30% (150MB).</li>
+<li>Subscriber C was allocated 20% (100MB) and has consumed 2% (10MB).</li>
+<li>Total consumption during the cycle: 270MB (54%), leaving 230MB (46%).</li>
+</ul>
+<p>Subscriber A cannot be reallocated to less than 22%, Subscriber B cannot be reallocated to less than 30%, and Subscriber C cannot be reallocated to less than 2%. No subscriber can have their allocation changed to more than what they have used plus the remaining plan allocation, which means:</p>
+<ul>
+<li>Subscriber A's allocation cannot be increased to more than 68%.</li>
+<li>Subscriber B's allocation cannot be increased to more than 76%.</li>
+<li>Subscriber C's allocation cannot be increased to more than 48%.</li>
+</ul>
+<p>The account controller changes subscriber A's allocation from 40% (200MB) to 50% (250MB).</p>
+<ul>
+<li>Subscriber A's allocation changes from 40% (200MB) to 50% (250MB). Usage for the cycle is now recorded as 110/250, so subscriber A has 140MB left to consume this cycle. In subsequent cycles, subscriber A will continue to have a 50% allocation of the allotment.</li>
+<li>Subscriber B's allocation and remaining usage does not change. Usage for the cycle is recorded as 150/200, so subscriber B has 50MB left to consume this cycle.</li>
+<li>Subscriber C's allocation is reduced to 10% (50MB). Usage for the cycle is now recorded as 10/50, so Subscriber C has 40MB left to consume this cycle. In subsequent cycles, subscriber C will continue to have 10% of the allotment.</li>
+</ul>
+<h3>Subscriber Join</h3>
+<p>The new subscriber is allocated 0%.</p>
+<h3>Subscriber Unjoin</h3>
+<p>No change to allocations of remaining subscribers, except that if the number of subscribers becomes 1, the remaining subscriber's allocation changes to 100%.</p>
+<h3>Plan Downgrade</h3>
+<p>Upon completion of downgrade, account controller is taken to the <em>Change Allowances</em> page. No automatic reallocation occurs.</p>
+<h3>Plan Upgrade</h3>
+<p>Upon completion of upgrade, account controller is taken to the <em>Change Allowances</em> page. No automatic reallocation occurs.</p>
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>
